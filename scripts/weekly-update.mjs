@@ -278,7 +278,7 @@ Existing glossary ids (link to these with [[id]]; don't propose them as new term
 Rules:
 - Use only facts from the research brief. Never add facts or numbers that aren't in it.
 - Cite sources only by their numbers from the numbered source list: the 1 to 3 that directly report the item, strongest (primary or most authoritative) first. Never attach a source that is only loosely related (the [n] markers in the brief show which sources support which claims).
-- Sports angle: only when the connection is direct and factual (the news is about sports, betting or media, or clearly changes something those businesses do). Never speculate about how sports companies use a technology, and never invent technical claims. An empty sports angle is better than a stretched one; most general AI items should have none.
+- Sports angle: for items in the "Sports, betting & media" category, explain the practical consequence for the industry. For every other item, sports_angle MUST be an empty string unless the brief itself reports a sports, betting or media connection for that news (for example, a company explicitly marketing a product for live sports). Never speculate about how sports companies might use a technology, and never make technical claims about betting systems. When in doubt, leave it empty; the "why" field already covers relevance.
 - Prefer items that matter to a sports-betting executive or that any informed executive must know. Skip consumer gadget news unless it's a major platform shift.
 - Order items by importance to this reader. Keep 4 to 7 items.
 - Write so he can understand each item even if he skipped last week.`;
