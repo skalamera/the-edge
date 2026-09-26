@@ -8,7 +8,7 @@ minutes: 13
 "AI" is one of the most overloaded words in business. A vendor uses it to describe a souped-up spreadsheet. A headline uses it to describe a robot uprising. Your phone uses it to sort your photos. By the end of this chapter you'll know what the word covers, how the pieces fit together, how we got here and why it all took off now.
 
 :::why Why this matters to you
-When someone pitches you an "AI-powered" product, your first question should be: what kind? A model that flags suspicious bets and a chatbot that writes match previews are both called AI, but they work differently, cost differently and fail differently. Knowing the family tree lets you ask the right question in the first five minutes, and spot when "AI" is just a new label on old software.
+When someone pitches you an "AI-powered" product, your first question should be: what kind? A model that tracks players from video and a chatbot that writes match previews are both called AI, but they work differently, cost differently and fail differently. Knowing the family tree lets you ask the right question in the first five minutes, and spot when "AI" is just a new label on old software.
 :::
 
 ## The nesting dolls
@@ -37,21 +37,21 @@ The biggest idea in this chapter: there are two ways to make a computer smart.
 
 **Learn from examples.** Feed the computer a mountain of examples with the answers attached, and let it find the patterns itself. That's machine learning.
 
-:::analogy Two ways to set a line
-Picture two ways to price an NFL game.
+:::analogy The textbook and the toddler
+Picture two ways to learn a language.
 
-The first is an old-school oddsmaker with a rulebook. Home field is worth three points. Knock off several points if the starting quarterback is out. Adjust for weather, travel and rest. Every rule is sensible, and every rule was written by a person.
+The first is the textbook. Verb tables, grammar rules, a list of exceptions to memorize. Every rule is correct, and every rule was written down by an expert.
 
-The second is a model that has been shown every game, every play and every line move for twenty years. Nobody tells it home field is worth three points. It works out what home field is actually worth, for which teams, in which conditions, and it notices when that number drifts. It also finds patterns no human thought to write down.
+The second is the toddler. Nobody hands a three-year-old a grammar book. They hear millions of sentences and work out the patterns themselves. When a child says "I goed to the park," nobody taught them that word. They found the past-tense rule on their own. They also absorb what no textbook covers: slang, tone, when a phrase lands as rude.
 
-The rulebook is easy to explain and audit, but it's brittle: the world changes and the rules don't. The model adapts and catches subtler signals, but it's only as good as the data it learned from, and it can't always tell you why it landed on a number.
+The textbook is easy to explain and check, but it's brittle: talk fast or use slang the book never covered, and the student is lost. The toddler adapts and catches subtler signals, but only learns what they hear (raise a child around one accent and that's their accent), and can't always explain it. Ask a native speaker why a sentence sounds wrong and you'll often hear: "It just does."
 
 That trade-off, rules you can read versus patterns you can't always see, runs through everything in AI.
 :::
 
-Why did learning win? Because most of the world is too messy for rules. Try writing rules to spot a sponsor's logo on a jersey: at every angle, in every light, half-hidden by an arm, blurred mid-sprint. You'd never finish. Show a system enough labeled examples, though, and it learns to spot the logo itself. That's [[computer vision]], the same family of technology that can now track every player on a pitch from video.
+Why did learning win? Because most of the world is too messy for rules. Try writing rules to spot a stop sign: at every angle, in every light, half-hidden by a branch, faded by the sun, caked in snow. You'd never finish. Show a system enough labeled examples, though, and it learns to spot the sign itself. That's [[computer vision]], the same family of technology that lets your phone recognize your face and a car read the road.
 
-The catch: you stop programming the answer and start curating the examples. The quality of the [[training data]] matters as much as the cleverness of the software. That's why, in an AI world, whoever owns the best data holds a card others can't easily copy.
+The catch: you stop programming the answer and start curating the examples. Like the toddler, a model learns whatever its examples teach, mistakes included. The quality of the [[training data]] matters as much as the cleverness of the software. That's why, in an AI world, whoever owns the best data has an edge others can't easily copy.
 
 ## A short history, in four eras
 
@@ -78,7 +78,7 @@ The contrast is the whole story. Deep Blue was programmed. AlphaGo learned.
 
 ### The language explosion (2017 to 2022)
 
-- **2017: The Transformer.** Eight Google researchers publish a paper called "Attention Is All You Need." It introduces the [[transformer]], a new neural network design built for translation. Its key trick, called attention, lets the model look at every word in a passage at once and work out which words matter most to each other. In "The book moved the line because it was taking too much money on the favorite," attention is how the model works out that "it" means the book, not the line. The Transformer is the "T" in GPT, and it sits under nearly every major LLM today.
+- **2017: The Transformer.** Eight Google researchers publish a paper called "Attention Is All You Need." It introduces the [[transformer]], a new neural network design built for translation. Its key trick, called attention, lets the model look at every word in a passage at once and work out which words matter most to each other. In "The laptop wouldn't fit in the bag because it was too big," attention is how the model works out that "it" means the laptop. Change "big" to "small" and "it" becomes the bag. The Transformer is the "T" in GPT, and it sits under nearly every major LLM today.
 - **2018 to 2020: Bigger gets better.** OpenAI builds a series of models called GPT, short for Generative Pre-trained Transformer. GPT-3, released in 2020, was more than 100 times larger than GPT-2 from the year before, and it could suddenly write essays, answer questions and produce simple code. Researchers found that bigger models, fed more data and computing power, improved in a predictable way. Those patterns, called [[scaling laws]], became the industry's playbook.
 - **November 30, 2022: ChatGPT.** OpenAI puts a chat window on one of its GPT models and releases it as a free "research preview." It reaches a million users in five days. The technology wasn't brand new. What was new was that anyone could talk to it.
 
@@ -96,18 +96,18 @@ Model names go stale fast; the Players page and This Week keep them current.
 :::myth Myth vs. reality
 **Myth:** ChatGPT came out of nowhere in 2022.
 
-**Reality:** It was a seventy-year overnight success. The core ideas date to the 1950s, the deep learning breakthrough to 2012, the Transformer to 2017. ChatGPT's real innovation was access: it let anyone talk to a technology researchers had been building for decades. Think of the rookie who "comes out of nowhere" after five years in the minors.
+**Reality:** It was a seventy-year overnight success. The core ideas date to the 1950s, the deep learning breakthrough to 2012, the Transformer to 2017. ChatGPT's real innovation was access: it let anyone talk to a technology researchers had been building for decades. Think of the band that becomes an "overnight sensation" after ten years of playing bars.
 :::
 
 ## Two kinds of output: predictive and generative
 
 Almost everything AI produces falls into one of two buckets.
 
-**[[predictive ai|Predictive AI]] looks at data and makes a call about it.** It classifies (is this betting pattern suspicious? is that player offside?), forecasts (what's the win probability right now? which customers are about to leave?) and ranks (which sponsorship leads are most likely to close?). It was the workhorse of business AI for the decade before ChatGPT, and it still quietly runs fraud alerts, recommendations and dynamic pricing across the economy.
+**[[predictive ai|Predictive AI]] looks at data and makes a call about it.** It classifies (is this credit card charge fraud? is that email spam?), forecasts (how much will we sell next quarter? which customers are about to leave?) and ranks (which sales leads are most likely to close?). It was the workhorse of business AI for the decade before ChatGPT, and it still quietly runs fraud alerts, recommendations and dynamic pricing across the economy.
 
-**Generative AI makes something new.** Text (a match preview, a contract summary), images (campaign visuals, a mock-up of in-stadium signage), video (highlight packages, ad variations), audio (commentary, voice-overs, translation) and code, which turns out to matter enormously (chapter 5).
+**Generative AI makes something new.** Text (a blog post, a contract summary), images (campaign visuals, a product mock-up), video (training clips, ad variations), audio (voice-overs, podcasts, live translation) and code, which turns out to matter enormously (chapter 5).
 
-Two caveats. Products often blend both: a system might predict which moments a fan cares about, then generate a personalized highlight reel. And the line is blurrier than it looks. An LLM writes by predicting, over and over, which word should come next. Generation is prediction, repeated at speed.
+Two caveats. Products often blend both: a system might predict which customers are about to cancel, then write each one a personalized offer to stay. And the boundary is blurrier than it looks. An LLM writes by predicting, over and over, which word should come next. Generation is prediction, repeated at speed.
 
 The commercial point: predictive AI is judged on accuracy you can measure (did the fraud flag hit or miss?). Generative AI is judged on quality, which is harder to measure, and it can be fluent and wrong at the same time. Different products, different buying questions.
 
@@ -119,7 +119,7 @@ You'll hear three terms for how capable AI is, or might become.
 - **[[agi|Artificial general intelligence]]**, or AGI, means AI that can do most of the thinking work a capable person can, across domains. There's no agreed definition. OpenAI's charter, for instance, describes it as highly autonomous systems that outperform humans at most economically valuable work. Others set the bar elsewhere, which is why AGI arguments often go nowhere: people mean different things.
 - **[[superintelligence]]** means AI that far exceeds the best humans at nearly everything. It's hypothetical, and central to the biggest debates about AI risk.
 
-So where are we? Today's LLMs are far more general than anything before them. The same model can summarize a contract, write code and explain a same-game parlay. But they're uneven: superhuman at some tasks, surprisingly weak at others that seem easier. Researchers from Harvard Business School and Boston Consulting Group gave this a name in 2023: the [[jagged frontier]]. Whether that smooths out in years or decades is one of the biggest open questions in tech (chapter 9).
+So where are we? Today's LLMs are far more general than anything before them. The same model can summarize a contract, write code and draft a wedding toast. But they're uneven: superhuman at some tasks, surprisingly weak at others that seem easier. Researchers from Harvard Business School and Boston Consulting Group gave this a name in 2023: the [[jagged frontier]]. Whether that smooths out in years or decades is one of the biggest open questions in tech (chapter 9).
 
 :::room Say this in the room
 - "When someone says 'AI,' I ask which kind. Predicting a number, flagging a risk and writing content are different problems, with different costs and failure modes."
@@ -141,10 +141,10 @@ If the ideas are decades old, why the explosion now? Four ingredients arrived at
 
 The four feed each other. Better models attract users, users attract money, money buys compute, and compute trains better models. That flywheel is why progress has felt so fast since 2022.
 
-:::analogy The PASPA moment
-You've seen this pattern before. Sports betting existed in America for decades: legally in Nevada, in the shadows almost everywhere else. Then in May 2018, in Murphy v. NCAA, the Supreme Court struck down the federal law that had kept states from legalizing it. Within a few years, more than half the states had legal sports betting.
+:::analogy The streaming tipping point
+You've lived through this pattern before. Movies on demand is an old idea. Cable companies were testing it in the 1990s, and Netflix spent roughly its first decade mailing DVDs in red envelopes. The idea was never the problem. The ingredients weren't ready.
 
-The ruling alone didn't build the industry. It took several things converging: smartphones in every pocket, official real-time data feeds to power live betting, and billions of dollars in marketing and investment.
+Then, in the late 2000s, several things arrived together: fast home broadband, better video compression, cheap servers and storage, and devices from game consoles to phones that could play it all. No single invention flipped the switch. Within a few years streaming went from novelty to household habit, and the corner video store all but vanished. Then it fed itself: more subscribers paid for more shows, which pulled in more subscribers.
 
 AI's takeoff is the same story. The ideas were old. Data, compute, the right design and a flood of money all arrived in the same few years. When someone asks "why now?", that's your answer.
 :::
@@ -155,7 +155,7 @@ Ask the room: what's the difference between Deep Blue beating Kasparov at chess 
 
 ## Check yourself
 
-1. One vendor pitches an "AI-powered" tool that flags suspicious betting patterns. Another pitches one that writes personalized promo emails. Why would you evaluate them differently?
+1. One vendor pitches an "AI-powered" tool that flags fraudulent invoices. Another pitches one that writes personalized promo emails. Why would you evaluate them differently?
 
 <details><summary>Answer</summary>
 
@@ -163,7 +163,7 @@ The first is predictive AI, so you can measure it against known outcomes: how ma
 
 </details>
 
-2. Your boss asks, "Why not have our best traders write down their rules and automate them? Isn't that AI?" How do you respond?
+2. Your boss asks, "Why not have our most experienced account managers write down their rules for spotting an unhappy client, and automate them? Isn't that AI?" How do you respond?
 
 <details><summary>Answer</summary>
 

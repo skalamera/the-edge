@@ -49,7 +49,7 @@ The whole book on one page. Two minutes in the car, and you walk in as the calme
 | "Is it answering from our documents, or from memory?" | Someone trusts an AI answer about your business. |
 | "Where's the [[human in the loop]], and what can the agent do without asking?" | Any agent or automation proposal. |
 | "Let's prove it on one painful, measurable workflow first." | Someone wants to buy an "AI platform." |
-| "In live betting, [[latency]] is the product. How fast is it at peak load?" | Anything touching in-play data or pricing. |
+| "Speed is part of the product. What's the [[latency]] on our busiest day, not a quiet Tuesday?" | Anything real-time or customer-facing. |
 | "Prices for this capability fall every year. Let's not lock in today's rate for three years." | Contract negotiations. |
 | "The capability is real. The timeline is what's debated." | AGI and jobs conversations. |
 
@@ -82,7 +82,7 @@ Each one costs you credibility: it sounds naive, overconfident or like [[ai-wash
 
 | Number | What it means |
 |---|---|
-| **2017 → 2022** | The [[transformer]] paper (Google, 2017) made modern AI possible; ChatGPT launched in November 2022. The ChatGPT era is younger than an NFL rookie contract. |
+| **2017 → 2022** | The [[transformer]] paper (Google, 2017) made modern AI possible; ChatGPT launched in November 2022. The whole ChatGPT era fits inside a few years. |
 | **1 billion+** | Active users of OpenAI's products, per the company in July 2026. Generative AI has spread faster than the PC or the internet did (Stanford AI Index, 2026). |
 | **~13x a year** | How fast the cost of a given level of AI performance has fallen since 2023 (Epoch AI estimate, September 2026). Uneven by task, but relentless. |
 | **~$700 billion** | Planned 2026 capital spending by Amazon, Microsoft, Alphabet and Meta combined, mostly on AI data centers (company guidance, some raised mid-year). |

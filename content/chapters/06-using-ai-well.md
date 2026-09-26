@@ -49,7 +49,7 @@ How to answer: Be direct and concise. Lead with the answer, then the reasoning. 
 The mental model: **brief a brilliant new hire on their first day.** They've read nearly everything ever published and they work fast. But they know nothing about you, your company, your partner or what "good" looks like here. A vague brief gets generic work. A sharp brief gets work you can use.
 
 :::analogy Brief it like a new hire
-Tell a new hire "put something together on that sportsbook" and you'll get a Wikipedia summary. Tell them "I'm meeting their head of partnerships Thursday about expanding our data deal. I need one page on their last two quarters, their state footprint and three smart questions, in bullets, by noon," and you'll get something you can walk in with.
+Tell a new hire "put something together on that company" and you'll get a Wikipedia summary. Tell them "I'm meeting their head of partnerships Thursday about expanding our deal. I need one page on their last two quarters, their biggest markets and three smart questions, in bullets, by noon," and you'll get something you can walk in with.
 
 AI is the same new hire, except it finishes in 30 seconds and never minds being sent back for a redo.
 :::
@@ -57,7 +57,7 @@ AI is the same new hire, except it finishes in 30 seconds and never minds being 
 A strong [[prompt]] covers six things:
 
 1. **Context.** Who you are, the situation, the audience.
-2. **Role.** Who it should act as: "a skeptical CFO," "a sports-betting analyst."
+2. **Role.** Who it should act as: "a skeptical CFO," "a veteran industry analyst."
 3. **Goal.** The decision or outcome the work serves.
 4. **Examples.** Paste one you like. This is the single biggest quality lever.
 5. **Format.** Length, structure, tone: "one page, bullets, three headers."
@@ -88,8 +88,8 @@ Keep it to one page. Cite a source for every factual claim.
 ### 2. Partner research
 
 ```
-Act as a sports-betting industry analyst. Build a research brief on [company] for someone evaluating a strategic partnership.
-Cover: ownership and financials, the U.S. states and international markets where they operate, product strengths and weaknesses, publicly announced technology partners, regulatory issues, leadership changes, and strategic direction from their last two earnings calls or public statements.
+Act as an experienced analyst covering [industry, e.g., sports media and technology]. Build a research brief on [company] for someone evaluating a strategic partnership.
+Cover: ownership and financials, the markets and regions where they operate, product strengths and weaknesses, publicly announced technology partners, regulatory issues, leadership changes, and strategic direction from their last two earnings calls or public statements.
 End with "What this means for a potential partner": 3 opportunities and 3 risks.
 Use only sources you can link. Flag anything older than 6 months.
 ```
@@ -113,7 +113,7 @@ My notes:
 ### 4. RFP responses
 
 ```
-You're helping me respond to an RFP from [e.g., a state lottery / a league]. Below are (A) the RFP questions and (B) our previously approved answers and product descriptions.
+You're helping me respond to an RFP from [e.g., a league / a media company / a government agency]. Below are (A) the RFP questions and (B) our previously approved answers and product descriptions.
 For each RFP question:
 - Draft an answer using only facts found in (B).
 - If (B) doesn't cover it, write [GAP: what's needed] instead of inventing anything.
@@ -157,7 +157,7 @@ Give me two versions: one more formal, one more casual.
 ### 7. Pitch deck outlines
 
 ```
-I'm building a pitch deck for [audience] to [goal, e.g., convince a sportsbook to expand a data partnership into media and advertising].
+I'm building a pitch deck for [audience] to [goal, e.g., convince a partner to expand a data partnership into media and advertising].
 Draft a 10–12 slide storyline. For each slide: a headline that states the takeaway as a full sentence, 3 supporting points, and the evidence or chart that would prove it.
 The story should flow: their problem → cost of doing nothing → our solution → proof → economics → next steps.
 Then tell me which slide is weakest and why.
@@ -174,7 +174,7 @@ Then give me: the top 5 trends, the biggest changes versus last year, and anythi
 Show the calculations you used so I can check them, and make one chart that tells the main story.
 ```
 
-**Pro move:** "Describe it back first" catches a misread column before it poisons the analysis. Then spot-check two numbers yourself. To practice, use public data, like league attendance figures or a public company's reported results.
+**Pro move:** "Describe it back first" catches a misread column before it poisons the analysis. Then spot-check two numbers yourself. To practice, use public data, like a public company's quarterly results or government economic statistics.
 
 ### 9. Preparing a lecture
 
@@ -190,7 +190,7 @@ Flag any facts I should verify before presenting.
 ### 10. Learning a new topic
 
 ```
-I want to understand [topic, e.g., how in-play betting prices are calculated]. I'm a smart non-expert: explain it from the ground up, using sports or business analogies.
+I want to understand [topic, e.g., how private equity firms value a company]. I'm a smart non-expert: explain it from the ground up, using everyday business analogies.
 Teach me in steps. After each step, ask me one question to check I understood before moving on. If I get it wrong, explain it a different way.
 At the end, give me a one-paragraph summary I could say out loud in a meeting, and the 3 best sources to go deeper.
 ```
@@ -206,8 +206,8 @@ Keep these out of any personal or unapproved tool:
 - Partner contracts, pricing, rate cards, deal terms and pipeline
 - Anything under NDA
 - Non-public financials or strategy. Genius Sports is publicly traded, so material non-public information is a securities-compliance issue, not just an IT one.
-- Personal data about bettors, customers, employees or students
-- Integrity and security information: suspicious-betting alerts, investigations, system details
+- Personal data about customers, employees or students
+- Security and investigation details: fraud or integrity alerts, internal investigations, system details
 - Passwords, API keys and access credentials
 
 **Why the account matters.** Consumer accounts (free or personal paid plans) may use your chats to train future models unless you opt out, some conversations can be reviewed by people, and chats are stored. Stored chats can become evidence: in The New York Times' copyright case against OpenAI, a federal court ordered OpenAI in 2025 to preserve user chats that would otherwise have been deleted. Turning off training helps, but it doesn't make a personal account enterprise-grade.
@@ -218,13 +218,13 @@ Three more habits:
 
 - **Know the policy.** If your company's AI policy is unclear, ask IT or legal which tools are approved and for what data. Asking is what a leader does.
 - **Disclose AI notetakers.** Tell people when an AI is recording or transcribing a call. Some U.S. states require everyone's consent to record, so with external partners, ask first.
-- **Anonymize when practicing.** "A top-five U.S. operator" and rounded numbers work fine for drafting. Anonymizing reduces risk; it doesn't make confidential material acceptable in an unapproved tool.
+- **Anonymize when practicing.** "A top-five U.S. customer" and rounded numbers work fine for drafting. Anonymizing reduces risk; it doesn't make confidential material acceptable in an unapproved tool.
 
-## Check the tape
+## Check the work
 
-Treat AI output like the call on the field. Most calls stand. The ones that matter go to replay.
+Treat AI output like directions from a GPS. It's right so often that people stop looking up, which is how cars end up in lakes. Follow it on the easy stretches. At the turns that matter, look out the windshield.
 
-AI is weakest exactly where business is least forgiving: specific numbers, dates, names and quotes. That's the [[hallucination]] problem from chapter 3. Your replay checklist:
+AI is weakest exactly where business is least forgiving: specific numbers, dates, names and quotes. That's the [[hallucination]] problem from chapter 3. Your look-up checklist:
 
 1. **Click the sources.** Does the page exist, and does it actually say what the AI claims? A common failure is a real source with the wrong claim attached.
 2. **Check every number** against the original document.
@@ -248,7 +248,7 @@ Fifteen to thirty minutes a day. By day seven it will feel like a habit.
 - **Day 2: Prep a real meeting** with workflow 1, using public information only.
 - **Day 3: Voice day.** On a walk or a hands-free drive, talk through a problem you're chewing on. Ask it to push back.
 - **Day 4: Long read.** Have it summarize a long public document, like a competitor's annual report, then quiz you on it. Check three facts against the original.
-- **Day 5: Deep research** a question you actually care about, like how state regulators are approaching AI in sports betting. Click at least five sources.
+- **Day 5: Deep research** a question you actually care about, like how regulators are approaching AI in your industry. Click at least five sources.
 - **Day 6: Head to head.** Run the same prompt in two assistants and compare. Note which you trust more, and why.
 - **Day 7: Teach it back.** Explain one chapter of this book to the AI as if it were your class, and ask it to grade your explanation and find the gaps.
 
@@ -275,7 +275,7 @@ A personal account may use the chat for training unless they've opted out, store
 
 </details>
 
-2. You asked for a one-page brief on an operator and got something generic. Which parts of a good prompt were probably missing?
+2. You asked for a one-page brief on a prospective partner and got something generic. Which parts of a good prompt were probably missing?
 
 <details><summary>Answer</summary>
 

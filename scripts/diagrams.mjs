@@ -10,7 +10,7 @@ const stack = figure(
     <div class="stack-flow" aria-hidden="true"><span>Money flows down</span></div>
     <ol class="stack-layers">
       ${[
-        ['Applications', 'What people actually use', 'ChatGPT · Copilot · Cursor · a sportsbook app'],
+        ['Applications', 'What people actually use', 'ChatGPT · Copilot · Cursor · the apps on your phone'],
         ['Tools & infrastructure', 'Picks and shovels for builders', 'Databricks · Hugging Face · Scale AI'],
         ['Foundation models', 'The “brains”', 'OpenAI · Anthropic · Google DeepMind · Meta'],
         ['Cloud', 'Rents out the computers', 'AWS · Microsoft Azure · Google Cloud · Oracle · CoreWeave'],

@@ -16,7 +16,8 @@ The reader is a senior sports-business executive, **VP of Betting & Gaming for t
 - Plain English. Short sentences. Active voice. Second person ("you").
 - Explain every concept **from the ground up** before using it. Build each idea on the previous one.
 - Lead with the intuition, then the mechanism, then why it matters commercially.
-- **Use sports, betting, sponsorship and media analogies** wherever they genuinely clarify: odds-making, live trading, player tracking, scouting, the draft, film study, a sportsbook's risk desk, sponsorship activation, media rights. Don't force them where they don't fit.
+- **Use general, everyday analogies** that anyone in business would get instantly: hiring and onboarding a new employee, a restaurant kitchen, a library, a GPS, a utility bill, a supply chain, learning a language, a contractor with a toolbox. The goal is clarity, not flavor.
+- **Keep sports and betting out of analogies.** He is not an oddsmaker, trader or bookmaker, so odds-setting, "the line", sportsbook risk desks, parlays, sharp money and similar betting mechanics are confusing, not helpful. Deep sports, betting and media material belongs only in the chapter "AI in Sports, Betting & Media". Everywhere else, a brief mention of his industry is fine now and then (for example, one example in a "Why this matters" box or a "Say this in the room" line), but the teaching itself stays general.
 - Be honest about uncertainty and hype. Separate "what's real today" from "what's promised." He'll lose credibility repeating hype; he gains credibility by being the calm, accurate person in the room.
 - No filler, no throat-clearing ("In today's fast-paced world…"). No emoji. Avoid the words "delve", "landscape", "leverage" (as a verb), "robust", "game-changer", "revolutionize".
 - Numbers: use them where they make things concrete, but prefer durable facts. If a figure is time-sensitive (market share, valuations, model rankings, funding), say "as of mid-2026" or similar. Never invent a number. If unsure, describe qualitatively.
@@ -46,7 +47,7 @@ Use these fenced blocks (three colons, a type, an optional title). The inner tex
 Two to four sentences connecting this chapter to his career and the rooms he's in. Put one at the top of every chapter, right after the intro paragraph.
 :::
 
-:::analogy The sportsbook analogy
+:::analogy The new-hire analogy
 An extended analogy that makes a concept click.
 :::
 

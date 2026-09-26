@@ -27,7 +27,7 @@
     "category": "Agents",
     "short": "The repeating cycle an agent runs: understand the goal, decide the next step, act with a tool, check the result, repeat.",
     "explain": "Each pass through the loop is a fresh model call informed by everything that has happened so far. The loop is what lets agents adapt and recover from mistakes, and also why small errors can compound over many steps. Most agent products are this loop plus good tools, instructions and rules for when to stop or ask a human.",
-    "analogy": "It's a live trading desk: read the market, move the price, watch the response, adjust again.",
+    "analogy": "It's how you'd find a restaurant in a new city: check the map, walk a block, look around, adjust, repeat until you're at the door.",
     "related": [
       "agent",
       "tool-use",
@@ -45,7 +45,7 @@
     "category": "Safety, risk & policy",
     "short": "Isolating an autonomous AI agent within restricted software boundaries to prevent unauthorized actions and data leakage.",
     "explain": "Agent sandboxing enforces strict architectural limits on what an AI agent can access when given external tools like web browsers, file systems, or APIs. Without rigorous sandboxing, autonomous agents can exceed their intended task parameters, access internal networks, or leak confidential data to external servers.",
-    "analogy": "Putting a new trader on a simulated paper-trading terminal with strict limits before granting direct access to live exchange capital.",
+    "analogy": "It's letting a new employee practice in a test copy of the system before giving them access to real customer accounts.",
     "related": [
       "agent",
       "tool-use",
@@ -102,7 +102,7 @@
     "category": "Agents",
     "short": "An AI system that works toward a goal on its own: planning steps, using tools, checking results and continuing until the job is done.",
     "explain": "A chatbot answers a question; an agent takes actions, such as searching, running code, updating a spreadsheet or drafting and sending a message, in a loop. Under the hood it's usually an LLM plus tools, instructions and permissions. Agents are genuinely useful for well-defined tasks today, but reliability drops on long, messy, open-ended work.",
-    "analogy": "A chatbot is a scout who writes you a report; an agent is a scout who also books the flights, sets up the workout and updates the draft board.",
+    "analogy": "A chatbot is a travel agent who tells you the best flight; an agent is one who also books it, reserves the hotel and adds it all to your calendar.",
     "related": [
       "agentic-ai",
       "agent-loop",
@@ -243,7 +243,7 @@
     "category": "Business & strategy",
     "short": "The layers of the AI industry, from energy and data centers to chips, cloud, models, tooling and applications, each with its own economics.",
     "explain": "Thinking in layers tells you who pays whom: apps pay model labs, labs pay clouds, clouds pay chipmakers, and everyone pays for power. So far, profits have concentrated near the bottom, especially in chips, while the model and app layers spend heavily to grow. When you read an AI headline, first ask which layer it's about.",
-    "analogy": "It's like the sports media value chain: leagues, rights holders, broadcasters, platforms and advertisers each capture a different slice.",
+    "analogy": "It's like the electricity business: power plants, the grid, the utility and the appliance maker each capture a different slice of what you pay.",
     "related": [
       "hyperscaler",
       "ai-lab",
@@ -385,7 +385,7 @@
     "category": "Foundations",
     "short": "The broad field of building computer systems that do things we'd normally say require human intelligence: recognizing, predicting, deciding and creating.",
     "explain": "AI is an umbrella term, not a single technology. Older AI was mostly rules written by hand; nearly everything called AI today is machine learning, where the system learns patterns from examples instead. When someone says 'AI' in a meeting, it helps to ask which kind they mean: a prediction model, a chatbot or an agent.",
-    "analogy": "AI is like 'analytics' in a front office: one word covering everything from a spreadsheet to a full player-tracking model.",
+    "analogy": "AI is like the word 'vehicle': one label covering everything from a scooter to a jet.",
     "related": [
       "machine-learning",
       "generative-ai",
@@ -466,7 +466,7 @@
     "category": "Safety, risk & policy",
     "short": "The human tendency to trust a machine’s answer too much, even when it’s wrong or when your own judgment says otherwise.",
     "explain": "When a system is usually right, people stop checking it, and that is exactly when its mistakes slip through. It’s why “a human reviews it” only works if the reviewer is trained, has time and is expected to push back.",
-    "analogy": "A trader who stops watching the feed because the model has been right all season, right up until the night it isn’t.",
+    "analogy": "It's following your GPS into a lake because it has been right every day for a year.",
     "related": [
       "human-in-the-loop",
       "hallucination",
@@ -486,7 +486,7 @@
     "category": "Agents",
     "short": "How much an AI system decides and acts on its own versus waiting for human direction; the dial separating chatbots, copilots and agents.",
     "explain": "At one end the AI only suggests; in the middle it acts but checks in; at the far end it runs a whole task unsupervised. More autonomy means more output per person and more risk. The right setting depends on how costly a mistake is and how easily it can be undone.",
-    "analogy": "It's how much freedom you give a quarterback at the line: a rookie runs the called play, a veteran gets to audible.",
+    "analogy": "It's the difference between a new hire who checks in before every decision and a trusted veteran who's told to handle it and report back.",
     "related": [
       "agent",
       "copilot",
@@ -719,7 +719,7 @@
     "category": "Agents",
     "short": "How small mistakes pile up across an agent's many steps, so a system that's usually right per step can still fail the whole job.",
     "explain": "If an agent gets each step right 95% of the time, a 20-step task succeeds only about 36% of the time. That simple math explains why agents shine on short tasks and struggle on long ones, and why checkpoints and human review matter. Small gains in per-step reliability pay off hugely on long tasks.",
-    "analogy": "It's the parlay math every bettor knows: each leg looks likely, but string enough together and the odds of hitting them all collapse.",
+    "analogy": "If each step in a 20-step process goes right 95% of the time, the whole thing succeeds only about a third of the time.",
     "related": [
       "agent-loop",
       "long-horizon-task",
@@ -831,7 +831,7 @@
     "category": "How models work",
     "short": "The maximum amount of text, measured in tokens, a model can consider at once, including your prompt, any documents and its own reply.",
     "explain": "Anything outside the context window is invisible to the model. Windows have grown from a few pages to hundreds of thousands of tokens or more, enough for long contracts or entire codebases. Bigger isn't free, though: long inputs cost more, run slower, and models can still miss details buried in the middle.",
-    "analogy": "It's the whiteboard in the film room: whatever fits on it, the team can work with; anything erased is gone.",
+    "analogy": "It's the model's desk: whatever fits on it, it can work with; anything that falls off the edge is forgotten.",
     "related": [
       "token",
       "memory",
@@ -850,7 +850,7 @@
     "category": "Business & strategy",
     "short": "An AI assistant built into software you already use, which helps you work but leaves you in control of the decisions.",
     "explain": "A copilot drafts the email, suggests the formula or summarizes the meeting; you review and decide. It sits between a chatbot (answers questions) and an agent (acts on its own). Microsoft uses Copilot as a brand name, but the word is used broadly across the industry.",
-    "analogy": "A copilot is the assistant coach suggesting the next call; the head coach still makes it.",
+    "analogy": "Like a GPS that suggests every turn while you keep your hands on the wheel.",
     "related": [
       "chatbot",
       "agent",
@@ -887,7 +887,7 @@
     "category": "Infrastructure & compute",
     "short": "Nvidia's software platform for programming its GPUs, widely seen as a core part of Nvidia's competitive moat.",
     "explain": "Over nearly two decades, researchers and engineers built their tools on CUDA, so switching to a rival chip often means rewriting and re-tuning software. That lock-in helps Nvidia hold its lead even when competitors match its hardware on paper. Rivals and hyperscalers are working hard to reduce this dependence.",
-    "analogy": "It's like an established data standard: once every partner has built to it, a rival format has to be far better, not just as good.",
+    "analogy": "It's like the QWERTY keyboard: once everyone has learned it, a rival layout has to be far better, not just as good.",
     "related": [
       "gpu",
       "moat",
@@ -1199,7 +1199,7 @@
     ],
     "category": "How models work",
     "short": "A list of numbers representing the meaning of a piece of text, an image or other data, so that similar things sit close together.",
-    "explain": "Embeddings let computers search by meaning rather than exact keywords: 'QB injury update' and 'quarterback hurt' land near each other. They're the engine behind RAG, recommendation systems and semantic search. You'll rarely touch them directly, but they're why AI search feels smarter than keyword search.",
+    "explain": "Embeddings let computers search by meaning rather than exact keywords: 'cheap flights to Miami' and 'low-cost airfare to Florida' land near each other. They're the engine behind RAG, recommendation systems and semantic search. You'll rarely touch them directly, but they're why AI search feels smarter than keyword search.",
     "related": [
       "vector-database",
       "rag",
@@ -1397,7 +1397,7 @@
     "category": "Foundations",
     "short": "A large model trained on broad data that can be adapted to many different tasks, rather than built for a single job.",
     "explain": "The term captures the business logic: a few companies spend heavily to build one very capable model, and thousands of products get built on top of it. Most LLMs are foundation models. The EU AI Act uses the related term 'general-purpose AI model' for the same idea.",
-    "analogy": "It's like a stadium: one massive build that then hosts football, concerts and conventions.",
+    "analogy": "It's like a big convention center: one massive build that then hosts trade shows, concerts and weddings.",
     "related": [
       "llm",
       "fine-tuning",
@@ -1475,7 +1475,7 @@
     ],
     "category": "Agents",
     "short": "The technical mechanism behind tool use: the model outputs a structured request to run a specific function, and the software runs it.",
-    "explain": "Developers describe the functions available (for example, one that fetches live odds for a given match), and the model decides when to call one and with what inputs. The app executes it and passes back the result for the model to use. You'll hear 'function calling' and 'tool calling' used almost interchangeably.",
+    "explain": "Developers describe the functions available (for example, one that looks up a customer's order status), and the model decides when to call one and with what inputs. The app executes it and passes back the result for the model to use. You'll hear 'function calling' and 'tool calling' used almost interchangeably.",
     "related": [
       "tool-use",
       "api",
@@ -1494,7 +1494,7 @@
     ],
     "category": "Foundations",
     "short": "AI that creates new content, such as text, images, audio, video or code, rather than only classifying or predicting.",
-    "explain": "Generative models learn the patterns in their training data well enough to produce fresh examples in the same style. LLMs are the best-known type; image and video generators are others. The business shift is that AI moved from scoring things (is this bet suspicious?) to making things (write the match recap).",
+    "explain": "Generative models learn the patterns in their training data well enough to produce fresh examples in the same style. LLMs are the best-known type; image and video generators are others. The business shift is that AI moved from scoring things (is this transaction suspicious?) to making things (write the summary).",
     "related": [
       "llm",
       "predictive-ai",
@@ -1629,7 +1629,7 @@
     "category": "Agents",
     "short": "Designing an AI system so a person reviews, approves or corrects key decisions instead of letting the AI act entirely alone.",
     "explain": "It's the most practical safety measure available today: the agent drafts, and a human approves the send, the trade or the payment. The right level depends on the stakes; low-risk tasks can run freely, while high-risk ones need sign-off. Regulators, including under the EU AI Act, increasingly expect meaningful human oversight for high-risk uses.",
-    "analogy": "It's the head trader signing off before a big limit change goes live, even when the model recommended it.",
+    "analogy": "It's the manager who signs off on every refund over a set amount, even when the system recommends approving it.",
     "related": [
       "guardrails",
       "autonomy",
@@ -1724,7 +1724,7 @@
     "category": "How models work",
     "short": "Using a trained model to produce an output; every time you send a prompt and get a response, that's inference.",
     "explain": "Training is a huge upfront cost; inference is an ongoing cost that grows with every user and every request. Each response takes real computing work on GPUs or other chips, so AI products carry a meaningful cost per use, unlike most traditional software. As usage explodes, inference is becoming a larger share of total AI compute spending.",
-    "analogy": "Training is building the stadium; inference is what it costs to open the gates and run it every game day.",
+    "analogy": "Training is building the restaurant; inference is the cost of cooking every meal after it opens.",
     "related": [
       "training",
       "latency",
@@ -1784,7 +1784,7 @@
     "category": "Foundations",
     "short": "The uneven shape of AI ability: superhuman at some tasks, surprisingly bad at others that seem just as easy.",
     "explain": "The phrase comes from a 2023 Harvard and BCG study of consultants using AI. A model might write a strong strategy memo, then miscount the letters in a word. You learn where the edges are by using it, not by guessing.",
-    "analogy": "A quarterback who throws a perfect deep ball but can’t reliably take a snap. You scheme around the gaps.",
+    "analogy": "Like a brilliant new hire who writes a great strategy memo but can't be trusted to book a meeting room. You learn where to rely on them.",
     "related": [
       "benchmark",
       "reasoning-model",
@@ -1891,7 +1891,7 @@
     ],
     "category": "Infrastructure & compute",
     "short": "The delay between making a request and getting a response; for AI, how long you wait before the model starts or finishes answering.",
-    "explain": "Latency depends on model size, how much the model 'thinks', network distance and server load. For chat, a second or two is fine; for live betting, voice or trading, milliseconds can matter. Faster usually means a smaller model or more expensive hardware, so latency is always a trade-off against quality and cost.",
+    "explain": "Latency depends on model size, how much the model 'thinks', network distance and server load. For chat, a second or two is fine; for voice assistants or anything real-time, fractions of a second matter. Faster usually means a smaller model or more expensive hardware, so latency is always a trade-off against quality and cost.",
     "related": [
       "throughput",
       "inference",
@@ -1950,8 +1950,8 @@
     ],
     "category": "Foundations",
     "short": "A way of building AI where the computer learns patterns from examples (data) instead of following rules a programmer wrote by hand.",
-    "explain": "You show the system many examples and it adjusts itself until its predictions are good; the result is a model you can use on cases it has never seen. When the examples come with the right answers attached (this bet was fraud, this one wasn't), that's supervised learning; when the system finds structure on its own, like clusters of similar customers, that's unsupervised learning. Almost all modern AI, from fraud detection to ChatGPT, is machine learning at its core.",
-    "analogy": "The old way is a bookmaker writing pricing rules by hand; machine learning is a model that studies a million past games and works out the patterns itself.",
+    "explain": "You show the system many examples and it adjusts itself until its predictions are good; the result is a model you can use on cases it has never seen. When the examples come with the right answers attached (this transaction was fraud, this one wasn't), that's supervised learning; when the system finds structure on its own, like clusters of similar customers, that's unsupervised learning. Almost all modern AI, from fraud detection to ChatGPT, is machine learning at its core.",
+    "analogy": "The old way is writing a rulebook for spotting spam; machine learning is showing the system a million emails marked spam or not and letting it work out the patterns.",
     "related": [
       "ai",
       "deep-learning",
@@ -2158,7 +2158,7 @@
     "category": "Foundations",
     "short": "A type of model loosely inspired by the brain: layers of simple connected units whose connection strengths get adjusted during training.",
     "explain": "Each unit takes in numbers, weighs them and passes a result forward to the next layer. Training tunes millions or billions of those weights (the parameters) until the network's outputs are useful. No single unit 'knows' anything; the knowledge is spread across the whole pattern of weights.",
-    "analogy": "Picture a scouting department where thousands of scouts each grade one small trait, and the final grade depends on how much the GM trusts each scout; training is adjusting that trust.",
+    "analogy": "Picture a huge panel of judges, each scoring one small detail, with the final verdict depending on how much weight each judge gets; training is adjusting those weights.",
     "related": [
       "parameters",
       "deep-learning",
@@ -2176,7 +2176,7 @@
     "category": "How models work",
     "short": "The core task an LLM is trained on: given some text, predict the most likely next token, then repeat.",
     "explain": "An LLM writes one token at a time, each time choosing from a spread of probabilities over what could come next. 'Fancy autocomplete' is technically accurate but undersells it, because predicting text well across trillions of examples forces the model to pick up grammar, facts and patterns of reasoning. The same mechanism explains hallucinations: the model produces what sounds likely, not what it has checked.",
-    "analogy": "It's like an odds compiler pricing every possible next word, then picking from near the top of the board.",
+    "analogy": "It's your phone's autocomplete, scaled up enormously: it predicts the most likely next word, adds it, and repeats.",
     "related": [
       "token",
       "llm",
@@ -2328,7 +2328,7 @@
     "category": "Agents",
     "short": "Coordinating multiple AI models, agents and tools so they work together on a larger task, in the right order.",
     "explain": "An orchestrator breaks a big job into pieces, assigns each to the right model or agent, and combines the results, handling retries, handoffs and when to ask a human. The software that does this, sometimes called the scaffolding or harness, is where much of an AI product's real engineering value lives. Two products using the same model can perform very differently because of it.",
-    "analogy": "It's the offensive coordinator: the players do the work, but someone has to call the plays and sequence them.",
+    "analogy": "It's the general contractor on a renovation: the plumber, electrician and painter do the work, but someone has to schedule them in the right order.",
     "related": [
       "multi-agent-system",
       "agent",
@@ -2348,7 +2348,7 @@
     "category": "Business & strategy",
     "short": "Charging based on results the AI delivers, such as a resolved support ticket or a qualified lead, rather than on access or usage.",
     "explain": "It ties the vendor's revenue directly to value created, which buyers like in principle. The hard part is agreeing on what counts as an outcome and how to measure it. Expect it most in narrow, measurable workflows like customer service rather than in broad tools.",
-    "analogy": "It's like a performance-based sponsorship deal: the partner pays more when the activation actually drives results.",
+    "analogy": "It's like a recruiter who only gets paid when the candidate is hired, not for the number of résumés sent.",
     "related": [
       "token-pricing",
       "saas",
@@ -2367,7 +2367,7 @@
     "category": "Foundations",
     "short": "When a model memorizes the quirks of its training data so closely that it performs poorly on new, real-world cases.",
     "explain": "An overfit model looks brilliant when tested on familiar data and falls apart in production. It's why models must be tested on data they've never seen, and why vendor demos run on hand-picked examples deserve skepticism. The opposite problem, a model too simple to capture the real patterns, is called underfitting.",
-    "analogy": "It's the betting system that perfectly 'predicts' last season's results and loses money this season.",
+    "analogy": "It's the student who memorized last year's exam answers and fails this year's test because the questions changed.",
     "related": [
       "training-data",
       "evals",
@@ -2507,7 +2507,7 @@
     "category": "How models work",
     "short": "The phase after pre-training that turns a raw base model into a helpful, safe assistant, using curated examples and feedback.",
     "explain": "It usually starts with instruction tuning (training on examples of requests paired with good answers, so the model learns to follow instructions), then feedback methods like RLHF and constitutional AI, plus reinforcement learning on tasks with checkable answers. It's where a model's personality, safety behavior and much of its reasoning skill come from. It uses far less compute than pre-training but has become a major battleground between labs.",
-    "analogy": "Pre-training is raw talent; post-training is coaching, the playbook and locker-room culture.",
+    "analogy": "Pre-training is a broad education; post-training is the on-the-job training that teaches someone how your company wants things done.",
     "related": [
       "pre-training",
       "rlhf",
@@ -2566,7 +2566,7 @@
     "category": "Foundations",
     "short": "AI that classifies or forecasts, answering questions like 'which outcome is likely?' or 'is this suspicious?' rather than creating new content.",
     "explain": "This is the workhorse AI that sportsbooks, banks and retailers have run for years: pricing models, churn prediction, fraud scores, recommendation engines. It's usually cheaper, faster and easier to test than generative AI. Many strong products combine the two: predictive models for the numbers, generative models for the words.",
-    "analogy": "An odds model is predictive AI: it outputs a probability, not a paragraph.",
+    "analogy": "A weather forecast is predictive AI's style of output: a probability, not a paragraph.",
     "related": [
       "generative-ai",
       "machine-learning",
@@ -2604,7 +2604,7 @@
     "category": "How models work",
     "short": "The skill of writing prompts that reliably get useful results, by giving context, a role, a goal, examples, a format and constraints.",
     "explain": "It's less about magic phrases and more about briefing well, the way you'd brief a smart new hire who knows nothing about your situation. One of the most effective techniques is 'few-shot' prompting, showing two or three examples of what good looks like, as opposed to 'zero-shot', just asking. Iterating and asking the model to critique its own draft also help.",
-    "analogy": "It's a pre-game scouting report: the more specific the brief, the better the execution.",
+    "analogy": "It's briefing a new freelancer: the clearer the goal, context and examples, the better the first draft.",
     "related": [
       "prompt",
       "system-prompt",
@@ -2687,7 +2687,7 @@
     "category": "How models work",
     "short": "A model trained to think step by step before answering, spending extra time on hard problems in exchange for better accuracy.",
     "explain": "Reasoning models work through a long internal chain of thought, checking and revising before giving a final answer. They're much stronger at math, coding, analysis and multi-step planning, but slower and more expensive per question. The visible reasoning can help you check the logic, though researchers caution it isn't always a faithful account of how the model reached its answer.",
-    "analogy": "It's the difference between a bettor firing off a gut pick and one who runs the numbers before placing it.",
+    "analogy": "It's the difference between blurting out an answer and working the problem on scratch paper first.",
     "related": [
       "test-time-compute",
       "reinforcement-learning",
@@ -2705,7 +2705,7 @@
     "category": "Safety, risk & policy",
     "short": "Deliberately attacking an AI system, trying to make it misbehave, leak data or cause harm, to find weaknesses before real bad actors do.",
     "explain": "Labs use internal teams and outside experts to probe models for dangerous capabilities, bias, jailbreaks and security holes before launch. Companies deploying AI should red-team their own products too, especially customer-facing ones. The practice is borrowed from the military and cybersecurity.",
-    "analogy": "It's the scout team running the opponent's plays in practice so the defense finds its gaps before Sunday.",
+    "analogy": "It's hiring someone to try to break into your office so you find the unlocked doors before a real burglar does.",
     "related": [
       "jailbreak",
       "prompt-injection",
@@ -2722,7 +2722,7 @@
     "category": "Foundations",
     "short": "Training by trial and error: the model takes actions, gets rewarded or penalized, and gradually learns what earns the best results.",
     "explain": "This is how DeepMind's AlphaGo learned to beat the world's best Go players, partly by playing millions of games against itself. It's now central to post-training LLMs, both through human feedback (RLHF) and by rewarding correct answers on math and code, which is how reasoning models are built. The risk is that a model learns to game the reward rather than do the real task.",
-    "analogy": "It's player development through reps: try something, get feedback from the coach, adjust, repeat thousands of times.",
+    "analogy": "It's how a dog learns tricks: try something, get a treat or not, adjust, repeat thousands of times.",
     "related": [
       "rlhf",
       "reasoning-model",
@@ -2783,7 +2783,7 @@
     "category": "Safety, risk & policy",
     "short": "When an AI finds a shortcut that scores well on the measure it's trained on without actually doing the intended task.",
     "explain": "A classic example is a coding model that edits the tests so they pass rather than fixing the code. It's a practical problem in training today and a core reason alignment is hard: any metric you set can be gamed. The business lesson applies to AI incentives just as it does to people.",
-    "analogy": "It's the player who pads stats in garbage time: the numbers look great, and the team doesn't win more.",
+    "analogy": "It's the call-center rep who hits the 'short call time' target by hanging up on customers.",
     "related": [
       "alignment",
       "reinforcement-learning",
@@ -2934,7 +2934,7 @@
     "category": "How models work",
     "short": "A compact language model built to run cheaply and quickly, sometimes on a phone or laptop, trading some capability for speed and cost.",
     "explain": "Not every task needs a frontier model; sorting support tickets or tagging clips can run well on a small one. Small models cut costs, reduce latency and can keep data on the device. A common design is routing: easy requests go to a small model, hard ones to a big model.",
-    "analogy": "It's using your role players for routine minutes and saving the star for crunch time.",
+    "analogy": "It's using a compact car for errands and saving the moving truck for moving day.",
     "related": [
       "on-device-ai",
       "distillation",
@@ -3067,7 +3067,7 @@
     "category": "How models work",
     "short": "A setting that controls how predictable or creative a model’s word choices are.",
     "explain": "At low temperature the model almost always picks the most likely next token, which suits factual or repeatable work. At higher temperature it takes more chances, which helps brainstorming but raises the odds of errors. Many newer models manage this internally.",
-    "analogy": "Low temperature is always taking the favorite; high temperature is sprinkling in longshots.",
+    "analogy": "Low temperature is ordering your usual; high temperature is letting the chef surprise you.",
     "related": [
       "token",
       "inference",
@@ -3102,8 +3102,8 @@
     ],
     "category": "Infrastructure & compute",
     "short": "How much work an AI system handles in a given time, such as tokens generated per second or requests served per minute.",
-    "explain": "Latency is how fast one customer is served; throughput is how many customers you can serve at once. Providers balance the two to control cost. For high-volume uses, like tagging thousands of clips or scoring every bet, throughput and cost per unit matter more than speed on any single request.",
-    "analogy": "Latency is how fast one bet gets accepted; throughput is how many bets per second the platform can take on Super Bowl Sunday.",
+    "explain": "Latency is how fast one customer is served; throughput is how many customers you can serve at once. Providers balance the two to control cost. For high-volume uses, like summarizing thousands of documents or screening every transaction, throughput and cost per unit matter more than speed on any single request.",
+    "analogy": "Latency is how long one customer waits for coffee; throughput is how many coffees the café serves in the morning rush.",
     "related": [
       "latency",
       "inference",
@@ -3165,7 +3165,7 @@
     ],
     "category": "Agents",
     "short": "An AI model's ability to use outside tools, like search, calculators, databases or other software, to get information or take action.",
-    "explain": "On its own, a model can only produce text. Tool use lets it say, in effect, 'look up this player's stats' or 'run this calculation', have the software carry it out, and then use the result. It's the bridge between a model that talks and an agent that does.",
+    "explain": "On its own, a model can only produce text. Tool use lets it say, in effect, 'look up this customer's account' or 'run this calculation', have the software carry it out, and then use the result. It's the bridge between a model that talks and an agent that does.",
     "related": [
       "function-calling",
       "mcp",
@@ -3226,7 +3226,7 @@
     "category": "How models work",
     "short": "Building a model by feeding it vast amounts of data and adjusting its parameters until its outputs are good.",
     "explain": "Training a frontier model is enormously expensive, requiring huge clusters of GPUs running for weeks or months. It usually comes in stages: pre-training for broad knowledge, then post-training for behavior. Once training ends the model is frozen, and using it is called inference.",
-    "analogy": "Training is the offseason and training camp; inference is game day.",
+    "analogy": "Training is going to medical school; inference is every patient appointment afterward.",
     "related": [
       "pre-training",
       "post-training",
@@ -3248,7 +3248,7 @@
     "category": "Foundations",
     "short": "The examples a model learns from, such as text, images, game logs or transactions; the biggest single influence on what a model can do.",
     "explain": "A model can only learn patterns that appear in its training data, including the gaps and biases. Frontier LLMs train on a large share of the public internet, books, code, licensed content and, increasingly, synthetic data generated by other AI models. Who owns, licenses and may legally use training data is now a major commercial and legal fight.",
-    "analogy": "Training data is the film room: a scout who only watched one conference will misjudge players from all the others.",
+    "analogy": "Training data is everything a model has ever read: someone who only read one newspaper will have a narrow view of the world.",
     "related": [
       "training",
       "bias",
@@ -3272,7 +3272,7 @@
     ],
     "category": "How models work",
     "short": "The neural network design, introduced in Google's 2017 paper 'Attention Is All You Need', that underpins nearly every modern LLM.",
-    "explain": "Its key idea, called attention, lets the model weigh how every word in a passage relates to every other word at once; in 'the quarterback found the tight end because he was wide open', attention helps it work out that 'he' is the tight end. That design trains efficiently on GPUs and handles long context well, which is why it took over. The 'T' in GPT (generative pre-trained transformer, the name of OpenAI's model family) stands for Transformer.",
+    "explain": "Its key idea, called attention, lets the model weigh how every word in a passage relates to every other word at once; in 'the trophy didn't fit in the suitcase because it was too big', attention helps it work out that 'it' is the trophy. That design trains efficiently on GPUs and handles long context well, which is why it took over. The 'T' in GPT (generative pre-trained transformer, the name of OpenAI's model family) stands for Transformer.",
     "related": [
       "llm",
       "neural-network",

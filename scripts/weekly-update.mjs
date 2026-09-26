@@ -235,7 +235,7 @@ const UPDATE_SCHEMA = {
       required: ['title', 'body'],
       properties: {
         title: str,
-        body: { type: 'string', description: 'A mini-lesson of 120 to 220 words in Markdown that teaches one fundamental concept surfaced by this week’s news, ideally with a sports or betting analogy.' },
+        body: { type: 'string', description: 'A mini-lesson of 120 to 220 words in Markdown that teaches one fundamental concept surfaced by this week’s news, using a clear everyday analogy (not a sports or betting one).' },
       },
     },
     new_terms: {
@@ -281,7 +281,8 @@ Rules:
 - Sports angle: for items in the "Sports, betting & media" category, explain the practical consequence for the industry. For every other item, sports_angle MUST be an empty string unless the brief itself reports a sports, betting or media connection for that news (for example, a company explicitly marketing a product for live sports). Never speculate about how sports companies might use a technology, and never make technical claims about betting systems. When in doubt, leave it empty; the "why" field already covers relevance.
 - Prefer items that matter to a sports-betting executive or that any informed executive must know. Skip consumer gadget news unless it's a major platform shift.
 - Order items by importance to this reader. Keep 4 to 7 items.
-- Write so he can understand each item even if he skipped last week.`;
+- Write so he can understand each item even if he skipped last week.
+- Analogies must be general and everyday (hiring, a kitchen, a GPS, a utility bill). Don't use betting mechanics like odds, lines, parlays or trading desks as analogies; he doesn't work in odds-setting or trading.`;
 
   const sourceList = sources.map((s) => `[${s.id}] ${s.title} — ${s.url}`).join('\n');
   const res = await generate('write', {

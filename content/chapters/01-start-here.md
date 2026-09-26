@@ -10,29 +10,31 @@ This playbook makes you one promise. Study it, use what it teaches, and you will
 You don't need a technical background. You need what you already have: commercial instincts, curiosity, and the habit of asking who pays whom.
 
 :::why Why this matters to you
-You work where official sports data, betting technology and sports media meet, and AI is reaching into all three: how odds get priced, how integrity gets monitored, how highlights get cut, how sponsors get measured. Every league, sportsbook and media partner you deal with is working out what it means for them. The person who can explain it calmly and accurately is the person everyone wants in the room.
+You work where official sports data, betting technology and sports media meet, and AI is reaching into all three: how live data gets captured, how highlights get cut, how sponsors get measured. Every league, sportsbook and media partner you deal with is working out what it means for them. The person who can explain it calmly and accurately is the person everyone wants in the room.
 :::
 
 ## Why this wave is different
 
-You've lived through tech waves before: the internet, mobile, social, streaming. Each one changed how sports gets sold, watched and bet on. AI is moving faster than any of them.
+You've lived through tech waves before: the internet, mobile, social, streaming. Each one changed how companies sell, market and serve their customers. AI is moving faster than any of them.
 
 - **ChatGPT launched on November 30, 2022.** About two months later it had an estimated 100 million monthly users, according to UBS analysts. Instagram took about two and a half years to get there.
-- **In early 2026, OpenAI said ChatGPT had more than 900 million weekly users.** That's more than seven Super Bowl audiences, every week.
+- **In early 2026, OpenAI said ChatGPT had more than 900 million weekly users.** That's more than one in ten people on the planet, every week.
 - **Economists at the St. Louis Fed found that Americans took up [[generative ai|generative AI]] faster than the personal computer or the internet.** By May 2026, 62% of working-age adults were using it, and 45% of workers were using it on the job.
 
 Why so fast? No new hardware: the internet needed wiring and mobile needed a new phone, but AI arrived as an app on the phone you already had. No manual: you talk to it in plain English. And it improves under your feet: the [[frontier model|leading AI models]] get meaningfully better every few months.
 
-The bigger difference is what it touches. The internet changed how a sponsorship deck reached a client. AI can help research the prospect, write the deck and draft the follow-up. It goes straight at knowledge work, which is your work.
+The bigger difference is what it touches. The internet changed how a pitch deck reached a client. AI can help research the prospect, write the deck and draft the follow-up. It goes straight at knowledge work, which is your work.
 
 Stay clear-eyed, though. Fast adoption isn't deep adoption. Much of that usage is casual, and most companies are still working out how to profit from AI. But the direction isn't in doubt.
 
 ### Why being early matters
 
-:::analogy Getting the opening number
-Sharp bettors love the opening line. When a book first hangs a number, it's working with less information, and the people who did their homework get the best of it. By kickoff the market has corrected, and the edge is gone.
+:::analogy The first spreadsheet whiz
+When spreadsheets first landed on office desks, the person who could build a real model in one became a minor celebrity. They got pulled into meetings above their pay grade. They could rerun a forecast in minutes that used to take days with a calculator and ledger paper. Their edge wasn't genius. It was that almost nobody else had learned the tool yet.
 
-AI fluency works the same way. Right now, in most rooms, few people can explain how these systems work, what they cost and where they fail. That's a soft opening number. In a few years fluency will be priced in, as expected of an executive as reading a P&L. Learn it now and you're betting the opener. Learn it later and you're paying the closing price.
+Within a decade or so, spreadsheet skills were on every job description, and nobody got a second look for having them. The tool didn't get less important. Everyone else caught up.
+
+AI fluency is at that early moment. Right now, in most rooms, few people can explain how these systems work, what they cost and where they fail. In a few years fluency will be as expected of an executive as reading a P&L. Learn it now and you're the person they pull into the meeting. Learn it later and you're just keeping up.
 :::
 
 ## What "fluent" means
@@ -44,7 +46,7 @@ Fluent doesn't mean technical. You won't write code in this playbook, and you wo
 - **The vocabulary.** The few dozen terms that come up in every AI conversation, so you never have to nod along.
 - **The judgment.** What works today, what's a demo and what's only a promise. The rarest of the four, and the most valuable. People lose credibility repeating hype. They gain it by being the calm, accurate voice.
 
-Think about how you understand a sportsbook's trading desk. You couldn't build their pricing models, and you don't need to. But you know what they do, what moves their numbers and when someone is overselling. That's the target for AI.
+Think about how you understand your car. You couldn't rebuild the engine, and you don't need to. But you know what the warning lights mean, what makes it burn more fuel and when a mechanic is padding the bill. That's the target for AI.
 
 :::myth Myth vs. reality
 **Myth:** To really understand AI, you need to learn to code or study the math.
@@ -57,7 +59,7 @@ Think about how you understand a sportsbook's trading desk. You couldn't build t
 Eleven chapters, read in order, each building on the last. Every chapter uses the same boxes:
 
 - **Why this matters to you:** at the top, connecting the chapter to your work.
-- **Analogy:** usually from sports, betting or media, to make an idea click.
+- **Analogy:** a comparison from everyday life or business that makes an idea click.
 - **Say this in the room:** lines to use in a leadership meeting or on a partner call.
 - **Teach it in 60 seconds:** how you'd explain the core idea to a class or a colleague. If you can teach it, you own it.
 - **Myth vs. reality:** a common misconception, corrected.
@@ -92,7 +94,7 @@ Miss a few days? Pick up where you left off. The plan is a guide, not a contract
 
 ## The habit that matters most
 
-Film study matters, but nobody learns the game from the film room alone. You need reps.
+You can read every recipe in the cookbook and still burn the onions. Cooking gets learned at the stove.
 
 The people who learn AI fastest use it while they learn. Every chapter lands harder once you've felt what it describes: the brilliant answer, the confidently wrong one, the moment it saves you an hour. Start today with three reps:
 
@@ -109,7 +111,7 @@ One rule until chapter 6: keep confidential work information out of personal AI 
 :::
 
 :::teach Teach it in 60 seconds
-Start with a number: ChatGPT reached an estimated 100 million users in about two months. Instagram took two and a half years. AI spreads faster than past waves because it needs no new device and no manual, and it keeps getting better. It's also different in kind: the internet changed how a sponsorship deck got delivered, but AI can help write the deck. Being fluent doesn't mean coding. It means knowing the mechanism, the economics, the vocabulary, and what's real versus hype.
+Start with a number: ChatGPT reached an estimated 100 million users in about two months. Instagram took two and a half years. AI spreads faster than past waves because it needs no new device and no manual, and it keeps getting better. It's also different in kind: the internet changed how a pitch deck got delivered, but AI can help write the deck. Being fluent doesn't mean coding. It means knowing the mechanism, the economics, the vocabulary, and what's real versus hype.
 :::
 
 ## Check yourself
@@ -134,14 +136,14 @@ Fast adoption isn't deep adoption. Much of that usage is casual, and most compan
 
 <details><summary>Answer</summary>
 
-A CRM changes one workflow. AI reaches across nearly all knowledge work, and fluency is still rare, so it sets you apart. Like betting the opener, the edge exists because the market hasn't caught up. In a few years it will be expected.
+A CRM changes one workflow. AI reaches across nearly all knowledge work, and fluency is still rare, so it sets you apart. Like the first spreadsheet whiz in the office, your edge exists because most people haven't caught up yet. In a few years it will be expected.
 
 </details>
 
 :::key Key takeaways
 - AI is spreading faster than the PC or the internet, and unlike earlier waves it goes straight at knowledge work.
 - Fluency isn't coding. It's the mechanism, the economics, the vocabulary and the judgment to tell real from hype.
-- The edge is timing. Fluency is rare now and will be expected soon. Get the opening number.
+- The edge is timing. Fluency is rare now and will be expected soon. Be the first spreadsheet whiz, not the last.
 - The plan: a chapter every two to three days, This Week every Monday, the cheat sheet before meetings.
 - Use AI every day while you learn. Reps beat reading.
 :::

@@ -15,7 +15,7 @@ A year from now, what you learned in this book will be the floor, not the ceilin
 
 ## Seven trends worth tracking
 
-These aren't predictions. They're lines already moving. For each one: what's happening, what's real versus promised, and why you should care.
+These aren't predictions. They're shifts already under way. For each one: what's happening, what's real versus promised, and why you should care.
 
 ### 1. Agents are working longer on their own
 
@@ -29,13 +29,13 @@ A research nonprofit called METR tracks exactly that: the length of task, measur
 
 The price of a given level of AI performance keeps collapsing. Epoch AI, an independent research group, estimated in September 2026 that it has fallen roughly 13x a year since 2023, faster than the historical price declines of computer chips, batteries or DNA sequencing. Treat the exact figure loosely. The direction is not in doubt.
 
-**Why it matters:** A feature that was too expensive to run on every bet, every play or every customer last year may be cheap this year. Total AI spending still rises, because cheaper capability gets used far more. For contracts, think twice before locking in today's per-unit price for three years.
+**Why it matters:** A feature that was too expensive to run on every transaction, every email or every customer last year may be cheap this year. Total AI spending still rises, because cheaper capability gets used far more. For contracts, think twice before locking in today's per-unit price for three years.
 
 ### 3. AI moves onto your devices
 
 Not every request needs a giant data center. Phones, laptops, glasses and earbuds now ship with chips built to run smaller models locally. [[on-device ai|On-device AI]] is faster (no round trip to the cloud), more private (the data stays with you) and carries no per-request cloud bill.
 
-**Real vs. promised:** The most capable models still live in the cloud, so the pattern is hybrid: easy tasks on the device, hard ones sent up to the cloud. In a stadium, or on a second screen during a live game where every second counts, that split matters.
+**Real vs. promised:** The most capable models still live in the cloud, so the pattern is hybrid: easy tasks on the device, hard ones sent up to the cloud. In a car, on a factory floor or at a packed concert where the cell signal gives out, that split matters.
 
 ### 4. Physical AI: cars first, robots later
 
@@ -43,7 +43,7 @@ Not every request needs a giant data center. Phones, laptops, glasses and earbud
 
 Humanoid robots are the opposite case. The demos are spectacular, but deployment is still pilots, not fleets. When you see a robot folding laundry on video, ask how many are doing paid work today.
 
-**In your world:** Robotic cameras, [[computer vision]] tracking and automated production are the nearer-term versions. Same technology family, pointed at the field of play.
+**Nearer term:** Warehouse robots, [[computer vision]] cameras that spot defects on a production line, and systems that track stock on store shelves. Less cinematic than a humanoid, but already doing paid work. Same technology family, pointed at narrow jobs with clear rules.
 
 ### 5. AI starts doing science
 
@@ -53,9 +53,9 @@ The 2024 Nobel Prize in Chemistry went in part to Demis Hassabis and John Jumper
 
 ### 6. Voice becomes the interface
 
-Typing into a chat box is a transitional habit. Voice mode already works well in the major assistants, and hardware makers are betting on glasses, earbuds and new devices built around talking. OpenAI has said it's building a device with former Apple designer Jony Ive, reportedly not shipping before 2027.
+Typing into a chat box is a transitional habit. Voice mode already works well in the major assistants, and hardware makers are pouring money into glasses, earbuds and new devices built around talking. OpenAI has said it's building a device with former Apple designer Jony Ive, reportedly not shipping before 2027.
 
-**In your world:** Picture a fan asking a sportsbook app, out loud and mid-game, for a bet on the next drive. That's a product opportunity, a [[latency]] challenge and a responsible-gaming question all at once. Regulators will care how a conversational interface nudges behavior.
+**Why it matters:** Picture a customer telling a shopping app, out loud while cooking dinner, "reorder the usual and add whatever's on sale." That's a product opportunity, a [[latency]] challenge and a consumer-protection question all at once. A friendly voice can nudge harder than a button, and regulators will care how a conversational interface shapes behavior.
 
 ### 7. AI-native companies with tiny teams
 
@@ -69,10 +69,10 @@ Every week brings a new model, a new record on some [[benchmark]], and a funding
 
 Here's the good news: the fundamentals move much more slowly than the news. Training still costs a fortune up front, and [[inference]] still costs money every time. Models still predict, so they still [[hallucination|hallucinate]]. Proprietary data and distribution are still the durable [[moat|moats]]. Anything that hasn't been measured with real [[evals]] is still a demo. Those ideas will outlast every model name you hear this year.
 
-:::analogy Sharp money or public money?
-When a line moves, a good trader doesn't react to the move. They ask what caused it. Sharp money from bettors with a real edge? News, like a late scratch? Or public money piling onto a popular team? Same move, very different meaning.
+:::analogy The trailer or the reviews?
+A movie trailer is cut by the studio. It's the best two minutes of a two-hour film, set to thundering music, and its only job is to get you excited. The reviews come later, from critics with no stake who sat through the whole thing. The truest signal comes last: are people still buying tickets a month after opening weekend?
 
-AI announcements are line moves. A product shipping to paying customers, independent test results, a big customer renewing: that's sharp money. A slick demo, a benchmark the company chose and graded itself, a giant funding round: that's public money. It tells you about excitement, not capability. Your job is to know which one you're looking at before you move.
+AI announcements come in the same three flavors. A slick demo, or a benchmark the company picked and graded itself, is the trailer. Independent test results are the reviews. A product shipping to paying customers who renew is the ticket sales a month in. And a giant funding round? That's the marketing budget. It tells you how excited the backers are, not how good the film is. Your job is to know which one you're looking at before you react.
 :::
 
 The filter is five questions. Ask them in order.
@@ -81,7 +81,7 @@ The filter is five questions. Ask them in order.
 2. **Real or demo?** Is it shipping? To whom, and at what price? "Available to select partners" and "coming later this year" both mean *not yet*.
 3. **Who checked?** Was the result verified by someone with no stake in it, or graded by the company that built it?
 4. **Who pays whom?** Many "partnerships" are really customer contracts, investments or cloud credits in disguise.
-5. **What changes for us?** If this is true, what would a sportsbook, a league, a media partner or your own team do differently in the next 12 months? If the answer is "nothing yet," file it and move on.
+5. **What changes for us?** If this is true, what would your customers, your competitors, your partners or your own team do differently in the next 12 months? If the answer is "nothing yet," file it and move on.
 
 ### A worked example
 
@@ -121,7 +121,7 @@ You don't need twenty sources. You need a few good ones and permission to ignore
 **Pick two weekly reads or listens**
 - **Hard Fork** (New York Times podcast, Kevin Roose and Casey Newton). The smartest general-audience tech show going. Good for flights.
 - **One Useful Thing** (newsletter, Ethan Mollick). A Wharton professor on how to actually use AI at work and in the classroom. The closest match to your own two jobs.
-- **Stratechery** (Ben Thompson). The business strategy of tech: who wins, who pays, and why. Weekly articles are free; the daily analysis is paid, and the bundle even includes an NBA podcast.
+- **Stratechery** (Ben Thompson). The business strategy of tech: who wins, who pays, and why. Weekly articles are free; the daily analysis is paid.
 - **The Batch** (free weekly newsletter from Andrew Ng's DeepLearning.AI). Calm and clear, from one of the field's most respected teachers.
 
 **For a long flight**
@@ -155,11 +155,11 @@ Two formats, same bones.
 
 | Time | Segment | What you do |
 |---|---|---|
-| 0–5 | Hook | A live demo on a real but non-confidential task, like summarizing a public league report. Let them see it work, and let them see it slip. |
+| 0–5 | Hook | A live demo on a real but non-confidential task, like summarizing a public industry report. Let them see it work, and let them see it slip. |
 | 5–15 | How it works | Next-token prediction, training vs. inference, why it hallucinates. Chapter 3 in ten minutes. |
 | 15–22 | The money | The stack, and why proprietary data is a moat. |
 | 22–30 | Chatbots to agents | What agents do well today, and where they break. |
-| 30–38 | Our industry | Three examples from betting, data and media. Pose company-specific ideas as questions, not plans. |
+| 30–38 | Our industry | Three examples from the audience's own work, such as sports data, media or sponsorship. Pose company-specific ideas as questions, not plans. |
 | 38–42 | Rules of the road | What never goes into a consumer AI tool. Always verify. |
 | 42–45 | The assignment | "Use it on one real task every day this week. Bring back one win and one failure." |
 
@@ -169,7 +169,7 @@ Your handout is the Cheat Sheet, the next chapter.
 
 Same spine, plus a case discussion. Two that work well with sports-industry students:
 
-- **The data-rights debate.** Should a league license its official data to an AI lab for training? What should it charge, and what should it never allow? Split the room into league, lab and sportsbook, and let them negotiate.
+- **The data-rights debate.** Should a league license its official data to an AI lab for training? What should it charge, and what should it never allow? Split the room into league, lab and players' association, and let them negotiate.
 - **The sponsorship audit.** Computer vision can now measure every second a logo is on screen. Does that make sponsorship valuation more honest, or just more complicated? Who should own that measurement?
 
 End with an assignment that makes students use the tool critically: have AI draft a sponsorship proposal, then grade its assumptions.
@@ -181,12 +181,12 @@ End with an assignment that makes students use the tool critically: have AI draf
 3. **Date your numbers.** "As of this fall" protects you when the figure changes. It will.
 
 :::teach Teach it in 60 seconds
-Open with a hook: "Every week, an AI headline says everything just changed, and it's almost never true." The key idea is to treat an AI announcement like a line move: before you react, ask whether it's sharp money (a product shipping to paying customers, checked by independent experts) or public money (a demo and a press release). In September 2026, headlines said AI had solved one of math's most famous problems. Within two weeks, mathematicians were arguing over whether it had solved the version that matters. The capability was real, and the headline still oversold it. Your edge isn't reading more news; it's asking better questions of the news you read.
+Open with a hook: "Every week, an AI headline says everything just changed, and it's almost never true." The key idea: every AI announcement is either a trailer or a review. Before you react, ask which one you're looking at: a demo and a press release (the trailer), or a product shipping to paying customers and checked by independent experts (the reviews). In September 2026, headlines said AI had solved one of math's most famous problems. Within two weeks, mathematicians were arguing over whether it had solved the version that matters. The capability was real, and the headline still oversold it. Your edge isn't reading more news; it's asking better questions of the news you read.
 :::
 
 ## The edge compounds
 
-In betting, the truest measure of skill isn't whether you won last night. It's whether you consistently got a better number than the line closed at. Beat the close by a little, again and again, and the edge compounds. No single bet makes you. The habit does.
+Think about how people actually learn a language. Nobody gets fluent from one heroic weekend with a textbook. The person who does fifteen minutes a day looks no different from everyone else for the first month. By month six, they're ordering dinner and following the conversation at the next table. No single lesson makes them fluent. The habit does.
 
 AI fluency works the same way. You don't need to predict the future. Nobody can, including the people building it. You just need to be a little better informed than the room, every week. Fifteen minutes a day. One Monday update. One new thing tried. One idea explained to someone else. Six months from now, those small edges have stacked up, and you're the person people call when AI comes up.
 
@@ -200,11 +200,11 @@ The edge isn't what you know today. It's the habit that keeps you ahead tomorrow
 
 ## Check yourself
 
-1. A partner forwards a press release: a startup says its betting AI "outperforms human traders" on a new benchmark. Using the filter, what do you ask first?
+1. A partner forwards a press release: a startup says its AI "outperforms human analysts" on a new benchmark. Using the filter, what do you ask first?
 
 <details><summary>Answer</summary>
 
-Start with "who checked?" If the company built and graded the benchmark itself, that's public money, not sharp money. Then "real or demo?": is it live with paying sportsbooks, at real volume and latency? Finally, "what changes for us?": what does it cost per decision at scale, and who carries the risk when it's wrong?
+Start with "who checked?" If the company built and graded the benchmark itself, you're watching the trailer, not reading the reviews. Then "real or demo?": is it live with paying customers, at real volume and speed? Finally, "what changes for us?": what does it cost per decision at scale, and who carries the risk when it's wrong?
 
 </details>
 
@@ -226,7 +226,7 @@ Read the last four This Week updates, skim the recent issues of one weekly sourc
 
 :::key Key takeaways
 - Seven trends to watch: agents that work longer, intelligence that gets cheaper, AI on devices, physical AI, AI in science, voice-first interfaces and tiny AI-native teams.
-- Treat every announcement like a line move. Which layer? Real or demo? Who checked? Who pays whom? What changes for us?
+- Before you react to any announcement, ask whether it's the trailer or the reviews. Which layer? Real or demo? Who checked? Who pays whom? What changes for us?
 - The fundamentals change slowly. Master them, and a month of news takes an hour to absorb.
 - Your system: This Week in The Edge on Mondays, 15 minutes a day (5 reading, 10 using), and a short list of sources you trust.
 - Teach it. A lunch-and-learn or guest lecture is the fastest way to find your gaps and build your reputation.

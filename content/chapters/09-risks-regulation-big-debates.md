@@ -18,10 +18,10 @@ Your political science and legal policy background is an advantage here. Most pe
 These risks are already costing companies money.
 
 - **Confidently wrong answers.** You own your [[hallucination|hallucinations]]. In 2024 a Canadian tribunal held Air Canada liable after its chatbot made up a refund policy, and lawyers keep getting sanctioned for citing fake, AI-generated cases. If your AI says it, you said it.
-- **[[bias|Bias]].** Models learn patterns from historical data, including unfair ones. Amazon scrapped an experimental recruiting tool that downgraded résumés mentioning "women's." In betting, think of any model that decides who gets offers, limits or extra checks.
+- **[[bias|Bias]].** Models learn patterns from historical data, including unfair ones. Amazon scrapped an experimental recruiting tool that downgraded résumés mentioning "women's." Think of any model that decides who gets a loan, a job interview, a discount or an extra security check.
 - **Privacy.** Personal data can leak into training sets, prompts and logs. Regulators are watching: Italy fined OpenAI €15 million in December 2024.
 - **Security.** New attack routes like [[prompt injection]] against [[agent|agents]] (Chapter 5), and phishing emails with perfect grammar.
-- **Deepfakes and fraud.** In early 2024 an employee of engineering firm Arup in Hong Kong sent about $25 million to fraudsters after a video call in which the "CFO" and colleagues were all [[deepfake|deepfakes]]. For betting operators, the front line is identity checks: forged IDs and face-swapped selfies.
+- **Deepfakes and fraud.** In early 2024 an employee of engineering firm Arup in Hong Kong sent about $25 million to fraudsters after a video call in which the "CFO" and colleagues were all [[deepfake|deepfakes]]. For any business that signs up customers online, from banks to apartment rentals, the front line is identity checks: forged IDs and face-swapped selfies.
 
 The law is catching up. The US TAKE IT DOWN Act (2025) made publishing nonconsensual intimate deepfakes a federal crime and requires platforms to remove them within 48 hours of a valid request. The EU and China now require AI-generated content to be labeled.
 
@@ -31,7 +31,7 @@ Two separate questions: can you train a model on copyrighted work without permis
 
 ### Training
 
-In the US, the fight is over [[fair use]], a four-factor test that asks, roughly, whether a use transforms the original and whether it hurts the market for it. The scoreboard as of September 2026:
+In the US, the fight is over [[fair use]], a four-factor test that asks, roughly, whether a use transforms the original and whether it hurts the market for it. Where things stand as of September 2026:
 
 - **Bartz v. Anthropic (2025).** Judge William Alsup held that training on books was fair use because it was highly transformative, but that downloading pirated copies was not. Anthropic settled for $1.5 billion, about $3,000 per book, the largest copyright settlement in US history. The court gave final approval in July 2026.
 - **Kadrey v. Meta (2025).** Meta won, narrowly. The judge said the authors made the wrong arguments and hinted that AI flooding the market with competing works could win next time.
@@ -44,7 +44,7 @@ The market isn't waiting for judges. Disney sued Midjourney in 2025, then invest
 
 ### Outputs
 
-US copyright requires a human author. The courts said so in Thaler v. Perlmutter, and the Supreme Court declined to take the case in March 2026. The Copyright Office's guidance: AI-assisted work can be protected when a person contributes real creative expression, but a prompt alone isn't enough. The commercial point: purely AI-generated highlight packages or ad creative may not be ownable. If exclusivity matters, keep people meaningfully involved in the creative work.
+US copyright requires a human author. The courts said so in Thaler v. Perlmutter, and the Supreme Court declined to take the case in March 2026. The Copyright Office's guidance: AI-assisted work can be protected when a person contributes real creative expression, but a prompt alone isn't enough. The commercial point: purely AI-generated ad creative, logos or marketing videos may not be ownable. If exclusivity matters, keep people meaningfully involved in the creative work.
 
 :::myth Myth vs. reality
 **Myth:** Courts have ruled that AI training is fair use.
@@ -83,17 +83,17 @@ The big foundation models, which the Act calls [[general-purpose ai|general-purp
 
 **About the "delay."** A simplification package called the Digital Omnibus took effect on July 27, 2026, days before the original deadline. It moved the high-risk obligations to December 2, 2027, for uses like hiring and credit, and to August 2, 2028, for AI inside regulated products. It did not delay the bans, the model rules or transparency.
 
-:::analogy The AI Act works like a gaming regulator
-Think about how a gaming regulator sorts products. Some are prohibited outright, like betting on high school games in most states. Some are allowed only after lab certification, licensing and ongoing monitoring, like a new betting platform. Some just need a disclosure, like responsible-gaming messaging on an ad. And most things near sports aren't gaming at all, like a fan trivia app.
+:::analogy The AI Act works like food safety rules
+Think about how food rules scale with risk. Cook dinner for your family and nobody inspects your kitchen. Sell homemade jam at a farmers' market and you often just need an honest label: what's in it and where it was made. Open a restaurant and you need a permit, trained staff, temperature logs and surprise inspections. And some things can't be served at all, however spotless the kitchen, because the ingredient is banned.
 
-The AI Act works the same way. Banned uses are the prohibited markets. High-risk systems are the certified platforms, tested and audited before launch. Transparency duties are the required disclosures. Minimal risk is the trivia app. Same technology, different treatment, depending on the use.
+The AI Act works the same way. Minimal risk is the family dinner. Transparency duties are the jam label. High-risk systems are the restaurant: documented, overseen by people and checked before and after opening. Banned uses are the forbidden ingredient. Notice what decides the tier. It isn't the oven. It's who you're feeding and what's at stake. Same technology, different treatment, depending on the use.
 :::
 
-For an ordinary company, the most common high-risk use isn't the product. It's HR: AI that screens CVs or evaluates employees. Customer chatbots in Europe need AI disclosures now. And remember the betting angle from Chapter 7: an AI promotions engine aimed at a struggling bettor is exactly what regulators will test against the Act's ban on exploiting vulnerabilities. It's a question worth putting to counsel before launch, not after.
+For an ordinary company, the most common high-risk use isn't the product. It's HR: AI that screens CVs or evaluates employees. Customer chatbots in Europe need AI disclosures now. And watch the ban on exploiting vulnerabilities: a lending app that pushes high-interest offers hardest at people showing signs of financial distress is exactly what regulators will test against it. That's a question for counsel before launch, not after. (Chapter 7 covers how this applies to gambling.)
 
 ### The United States
 
-There's no comprehensive federal AI law. If you lived through sports betting's state-by-state rollout, this will feel familiar.
+There's no comprehensive federal AI law. If your company has ever juggled fifty states' rules on privacy or sales tax, this will feel familiar.
 
 **Washington: light touch, plus preemption.** In January 2025 President Trump revoked the Biden administration's 2023 AI executive order, and an AI Action Plan followed that July. Congress tried to put a 10-year moratorium on state AI laws into the 2025 budget bill; the Senate stripped it out, 99 to 1. In December 2025 the President signed an order targeting "onerous" state AI laws. It created a Justice Department task force to challenge them in court and pushed to tie some federal broadband money to states' AI policies. In March 2026 the White House asked Congress to preempt burdensome state laws, while leaving states room on things like child safety and their own use of AI. As of September 2026, Congress hasn't passed a preemption law.
 
@@ -109,11 +109,11 @@ You know part of this from Murphy v. NCAA, the 2018 case that opened up sports b
 - **Texas's TRAIGA**, in effect since January 2026, bans a short list of intentionally harmful uses.
 - **More than a dozen states** passed rules in 2026 for AI "companion" chatbots.
 
-Bottom-up, uneven and contested by Washington: the same way the US handled sports betting and privacy.
+Bottom-up, uneven and contested by Washington: the same way the US has handled data privacy.
 
 ### The United Kingdom
 
-The UK has no AI-specific law. Existing regulators, including the Gambling Commission, apply existing rules to AI, and the government's AI Security Institute tests frontier models. The 2026 King's Speech included no AI bill, and in March 2026 the government shelved its plan for a broad copyright exception for AI training.
+The UK has no AI-specific law. Existing regulators, such as the Information Commissioner's Office (data protection) and the Financial Conduct Authority, apply existing rules to AI, and the government's AI Security Institute tests frontier models. The 2026 King's Speech included no AI bill, and in March 2026 the government shelved its plan for a broad copyright exception for AI training.
 
 ### China
 
@@ -123,7 +123,7 @@ China moved first, with narrow and fast rules: recommendation algorithms (2022),
 
 - Build to the strictest regime you operate in, usually the EU, and keep your AI inventory mapped to its tiers (Chapter 8).
 - Watch the US federal-state fight. The rules you follow in 2027 may not be the ones on the books today.
-- Don't wait for AI laws. Gaming regulators' expectations on integrity and responsible gambling already apply to AI.
+- Don't wait for AI laws. Consumer protection, anti-discrimination and privacy rules, plus your own industry's regulators, already apply to AI.
 
 :::room Say this in the room
 - "The EU didn't delay the AI Act. It delayed the high-risk rules. The bans, the model rules and the transparency duties are live."
@@ -143,7 +143,7 @@ China moved first, with narrow and fast rules: recommendation algorithms (2022),
 
 The frontier risks labs cite most: helping someone build biological or chemical weapons, large-scale cyberattacks and, longer term, autonomous systems people can't correct.
 
-The industry's main answer is the [[responsible scaling policy]], a set of if-then commitments: if a model crosses a dangerous capability threshold, stronger safeguards come before release. Think of a risk desk's liability limits, applied to capability. Anthropic, OpenAI and Google DeepMind all publish versions. Governments test models too, through the UK's AI Security Institute and the US Center for AI Standards and Innovation.
+The industry's main answer is the [[responsible scaling policy]], a set of if-then commitments: if a model crosses a dangerous capability threshold, stronger safeguards come before release. Think of how labs handle germs: the more dangerous the pathogen, the tighter the containment required before work begins. Anthropic, OpenAI and Google DeepMind all publish versions, and Anthropic's "AI Safety Levels" are loosely modeled on the biosafety levels those labs use. Governments test models too, through the UK's AI Security Institute and the US Center for AI Standards and Innovation.
 
 Know three views. Critics say voluntary policies let companies grade their own homework. Supporters note that California, New York and the EU have effectively made publishing such a framework a legal duty. And a third camp argues that safety talk inflates risk to justify rules that favor incumbents.
 
@@ -155,7 +155,7 @@ On timing, there are three camps:
 
 - **Soon.** Many lab leaders. Anthropic's Dario Amodei has written that "powerful AI" could arrive as early as 2026 or 2027. Google DeepMind's Demis Hassabis has said five to ten years. Their evidence: steady capability gains, and the length of tasks AI can finish doubling every several months (Chapter 10).
 - **Skeptical.** Gary Marcus and Turing Award winner Yann LeCun argue that [[large language model|LLMs]] lack real understanding and that [[scaling laws|scaling]] alone won't close the gap. Princeton's Arvind Narayanan and Sayash Kapoor call AI a "normal technology" that, like electricity, will take decades to reshape the economy. And a 2025 study by the research group METR found experienced developers were about 19% slower with AI tools, though they believed they were faster.
-- **Worried.** Geoffrey Hinton and Yoshua Bengio, two of the field's founders, warn about losing control of more capable systems. At the far end, Eliezer Yudkowsky argues superintelligence would likely be catastrophic. You'll hear people trade their "p(doom)," their odds of catastrophe.
+- **Worried.** Geoffrey Hinton and Yoshua Bengio, two of the field's founders, warn about losing control of more capable systems. At the far end, Eliezer Yudkowsky argues superintelligence would likely be catastrophic. You'll hear people trade their "p(doom)," their personal estimate of the chance of catastrophe.
 
 Apply your investor lens: the CEOs forecasting AGI are also raising money, and the skeptics sell books too. To discuss it well, ask "AGI by what definition?" first. Separate capability (what models can do in a lab) from diffusion (how fast they change businesses). And use signposts, not dates: "I'll update when agents reliably complete week-long projects, or when AI shows up in productivity statistics."
 

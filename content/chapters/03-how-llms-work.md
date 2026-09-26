@@ -10,18 +10,20 @@ You've typed a question into ChatGPT or Claude and watched a sharp answer stream
 By the end of this chapter, you'll know why these tools are brilliant one minute and confidently wrong the next, why they forget what you told them yesterday, and why every answer costs somebody money.
 
 :::why Why this matters to you
-Almost every AI conversation you'll sit in, about pricing, vendors, risk or "can we build this?", traces back to the mechanics in this chapter. Understand them and you can pressure-test any pitch in real time. And you start with an advantage: at its core, this technology is a pricing engine. It just prices words instead of outcomes.
+Almost every AI conversation you'll sit in, about pricing, vendors, risk or "can we build this?", traces back to the mechanics in this chapter. Understand them and you can pressure-test any pitch in real time. In a business built on fast, accurate data, like sports data, that's the difference between buying a real capability and buying a slick demo.
 :::
 
-## The big idea: a pricing engine for words
+## The big idea: a prediction engine for words
 
 A [[large language model]] (LLM) does one thing. It looks at a stretch of text and predicts what comes next.
 
-Type "The quarterback dropped back and threw a..." and the model sets odds on every possible next word. "Pass" is the heavy favorite. "Strike" and "touchdown" are live. "Banana" is a 10,000-to-1 longshot. It picks one, adds it to the text, and prices the next word from scratch, over and over, until the answer is done. Every email, summary and line of code these models produce is built this way, one piece at a time.
+You already do this. Finish the sentence: "Peanut butter and..." You thought "jelly" before you could stop yourself. You didn't look it up. You've heard that phrase so often that your brain filled in the blank on its own.
+
+An LLM does the same thing with math. It gives every possible next word a probability. "Jelly" gets most of it. "Honey" and "banana" get a sliver. "Stapler" gets almost nothing. It picks one, adds it to the text, and scores the next word from scratch, over and over, until the answer is done. Every email, summary and line of code these models produce is built this way, one piece at a time.
 
 ### Tokens: the unit everything is measured in
 
-Those pieces are [[token|tokens]], not quite words. Common words are usually one token; longer or rarer ones get chopped up ("Commanders" might become "Command" + "ers"). In English, a token is roughly half to three-quarters of a word, depending on the model.
+Those pieces are [[token|tokens]], not quite words. Common words are usually one token; longer or rarer ones get chopped up ("unbelievable" might become "un" + "believ" + "able"). In English, a token is roughly half to three-quarters of a word, depending on the model.
 
 Remember the unit: pricing, speed and memory limits for every AI product are measured in tokens.
 
@@ -31,20 +33,20 @@ Skeptics call this "autocomplete on steroids." Fair, but consider what it takes 
 
 OpenAI co-founder Ilya Sutskever has used a version of this example: feed a model an entire detective novel, up to the line where the detective says, "The killer is..." To predict that next word, the model has to have tracked the plot, the clues and the motives.
 
-Scale that across contracts, code, medicine and sports, and the model has to absorb facts, logic and how experts reason. Prediction is the task. Something that behaves a lot like understanding is what falls out of doing it at enormous scale.
+Scale that across contracts, code, medicine and history, and the model has to absorb facts, logic and how experts reason. Prediction is the task. Something that behaves a lot like understanding is what falls out of doing it at enormous scale.
 
 ## What's inside: dials, not a database
 
-An LLM is a [[neural network]]: a tall stack of layers of simple math, loosely inspired by the brain. Text goes in as numbers, each layer transforms them a little, and out the top come the odds for the next token.
+An LLM is a [[neural network]]: a tall stack of layers of simple math, loosely inspired by the brain. Text goes in as numbers, each layer transforms them a little, and out the top come the probabilities for the next token.
 
 How each layer transforms those numbers is set by billions of adjustable settings called [[parameter|parameters]], or weights. Picture a mixing board with billions of dials. The exact position of every dial *is* the model. GPT-3 had 175 billion in 2020. As of 2026, the largest open models run past a trillion, and the top labs generally don't disclose their counts.
 
-The blueprint behind modern LLMs is the [[transformer]] from Chapter 2. Its key trick, [[attention]], lets every token look at every other token to work out what matters. It's how the model knows who "they" is in "The Dolphins beat the Jets because they ran the ball."
+The blueprint behind modern LLMs is the [[transformer]] from Chapter 2. Its key trick, [[attention]], lets every token look at every other token to work out what matters. It's how the model knows what "it" means in "The trophy didn't fit in the suitcase because it was too big." Swap "big" for "small" and "it" flips from the trophy to the suitcase. Attention is what catches that.
 
-:::analogy The veteran oddsmaker
-Think of the best oddsmaker you've ever met, someone who has watched decades of games. Ask him to price tonight's game and he doesn't consult a rulebook. He just *knows*: this team struggles on short rest, that quarterback is worse in the cold.
+:::analogy The veteran chef
+Think of a chef who has spent thirty years in professional kitchens. Hand her a sauce and she doesn't reach for a cookbook. She just *knows*: it needs acid, that pan is seconds from burning, this fish wants one more minute.
 
-Where in his head does "worse in the cold" live? Nowhere specific. It's spread across thousands of games, compressed into instinct.
+Where in her head does "one more minute" live? Nowhere specific. It's spread across tens of thousands of dishes, compressed into instinct.
 
 That's what a model's weights are. Nobody typed facts in. Patterns learned from an ocean of text are smeared across billions of dials. That's why a model can't point to where it learned something, and why, like any expert working from memory, it sometimes misremembers.
 :::
@@ -65,44 +67,44 @@ Every model lives two lives. It's trained once, at enormous cost. Then it's used
 
 [[pre-training|Pre-training]] is where the raw talent comes from. The lab gathers a vast pile of text (web pages, books, articles, code) and plays one game with the model, across trillions of tokens: hide the next token, let the model guess, measure the miss, and nudge every dial so it would be slightly less wrong next time.
 
-The scale is staggering. Meta said its Llama 3 models (2024) trained on more than 15 trillion tokens, and newer models have used more. Runs take weeks or months on tens of thousands of [[gpu|GPUs]], the specialized chips that power AI. The cost of the biggest runs has more than doubled year after year; in 2024, Anthropic's CEO said models costing around $1 billion to train were already underway. As of 2026, a frontier run is a nine- or ten-figure bet (Chapter 4 follows the money).
+The scale is staggering. Meta said its Llama 3 models (2024) trained on more than 15 trillion tokens, and newer models have used more. Runs take weeks or months on tens of thousands of [[gpu|GPUs]], the specialized chips that power AI. The cost of the biggest runs has more than doubled year after year; in 2024, Anthropic's CEO said models costing around $1 billion to train were already underway. As of 2026, a frontier run is a nine- or ten-figure investment (Chapter 4 follows the money).
 
-What comes out is a "base model" that knows an astonishing amount but isn't an assistant. It's a document-continuer. Ask it "Who won Super Bowl LVIII?" and it may reply "Who won Super Bowl LVII?", as if it were writing a trivia worksheet. It also has a [[knowledge cutoff]]: it knows nothing that happened after its training data was collected, unless you tell it.
+What comes out is a "base model" that knows an astonishing amount but isn't an assistant. It's a document-continuer. Ask it "What's the capital of France?" and it may reply "What's the capital of Germany?", as if it were writing a trivia worksheet. It also has a [[knowledge cutoff]]: it knows nothing that happened after its training data was collected, unless you tell it.
 
 ### Post-training: turning raw talent into a pro
 
-If pre-training is the draft, [[post-training|post-training]] is training camp: teaching a freak athlete the playbook and how to carry himself.
+If pre-training produces a brilliant graduate who has read everything and never held a job, [[post-training|post-training]] is onboarding: teaching them what the job is, the house rules and how to treat a customer.
 
 - **[[instruction tuning|Instruction tuning]].** The model studies thousands of examples of good requests and good answers, written or checked by people. It learns the format: you ask, it helps.
 - **[[rlhf|RLHF]]**, short for [[reinforcement learning]] from human feedback. Reinforcement learning is learning by trial and reward; here, people supply the reward. They compare pairs of answers and pick the better one, a second model learns their taste, and the main model is tuned to win its approval. It was a key ingredient in ChatGPT: in OpenAI's 2022 research, people preferred a small model tuned this way over an untuned one more than 100 times its size.
 - **[[constitutional ai|Constitutional AI]].** Anthropic's approach, introduced in 2022: write down a set of principles, a "constitution," and have AI, not just human raters, critique and revise the model's answers against it during training. Anthropic published a far longer, more detailed constitution for Claude in January 2026.
 
-Post-training is why ChatGPT, Claude and Gemini feel so different despite similar raw ingredients: personality, caution and style are largely coaching choices. It's also the front line of [[alignment]], the work of making models behave as intended (Chapter 9).
+Post-training is why ChatGPT, Claude and Gemini feel so different despite similar raw ingredients: personality, caution and style are largely onboarding choices. It's also the front line of [[alignment]], the work of making models behave as intended (Chapter 9).
 
-Coaching has side effects, too. Tune a model hard toward what people *like* and it can learn to flatter, a failure called [[sycophancy]]. In 2025, OpenAI rolled back a ChatGPT update after users found it excessively agreeable.
+Onboarding has side effects, too. Reward a new hire mainly for keeping the boss happy and you get a yes-man. Tune a model hard toward what people *like* and it can learn to flatter, a failure called [[sycophancy]]. In 2025, OpenAI rolled back a ChatGPT update after users found it excessively agreeable.
 
 ## What happens when you hit enter
 
-Using a trained model is called [[inference]]. If training is the oddsmaker's decades of watching games, inference is him setting tonight's live line: fixed instincts, applied to the information in front of him.
+Using a trained model is called [[inference]]. If training is the chef's thirty years in kitchens, inference is her working tonight's dinner service: fixed instincts, applied to the orders in front of her.
 
-The mechanics: your message, the conversation so far and any hidden instructions are converted into tokens. They run through the entire network, every one of those dials, and out comes a priced board for the next token. The model picks one, adds it to the text, and runs the *whole thing again* for the next.
+The mechanics: your message, the conversation so far and any hidden instructions are converted into tokens. They run through the entire network, every one of those dials, and out comes a probability for every possible next token. The model picks one, adds it to the text, and runs the *whole thing again* for the next.
 
 A 500-word answer means hundreds of full passes. That one fact explains a lot:
 
 - **Answers stream in word by word** because that's how they're made.
 - **AI costs money every single time.** Traditional software costs next to nothing to serve one more user. An LLM burns chip time, what the industry calls [[compute]], on every answer. That's why AI is priced per token, and why, as of 2026, the tokens a model writes typically cost several times more than the ones it reads.
-- **Speed is a design choice.** Bigger models and longer answers mean more delay, or [[latency]]. Fine for a deal memo; far too slow for pricing in-play markets, which run on specialized, much faster models, not chatbots.
-- **The same question gets different answers.** The model doesn't always take the favorite. A setting called [[temperature]] controls how often it picks a less likely token: higher is more creative, lower is more consistent.
+- **Speed is a design choice.** Bigger models and longer answers mean more delay, or [[latency]]. Fine for a deal memo; far too slow for approving a card payment at checkout, where fraud checks run on specialized, much faster models, not chatbots.
+- **The same question gets different answers.** The model doesn't always pick the most likely word. A setting called [[temperature]] controls how often it picks a less likely token: higher is more creative, lower is more consistent.
 
 ### Context window, memory and system prompts
 
-Here's what surprises most people: **the model doesn't learn from your conversations.** Its dials are frozen after training, just as the oddsmaker doesn't relearn the sport mid-game.
+Here's what surprises most people: **the model doesn't learn from your conversations.** Its dials are frozen after training, just as the chef doesn't relearn cooking in the middle of a dinner rush.
 
-What it has instead is a [[context window]]: all the text it can see at once, measured in tokens. Think of it as the stat sheet on the oddsmaker's desk. It holds the instructions, your conversation, any pasted documents and the answer being written. As of 2026, leading models from the big labs handle around a million tokens, well over a thousand pages, and a few advertise more. But bigger isn't perfect recall. Models get less reliable as the window fills, and details buried mid-document are easier to miss.
+What it has instead is a [[context window]]: all the text it can see at once, measured in tokens. Think of it as the chef's counter: everything laid out within reach for this order. It holds the instructions, your conversation, any pasted documents and the answer being written. As of 2026, leading models from the big labs handle around a million tokens, well over a thousand pages, and a few advertise more. But bigger isn't perfect recall. Models get less reliable as the window fills, and details buried mid-document are easier to miss.
 
-So how does ChatGPT "remember" you? Within a chat, the app quietly re-sends the whole conversation with every message. Across chats, "memory" features save notes about you and slip them back into the window. A sticky note on the stat sheet, not new instincts.
+So how does ChatGPT "remember" you? Within a chat, the app quietly re-sends the whole conversation with every message. Across chats, "memory" features save notes about you and slip them back into the window. A note taped to the counter, not new instincts.
 
-Finally, the [[system prompt]]: instructions the company or developer puts at the top of the context, usually invisible to you. "You are a support assistant for a sportsbook. Be concise. Never predict game outcomes." That's how one general model becomes a thousand products. Many "AI-powered" tools you'll be pitched are a general model, a system prompt and some company data in a nice wrapper.
+Finally, the [[system prompt]]: instructions the company or developer puts at the top of the context, usually invisible to you. "You are a support assistant for an airline. Be concise. Never promise a refund." That's how one general model becomes a thousand products. Many "AI-powered" tools you'll be pitched are a general model, a system prompt and some company data in a nice wrapper.
 
 :::room Say this in the room
 - "Every answer these models give costs compute, so usage growth is cost growth unless we match the model to the job."
@@ -119,9 +121,9 @@ A standard model commits to each token as it goes. It can't pause, plan or go ba
 
 The big idea is [[test-time compute]]. For years, the main route to a smarter model was a bigger training run. Now there's a second dial: spend more computing power at the moment of answering. On hard problems, more thinking means better answers.
 
-Think of a Tuesday-night NBA line versus the Super Bowl. Same oddsmaker, same instincts, but for the Super Bowl he spends days on film. Better number, more time.
+Back to the chef. Ask for an omelet and she makes it on autopilot. Ask her to design a new tasting menu and she spends days testing, tasting and throwing out drafts. Same chef, same instincts. Better result, more time.
 
-Same trade-off here. Thinking tokens are billed like any other output, and you wait while the model thinks. Save it for analysis, math, code and planning. Don't pay Super Bowl prices to rewrite an email.
+Same trade-off here. Thinking tokens are billed like any other output, and you wait while the model thinks. Save it for analysis, math, code and planning. Don't pay tasting-menu prices to rewrite an email.
 
 One caution: the visible "thinking" is a useful window, not sworn testimony. Anthropic's own 2025 research found that reasoning models don't always accurately report what drove their answers.
 
@@ -139,17 +141,17 @@ A [[hallucination]] is a model stating something false as fact: an invented stat
 
 It's not a glitch. It falls out of the mechanism:
 
-- **Plausible, not verified.** The model prices the next token by what sounds right. There's no built-in fact-check.
-- **Fuzzy memory.** Facts that appear constantly in training (Patrick Mahomes's career) are sharp. Rare ones (a backup lineman's 2019 stats) are blurry, and the model fills the gap with something that looks right.
-- **Rewarded for guessing.** A 2025 OpenAI paper argued that training and testing have favored confident guesses over "I don't know." Picture a tipster graded only on correct picks, with no penalty for misses and no credit for passing. He'll pick every game.
+- **Plausible, not verified.** The model picks the next token by what sounds right. There's no built-in fact-check.
+- **Fuzzy memory.** Facts that appear constantly in training (who wrote *Romeo and Juliet*) are sharp. Rare ones (the founding year of a small regional law firm) are blurry, and the model fills the gap with something that looks right.
+- **Rewarded for guessing.** A 2025 OpenAI paper argued that training and testing have favored confident guesses over "I don't know." Picture a student on a multiple-choice test where a wrong answer costs nothing and a blank scores zero. The smart move is to guess on every question.
 
-Ask the oddsmaker to price a league he's never watched and he'll still give you a number, in the same confident voice.
+Ask the chef to cook a cuisine she's never tasted and she'll still send out a plate, with the same confident flourish.
 
 Newer models hallucinate less, but none are at zero. To reduce it: give the model the source documents, turn on web search for current facts, ask it to quote and cite its sources (then check them), tell it "I don't know" is acceptable, and keep a human on anything going to a client, a regulator or the public.
 
 ### Three ways to teach it your business
 
-Out of the box, a model doesn't know your contracts, your rate card or this morning's injury report. There are three ways to fix that.
+Out of the box, a model doesn't know your contracts, your rate card or this morning's sales numbers. There are three ways to fix that.
 
 :::analogy Three ways to teach a new hire
 You've just hired a sharp analyst. How do you get them productive?
@@ -172,7 +174,7 @@ The rule of thumb: start with prompting, which goes further than most people exp
 :::
 
 :::teach Teach it in 60 seconds
-Open with: "Every time you use ChatGPT, you're watching a bookmaker at work." The model has read a huge slice of everything humans have written and compressed it into billions of dials, its instincts. When you type, it prices every possible next word, picks one, and repeats until it's done. That's why it's fluent on almost any topic, and why it can be confidently wrong: it prices the most plausible answer, not the true one. So treat it like a brilliant analyst who's never been fact-checked: hand it the source documents, and check its work.
+Open with: "Finish this sentence: peanut butter and..." Everyone says "jelly," and that's the whole trick behind ChatGPT, done with math at enormous scale. The model has read a huge slice of everything humans have written and compressed it into billions of dials, its instincts. When you type, it scores every possible next word, picks a likely one, and repeats until it's done. That's why it's fluent on almost any topic, and why it can be confidently wrong: it predicts the most plausible answer, not the true one. So treat it like a brilliant analyst who's never been fact-checked: hand it the source documents, and check its work.
 :::
 
 ## Check yourself
@@ -201,7 +203,7 @@ Reasoning models write a long scratchpad before answering, and those thinking to
 
 </details>
 
-4. A sportsbook partner wants an AI assistant, but its compliance team won't let customer data leave its own servers. What option do you put on the table?
+4. A partner in a heavily regulated business, say a bank, wants an AI assistant, but its compliance team won't let customer data leave its own servers. What option do you put on the table?
 
 <details><summary>Answer</summary>
 
@@ -210,7 +212,7 @@ An open-weight model. Because the weights are downloadable, the partner can run 
 </details>
 
 :::key Key takeaways
-- An LLM predicts the next token by pricing every possibility. Doing that well at scale forces it to learn a lot about the world.
+- An LLM predicts the next token by scoring every possibility. Doing that well at scale forces it to learn a lot about the world.
 - Its knowledge lives in billions of parameters set during pre-training. Post-training (instruction tuning, RLHF, constitutional AI) turns that raw talent into a helpful assistant.
 - Every answer is fresh computation (inference), which is why AI costs money per use. The model doesn't learn from your chats; the context window is its only working memory.
 - Reasoning models add a second dial: more thinking at answer time for better answers on hard problems, paid for in time and money.

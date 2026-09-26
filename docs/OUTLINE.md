@@ -16,7 +16,7 @@ File names: `content/chapters/NN-slug.md`.
 ## 02-what-ai-is.md: What AI Actually Is
 *From chess computers to ChatGPT in ten minutes: the nesting dolls of AI.*
 - Definitions: AI, machine learning, deep learning, neural networks, generative AI, LLMs (use `{{diagram:ai-nesting}}`)
-- Rules vs learning from examples (old-school programmed odds vs a model that learns from millions of games)
+- Rules vs learning from examples (a hand-written rulebook vs a system that learns from millions of examples)
 - The short history: Turing, early AI winters, Deep Blue, the deep learning breakthrough (ImageNet 2012), AlphaGo, the Transformer paper 2017 ("Attention Is All You Need"), GPT-3, ChatGPT (Nov 2022), and the 2023–2026 race (use `{{diagram:timeline}}`)
 - Types of AI output: predictive (classify, forecast) vs generative (text, images, video, audio, code)
 - Narrow AI vs AGI vs superintelligence: brief intro; deep treatment is in chapter 09
@@ -57,7 +57,7 @@ File names: `content/chapters/NN-slug.md`.
 - What agents are good at today vs where they break: reliability, compounding errors, long tasks, permissions, security (prompt injection)
 - Human-in-the-loop, guardrails, evaluation
 - Where it's going: agents doing hours/days of work, the "AI employee" framing, and what it means for jobs and org design
-- Concrete agent examples from his world (a trading-desk monitoring agent, a sponsorship-proposal agent, a partner-research agent) but save deep sports treatment for 07
+- Concrete, general business examples of agents (an inbox-triage agent, a proposal-drafting agent, a research agent); save sports-specific examples for 07
 
 ## 06-using-ai-well.md: Using AI Well: Your Personal Edge
 *The fastest way to understand AI is to use it every day. Here's how.*

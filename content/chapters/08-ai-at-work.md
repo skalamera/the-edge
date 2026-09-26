@@ -58,10 +58,10 @@ Every pitch deck now has "AI" on slide one. You don't need the engineering to as
 
 The red flags write themselves: "proprietary AI" that's a standard model with a clever prompt, numbers without definitions, a demo they won't run on your inputs, shifting answers about data, "fully autonomous" for anything high-stakes, and pricing they can't model for you.
 
-:::analogy Scouting off the highlight reel
-A vendor demo is a highlight reel: every clip is the player's best moment, cut tight and set to music. No good scout signs a player off the reel. They watch full game film, against good opponents, in bad weather, in the fourth quarter. They want to see the blown assignments too.
+:::analogy Hiring off a polished interview
+A vendor demo is a job interview where the candidate wrote the questions. Every answer is rehearsed, every example is their best work, and nothing goes wrong. No good hiring manager makes an offer on that alone. They ask for a work sample, hand the candidate a messy real problem, and watch how the person handles a mistake, not just a win.
 
-Treat AI the same way. A trial on your own data is the game film. Evals are the combine numbers, useful only if the drills look like the job. References are calls to the player's former coaches. Sign off the tape, never the reel.
+Treat AI the same way. A trial on your own data is the work sample. Evals are the skills test, useful only if the test looks like the actual job. References are the calls to former managers. Hire on the work, never the interview.
 :::
 
 ## Pricing and ROI
@@ -76,13 +76,13 @@ AI gets sold three ways, and most contracts mix them.
 
 Why is AI breaking the old model? Traditional software cost almost nothing to run for one more user. AI doesn't: every answer requires [[inference]], which costs real money (Chapter 4). And if AI does the work, companies need fewer people using the software, so a vendor charging per seat is selling against itself. Buyers increasingly want to pay for results, not access.
 
-:::analogy The CPA deal of software
-You know this movie from sportsbook marketing. Affiliates get paid a flat fee, a CPA (a fixed payment per new depositing customer) or a revenue share. Each one shifts risk. Flat fees favor the seller. CPA pays for a defined result. Revenue share aligns both sides for the long haul, if you trust the numbers.
+:::analogy Paying AI like you'd pay a recruiter
+Think about how companies pay recruiters. A retained search firm gets paid up front, whether or not anyone gets hired. A contingency recruiter gets paid only when the new hire actually starts. Each deal shifts risk. The retainer protects the recruiter. The contingency fee means you pay only for a result.
 
-AI pricing is making the same moves. Per seat is the flat fee. Per outcome is the CPA. And the same fights follow: who defines the outcome, who measures it, and what stops the vendor from counting outcomes that would have happened anyway.
+AI pricing is making the same moves. Per seat is the retainer. Per outcome is the contingency fee. And the same fights follow. Does a hire count at the signed offer, the first day or ninety days in? Who keeps the records? What stops the recruiter from claiming credit for a candidate who had already applied on their own? Swap "hire" for "resolved ticket" and those are exactly the questions to settle with an AI vendor.
 :::
 
-As a buyer, model three volume scenarios before you sign, negotiate caps, and push for price reductions over time, since the cost of running AI keeps falling (Chapter 10). If you pay per outcome, define "outcome" as precisely as a sportsbook defines a qualifying deposit.
+As a buyer, model three volume scenarios before you sign, negotiate caps, and push for price reductions over time, since the cost of running AI keeps falling (Chapter 10). If you pay per outcome, define "outcome" as tightly as a good recruiting contract defines a hire: what counts, who confirms it and what happens if it doesn't stick.
 
 ### Proving it pays
 
@@ -102,7 +102,7 @@ A simple way to measure:
 4. **Count every cost,** including the time people spend checking the AI's work.
 5. **Report results, not usage.** "80% of the team logged in" is an impression count. "RFP turnaround fell from ten days to four, and we bid on a third more deals" is a result.
 
-You've watched sponsorship make this shift, from selling impressions to proving attribution. AI is on the same arc, only faster.
+Marketing went through this exact shift, from counting impressions to proving attribution. AI is on the same arc, only faster.
 
 ## Data and the contract
 
@@ -110,7 +110,7 @@ You've watched sponsorship make this shift, from selling impressions to proving 
 
 Your competitors can rent the same model you do. They can't rent your data, workflows and relationships. That's the [[moat]] (Chapter 4). Before any project, ask: Is the data accurate? Is it in one place? Is it labeled so a machine can tell what's what? Do we have the rights to use it this way? Many failed AI projects are data problems wearing an AI costume.
 
-Privacy raises the stakes. Bettor data is some of the most sensitive in consumer business: identity documents, financial details and behavior patterns that can signal problem gambling. Privacy law and gaming regulation both apply, so legal and compliance belong in the room from the start.
+Privacy raises the stakes. Some of what companies hold is deeply sensitive: identity documents, financial details, health information and behavior patterns that reveal more about a person than they'd ever volunteer. Privacy law and industry regulators can both apply, so legal and compliance belong in the room from the start.
 
 ### The terms that matter when you buy
 
@@ -119,7 +119,7 @@ Privacy raises the stakes. Bettor data is some of the most sensitive in consumer
 - **Output ownership.** You own what the system produces for you.
 - **IP [[indemnity]].** Microsoft, Google, OpenAI and others have promised to defend enterprise customers against copyright claims over AI outputs. Read the conditions: they often require using the vendor's safety filters and exclude outputs you've modified.
 - **Model changes.** Advance notice and the right to re-test.
-- **Service levels.** Uptime, [[latency]], and what happens if it fails mid-event.
+- **Service levels.** Uptime, [[latency]], and what happens if it fails at your busiest moment.
 - **Exit.** Data export and certified deletion when you leave.
 
 ### When you're the one licensing data
@@ -128,7 +128,7 @@ Now flip the table. If your company licenses data to others, AI raises a questio
 
 You can't un-bake a cake. A model trained on your data keeps what it learned after the data is deleted.
 
-So treat AI training as its own right, the way media deals separate broadcast, streaming and clips by platform and territory. Define it. Price it. Decide whether trained models and their outputs survive termination. Chapter 7 covers why this matters so much in sports data. Questions worth asking internally: do our standard terms define AI training at all, and do our partners' terms let them train on what we send them?
+So treat AI training as its own right, the way an author sells print, audiobook, translation and film rights separately, each with its own price and term. Define it. Price it. Decide whether trained models and their outputs survive termination. Chapter 7 covers why this matters so much in sports data. Questions worth asking internally: do our standard terms define AI training at all, and do our partners' terms let them train on what we send them?
 
 :::room Say this in the room
 - "Before we talk features, can we run it on a month of our real data, with success criteria we agree on today?"
@@ -141,9 +141,9 @@ So treat AI training as its own right, the way media deals separate broadcast, s
 
 Now you're across the table. Your buyers hear "AI-powered" in every pitch. It's wallpaper. What cuts through is specificity.
 
-- **Lead with the problem, not the technology.** "We cut the time from a live event to a priced market" beats "our AI-driven platform."
-- **Say what the AI does and what people do.** Buyers trust a clear division of labor more than claims of full autonomy. On a trading desk, "the model proposes, the trader approves anything above a set limit" is a selling point.
-- **Talk about accuracy like an adult.** Name the metric, the data it was measured on and the baseline, and volunteer the failure modes. Alert products like integrity monitoring have two numbers that pull against each other: how many alerts are real, and how many real problems get caught. Tighten one and the other suffers. Buyers who know that trust the vendor who says it first.
+- **Lead with the problem, not the technology.** "We cut partner onboarding from six weeks to two" beats "our AI-driven platform."
+- **Say what the AI does and what people do.** Buyers trust a clear division of labor more than claims of full autonomy. Think of an expense system: "the AI clears routine claims, and a manager approves anything over $500" is a selling point, not a weakness.
+- **Talk about accuracy like an adult.** Name the metric, the data it was measured on and the baseline, and volunteer the failure modes. Alert products, like fraud detection, have two numbers that pull against each other: how many alerts are real, and how many real problems get caught. It's a smoke detector. Make it more sensitive and it shrieks at every slice of burnt toast. Calm it down and it might sleep through a real fire. Buyers who know that trust the vendor who says it first.
 - **Speak to each buyer's goals.** Sportsbooks want margin, speed, risk control and personalization within responsible-gaming limits. Leagues want integrity, fan engagement and control of their data and IP. Media partners want engagement, ad yield and lower production cost.
 - **Write every claim for the regulator.** Sportsbooks answer to gaming regulators. Any AI claim you make may land in front of one, or a board. Write it to survive that reading.
 
@@ -168,12 +168,12 @@ The technology is the easy part. Most pilots die of human causes.
 
 ### Governance
 
-Governance sounds like a brake. Think of it as good brakes on a race car: NASCAR drivers carry speed into turn one because they trust they can stop. Companies with clear AI rules move faster, because people know what's allowed.
+Governance sounds like a brake. That's the point: brakes are what let you drive fast. Nobody takes a winding mountain road at speed in a car they don't trust to stop. Companies with clear AI rules move faster, because people know what's allowed.
 
 A workable AI policy covers five things:
 
 1. **Approved tools**, on enterprise accounts, not personal ones.
-2. **Data classes:** what can go into which tool. Bettor data and confidential deal terms get the tightest rules.
+2. **Data classes:** what can go into which tool. Customers' personal data and confidential deal terms get the tightest rules.
 3. **Human review:** which outputs a person must check before they go out or drive a decision.
 4. **Disclosure:** when you tell customers or partners that something was AI-generated.
 5. **An inventory** of every AI use, tiered by risk. Internal drafting is low. Anything customer-facing, or touching people's money, access or jobs, is high. That's the same logic regulators use (Chapter 9).
@@ -214,7 +214,7 @@ The time was counted but never redeployed, so it got absorbed. Next time, name u
 
 </details>
 
-3. A sportsbook partner wants to fine-tune its own pricing model on data you license to it. Which contract terms matter most?
+3. A partner wants to fine-tune its own AI model on data you license to it. Which contract terms matter most?
 
 <details><summary>Answer</summary>
 

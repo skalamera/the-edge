@@ -10,7 +10,7 @@ Every time you ask ChatGPT a question, a chain of companies gets paid. The app p
 That chain is the [[ai stack|AI stack]]. Learn it once and every AI headline sorts itself: which layer it's about, who is paying whom, and whether the money is real.
 
 :::why Why this matters to you
-You already know how this works. In betting, money flows from the bettor to the sportsbook, from the sportsbook to its data and technology suppliers, and from them to the leagues that own the rights. Margin pools wherever something is scarce. AI runs on the same logic. Once you see the stack, you can size up any AI partner, pitch or stock in one conversation, and you'll see why owning data nobody else has gets more valuable as AI spreads, not less.
+You already know how supply chains work. Money flows from the customer back through every supplier, and margin pools wherever something is scarce. AI runs on the same logic. Once you see the stack, you can size up any AI partner, pitch or stock in one conversation, and you'll see why owning data nobody else has, like official sports data, gets more valuable as AI spreads, not less.
 :::
 
 ## The stack, floor by floor
@@ -49,14 +49,14 @@ The plumbing between a raw model and a finished product: companies that store an
 
 ### Top floor: applications
 
-Where people meet AI: ChatGPT and Claude themselves, Microsoft Copilot, coding tools like Cursor, the answer engine Perplexity, legal AI like Harvey, and AI features inside products from Salesforce to a sportsbook app. Apps own the customer, but most rent their intelligence from the floor below, paying by the answer.
+Where people meet AI: ChatGPT and Claude themselves, Microsoft Copilot, coding tools like Cursor, the answer engine Perplexity, legal AI like Harvey, and AI features inside products from Salesforce to your banking app. Apps own the customer, but most rent their intelligence from the floor below, paying by the answer.
 
-:::analogy The sportsbook supply chain
-You know this chain by heart. A league owns the games and the official data they throw off. A data and technology supplier captures that data, turns it into feeds and prices, and distributes it. A sportsbook packages it and owns the customer. The bettor pays, and the money flows back down.
+:::analogy The restaurant supply chain
+Think about a dinner out. You pay the restaurant. The restaurant pays a food distributor. The distributor pays the farms, ranches and fishing boats. And everyone along the way pays the utility company to keep the lights on and the walk-in freezer cold.
 
 AI is the same shape. The user pays the app. The app pays the model lab by the token. The lab pays the cloud. The cloud has already paid Nvidia, and Nvidia has paid TSMC.
 
-Profit in any chain like this pools wherever something is scarce: the rights, the fastest feed, the customer relationship. In AI today the scarce things are chips and power, so the fattest margins sit at the bottom of the building. The big question is whether that shifts upward.
+Profit in any chain like this pools wherever something is scarce. The restaurant owns the customer, yet restaurants famously run on thin margins, while the only farm growing an ingredient every chef wants can name its price. In AI today the scarce things are chips and power, so the fattest margins sit at the bottom of the building. Investors have an old name for this: in a gold rush, sell picks and shovels. The big question is whether the profits shift upward.
 :::
 
 ## Follow the money
@@ -69,7 +69,7 @@ That strains even the richest companies on earth. By mid-2026, Amazon's free cas
 
 ### Training vs. inference
 
-Training builds the model: a huge, lumpy, upfront bill, like building the stadium. [[inference|Inference]] runs it: every question costs compute, like staging every game. Inference is increasingly the bigger bill, because hundreds of millions of people use these tools weekly and [[reasoning model|reasoning models]] "think" through many steps per answer. It's also where the business model lives: it grows with customers.
+Training builds the model: a huge, lumpy, upfront bill, like building and fitting out the restaurant. [[inference|Inference]] runs it: every question costs compute, like the ingredients and staff behind every meal served. Inference is increasingly the bigger bill, because hundreds of millions of people use these tools weekly and [[reasoning model|reasoning models]] "think" through many steps per answer. It's also where the business model lives: it grows with customers.
 
 ### The token: AI's unit of sale
 
@@ -100,16 +100,16 @@ The pattern so far: the lower the floor, the fatter the margin.
 A [[moat]] is an advantage that keeps competitors from taking your profits. Five matter most in AI.
 
 1. **Compute.** Chips and power are rationed. Locking them up early is a moat, and a trap if demand disappoints.
-2. **Talent.** A few hundred elite researchers can build a [[frontier model]]; their pay now looks like star-athlete contracts.
+2. **Talent.** A few hundred elite researchers can build a [[frontier model]]; companies now court them the way studios court movie stars.
 3. **Distribution.** Microsoft is in the office, Google in search, Apple on the iPhone. A good model inside a product people already use beats a great one they have to go find.
 4. **Data.** Models trained on the same public internet converge. What stays different is data nobody else has.
 5. **Trust.** Regulated enterprises buy from vendors they trust with their data.
 
 ### Why proprietary data matters more now
 
-As models get better and more alike, value shifts to the ingredients they can't get elsewhere. Much of the public internet has already been used for training, and copyright lawsuits are raising the cost of scraping the rest. And no trained model knows tonight's score; someone has to feed it live data.
+As models get better and more alike, value shifts to the ingredients they can't get elsewhere. Much of the public internet has already been used for training, and copyright lawsuits are raising the cost of scraping the rest. And no trained model knows what happened this morning; someone has to feed it live data.
 
-So data that is official, accurate, fast and rights-cleared gets more valuable. Think of models as broadcast networks and data as media rights. Networks rise and fall; the NFL package stays scarce. Chapter 7 takes this into sports and betting.
+So data that is official, accurate, fast and rights-cleared gets more valuable. Back to the restaurant: models are kitchens, and new ones open every year. Proprietary data is the ingredient only one farm grows. Kitchens compete; the farm stays scarce. Chapter 7 takes this into sports and betting.
 
 :::room Say this in the room
 - "The models are getting cheaper and more alike every quarter. The durable value is what they can't get anywhere else: proprietary, rights-cleared, real-time data."
@@ -123,7 +123,7 @@ So data that is official, accurate, fast and rights-cleared gets more valuable. 
 
 **[[open-weight model|Open-weight models]]** are published for anyone to download, run and modify. DeepSeek, Alibaba's Qwen, several Mistral models and Meta's Llama family are the best-known examples.
 
-Why give away something that cost a fortune to build? Think free-to-air broadcasting: give the game away to build an audience, and make your money elsewhere. Meta earns its money from ads, so free models mean no rival can charge it a toll. Chinese labs have won global adoption this way despite US limits on their access to top chips. Mistral and Alibaba sell what surrounds the model: enterprise deployments and cloud.
+Why give away something that cost a fortune to build? Think of how Google gives Android to phone makers for free. It isn't charity: it keeps any rival from owning the phone, and Google makes its money on the search and apps that run on it. Meta earns its money from ads, so free models mean no rival can charge it a toll. Chinese labs have won global adoption this way despite US limits on their access to top chips. Mistral and Alibaba sell what surrounds the model: enterprise deployments and cloud.
 
 It's strategy, not ideology, and it shifts with position. Meta made open models famous with Llama, then in April 2026 launched its new flagship, Muse Spark, as a closed model. When you think you're ahead, you charge.
 
@@ -133,7 +133,7 @@ The commercial effect is a price ceiling: open models set a free floor for "good
 
 ### The partnerships web
 
-AI's giants are each other's customers, suppliers, investors and competitors at once, like a network that is a league's partner on Sunday and its streaming rival on Monday. The main threads, as of mid-2026:
+AI's giants are each other's customers, suppliers, investors and competitors at once, like Samsung, which supplies parts for the iPhone while selling the phones that compete with it. The main threads, as of mid-2026:
 
 - **Microsoft and OpenAI.** Microsoft held about 27% of OpenAI after an October 2025 restructuring and remains its primary cloud. But since April 2026 OpenAI can sell on any cloud, and Microsoft builds its own models and uses Anthropic's inside Copilot.
 - **Amazon and Google with Anthropic.** Both are major investors and suppliers. Amazon is Anthropic's primary training partner, on its Trainium chips; Google supplies up to a million TPUs. Microsoft and Nvidia joined in November 2025.
@@ -220,7 +220,7 @@ It pays the lab for every answer, so costs rise with usage and margins may never
 
 <details><summary>Answer</summary>
 
-As models converge, the scarce input becomes data they can't get elsewhere. Tonight's score can't be baked into a trained model; whoever holds the rights must supply it live. Cheaper models mean more products that need that feed, so more buyers for the scarce ingredient.
+As models converge, the scarce input becomes data they can't get elsewhere. Live information, like today's prices or tonight's results, can't be baked into a trained model; whoever holds the rights must supply it live. Cheaper models mean more products that need that feed, so more buyers for the scarce ingredient.
 
 </details>
 
