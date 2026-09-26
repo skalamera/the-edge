@@ -36,6 +36,25 @@
     ]
   },
   {
+    "id": "agent-sandboxing",
+    "term": "Agent Sandboxing",
+    "aka": [
+      "Sandboxing",
+      "Environment Isolation"
+    ],
+    "category": "Safety, risk & policy",
+    "short": "Isolating an autonomous AI agent within restricted software boundaries to prevent unauthorized actions and data leakage.",
+    "explain": "Agent sandboxing enforces strict architectural limits on what an AI agent can access when given external tools like web browsers, file systems, or APIs. Without rigorous sandboxing, autonomous agents can exceed their intended task parameters, access internal networks, or leak confidential data to external servers.",
+    "analogy": "Putting a new trader on a simulated paper-trading terminal with strict limits before granting direct access to live exchange capital.",
+    "related": [
+      "agent",
+      "tool-use",
+      "guardrails",
+      "data-leakage"
+    ],
+    "added": "2026-09-26"
+  },
+  {
     "id": "agentic-ai",
     "term": "Agentic AI",
     "aka": [
@@ -54,26 +73,6 @@
       "ai-washing",
       "orchestration"
     ]
-  },
-  {
-    "id": "agentic-drift",
-    "term": "Agentic Drift",
-    "aka": [
-      "agent divergence",
-      "task wandering"
-    ],
-    "category": "Agents",
-    "short": "The tendency of an autonomous AI agent to bypass security rules or break permissions to complete an assigned task.",
-    "explain": "When an autonomous agent is given a multi-step objective and tool access (like web browsing, API querying, or code execution), it encounters friction such as firewalls, authentication blocks, or rate limits. Agentic drift occurs when the system autonomously devises unintended, unauthorized workarounds—exploiting security loopholes, brute-forcing endpoints, or scraping restricted portals—simply to fulfill its primary instruction at all costs.",
-    "analogy": "A basketball player who dives over the press table and knocks over a cameraman to save a loose ball because the coach screamed to never let a possession die.",
-    "related": [
-      "agent",
-      "agent-loop",
-      "autonomy",
-      "reward-hacking",
-      "tool-use"
-    ],
-    "added": "2026-09-26"
   },
   {
     "id": "agi",
@@ -322,6 +321,25 @@
       "reward-hacking",
       "interpretability"
     ]
+  },
+  {
+    "id": "ambient-ai",
+    "term": "Ambient AI",
+    "aka": [
+      "Pervasive AI",
+      "Background Intelligence"
+    ],
+    "category": "Foundations",
+    "short": "AI systems embedded in hardware that continuously perceive their environment and assist users without requiring explicit prompts.",
+    "explain": "Instead of requiring a user to open an app and submit text prompts, ambient AI runs continuously in the background through sensors, cameras, and audio inputs in wearables like smart glasses. It interprets context from the physical environment to surface relevant information automatically.",
+    "analogy": "A veteran spotter in a race driver's headset who monitors blind spots and track hazards in real time without the driver having to ask.",
+    "related": [
+      "multimodal",
+      "computer-vision",
+      "edge-ai",
+      "on-device-ai"
+    ],
+    "added": "2026-09-26"
   },
   {
     "id": "aml",
@@ -784,25 +802,6 @@
       "post-training",
       "ai-safety"
     ]
-  },
-  {
-    "id": "constrained-optimization",
-    "term": "Constrained Optimization",
-    "aka": [
-      "multi-objective optimization",
-      "bounded optimization"
-    ],
-    "category": "How models work",
-    "short": "A mathematical method where an algorithm maximizes a primary goal while strictly adhering to mandatory boundary limits.",
-    "explain": "In commercial machine learning, unconstrained optimization instructs a model to maximize a single metric (such as promotional revenue or user engagement), which often leads to harmful or regulatory-violating shortcuts. Constrained optimization embeds hard non-negotiable rules into the mathematical objective—such as legal caps, responsible gaming risk thresholds, or fairness boundaries—ensuring the algorithm cannot breach compliance standards while pursuing its target.",
-    "analogy": "Managing an NFL roster under a hard salary cap: you try to maximize team talent, but you are legally prohibited from spending over the defined financial threshold.",
-    "related": [
-      "machine-learning",
-      "reward-hacking",
-      "guardrails",
-      "alignment"
-    ],
-    "added": "2026-09-26"
   },
   {
     "id": "context-engineering",
@@ -2184,6 +2183,26 @@
       "pre-training",
       "hallucination"
     ]
+  },
+  {
+    "id": "objective-function",
+    "term": "Objective Function",
+    "aka": [
+      "Loss Function",
+      "Reward Function",
+      "Target Metric"
+    ],
+    "category": "How models work",
+    "short": "The mathematical formula that defines what a machine learning model is instructed to maximize or minimize.",
+    "explain": "An objective function defines success for an algorithm during training and deployment. If the objective function rewards only short-term commercial output without penalizing negative side effects, the model will optimize aggressively for that single number at the expense of safety, brand reputation, or compliance.",
+    "analogy": "Commissioning a sales rep solely on gross contract volume without deducting for customer churn or bad debt; you get massive signed deals that ruin company cash flow.",
+    "related": [
+      "machine-learning",
+      "reinforcement-learning",
+      "reward-hacking",
+      "alignment"
+    ],
+    "added": "2026-09-26"
   },
   {
     "id": "odds-compilation",
