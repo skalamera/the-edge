@@ -1,0 +1,987 @@
+[
+  {
+    "id": "constellation-energy",
+    "name": "Constellation Energy",
+    "layer": "energy-datacenters",
+    "type": "Nuclear power producer",
+    "hq": "Baltimore, MD",
+    "status": "Public (NASDAQ: CEG)",
+    "oneliner": "Runs the largest fleet of nuclear power plants in the US and, since buying Calpine, is the country's biggest power producer.",
+    "why": "AI data centers need huge amounts of power around the clock, and nuclear is the main carbon-free source that never switches off. Constellation has 20-year deals to restart the Three Mile Island unit now called Crane for Microsoft (targeted for 2027) and to supply Meta from its Clinton, Illinois plant starting in June 2027. It closed its acquisition of gas-power producer Calpine in January 2026.",
+    "watch": "Whether the Crane restart hits its 2027 target despite grid and transmission hurdles.",
+    "related": [
+      "microsoft",
+      "meta",
+      "ge-vernova"
+    ]
+  },
+  {
+    "id": "ge-vernova",
+    "name": "GE Vernova",
+    "layer": "energy-datacenters",
+    "type": "Power equipment maker",
+    "hq": "Cambridge, MA",
+    "status": "Public (NYSE: GEV)",
+    "oneliner": "Makes the gas turbines, grid equipment and wind systems that generate and move electricity.",
+    "why": "When a data center can't wait years for a grid connection, it often builds its own gas-fired power, and GE Vernova is one of the few companies that make the large turbines needed. As of mid-2026 it reported its gas turbines sold out through 2029 and was taking orders for 2031 delivery, though by one industry analysis only about a fifth of that pipeline was tied to data centers. It is a way to own the AI power bottleneck without betting on any single AI company.",
+    "watch": "Whether it can expand factory capacity fast enough, and whether turbine demand holds if AI spending cools.",
+    "related": [
+      "constellation-energy",
+      "vertiv",
+      "crusoe"
+    ]
+  },
+  {
+    "id": "vertiv",
+    "name": "Vertiv",
+    "layer": "energy-datacenters",
+    "type": "Power and cooling supplier",
+    "hq": "Westerville, OH",
+    "status": "Public (NYSE: VRT)",
+    "oneliner": "Sells the power systems, backup equipment and liquid cooling that keep data centers running.",
+    "why": "AI chips run so hot that data centers are shifting from air cooling to liquid piped directly to the chips, and Vertiv sells much of that equipment. It co-develops reference designs with Nvidia for each new generation of AI server racks. In September 2026 it agreed to buy microgrid specialist UtilityInnovation Group, pushing further into on-site power.",
+    "watch": "How well it integrates its string of 2025 and 2026 acquisitions as each Nvidia generation demands more power per rack.",
+    "related": [
+      "nvidia",
+      "equinix",
+      "ge-vernova"
+    ]
+  },
+  {
+    "id": "equinix",
+    "name": "Equinix",
+    "layer": "energy-datacenters",
+    "type": "Data center operator",
+    "hq": "Redwood City, CA",
+    "status": "Public (NASDAQ: EQIX)",
+    "oneliner": "Owns and runs about 260 data centers in more than 30 countries where companies rent space and connect to networks and clouds.",
+    "why": "Equinix is the biggest landlord of shared data centers, and its buildings are where networks, clouds and companies physically meet. As AI shifts from training giant models to running them close to users and business data, well-connected sites gain value. It is a real estate investment trust (REIT), so investors own it mainly for long-term contracted rent.",
+    "watch": "How much AI inference demand shows up in its leasing, and whether power availability limits new capacity.",
+    "related": [
+      "vertiv",
+      "amazon",
+      "microsoft"
+    ]
+  },
+  {
+    "id": "crusoe",
+    "name": "Crusoe",
+    "layer": "energy-datacenters",
+    "type": "AI data center developer",
+    "hq": "Denver, CO",
+    "status": "Private",
+    "oneliner": "Builds and operates gigawatt-scale AI data center campuses and rents out AI computing power.",
+    "why": "Crusoe developed the flagship Stargate campus in Abilene, Texas, used by Oracle and OpenAI, and in March 2026 Microsoft agreed to lease an adjacent project after Oracle and OpenAI dropped expansion plans there. It raised $3.9 billion in September 2026 and says it has more than 6 gigawatts of capacity under contract. Its bet is that access to power, not chips, is the scarcest input in AI.",
+    "watch": "Whether it delivers its contracted capacity on schedule, and whether it heads toward the public markets.",
+    "related": [
+      "oracle",
+      "openai",
+      "microsoft",
+      "nvidia"
+    ]
+  },
+  {
+    "id": "nvidia",
+    "name": "Nvidia",
+    "layer": "chips",
+    "type": "AI chip leader",
+    "hq": "Santa Clara, CA",
+    "status": "Public (NASDAQ: NVDA)",
+    "oneliner": "Designs the GPUs, networking gear and software that train and run most of the world's AI.",
+    "why": "Nvidia is the biggest profit winner of the AI boom so far: in the quarter ending July 2026 it reported $96.2 billion of revenue at a 75% gross margin. Its moat is software (CUDA) and complete data center systems as much as chips, and its Vera Rubin generation entered full production in 2026. It increasingly finances its own demand, investing in customers such as OpenAI, Anthropic and CoreWeave, and in September 2026 it agreed to buy Hugging Face for about $11.9 billion.",
+    "watch": "Its gross margin as custom chips compete and Rubin ramps, plus regulators' review of the Hugging Face deal.",
+    "related": [
+      "tsmc",
+      "sk-hynix",
+      "amd",
+      "broadcom",
+      "openai",
+      "coreweave",
+      "hugging-face"
+    ]
+  },
+  {
+    "id": "amd",
+    "name": "AMD",
+    "layer": "chips",
+    "type": "GPU and CPU maker",
+    "hq": "Santa Clara, CA",
+    "status": "Public (NASDAQ: AMD)",
+    "oneliner": "Makes server processors and Instinct AI GPUs, and now sells complete AI server racks called Helios.",
+    "why": "AMD is the main alternative to Nvidia for companies buying AI GPUs off the shelf. It signed 6-gigawatt deals with OpenAI (October 2025) and Meta (February 2026), giving each warrants for up to 160 million AMD shares that vest in stages as the chips are deployed, and a July 2026 deal with Anthropic for up to 2 gigawatts. Its data center revenue roughly doubled year over year in the April to June 2026 quarter.",
+    "watch": "Whether Helios racks ship on schedule from late 2026, which triggers the warrant tranches and tests whether buyers really diversify away from Nvidia.",
+    "related": [
+      "nvidia",
+      "openai",
+      "meta",
+      "anthropic",
+      "tsmc"
+    ]
+  },
+  {
+    "id": "tsmc",
+    "name": "TSMC",
+    "layer": "chips",
+    "type": "Contract chip manufacturer",
+    "hq": "Hsinchu, Taiwan",
+    "status": "Public (NYSE: TSM; TWSE: 2330)",
+    "oneliner": "Manufactures the chips that Nvidia, AMD, Apple, Broadcom and most other chip designers create.",
+    "why": "TSMC makes almost every advanced AI chip and much of the advanced packaging that bonds chips and memory together, making it the most important choke point in the stack. It held about 72% of the global contract chipmaking market in the April to June 2026 quarter, per TrendForce, and reported a 67.7% gross margin. In July 2026 it raised its planned Arizona investment to $265 billion, which matters because so much of the world's advanced production sits in Taiwan.",
+    "watch": "Whether its advanced packaging capacity keeps up with AI demand and its second Arizona fab starts 3-nanometer production on schedule in 2027.",
+    "related": [
+      "nvidia",
+      "amd",
+      "apple",
+      "broadcom",
+      "asml"
+    ]
+  },
+  {
+    "id": "broadcom",
+    "name": "Broadcom",
+    "layer": "chips",
+    "type": "Custom AI chip designer",
+    "hq": "Palo Alto, CA",
+    "status": "Public (NASDAQ: AVGO)",
+    "oneliner": "Co-designs custom AI chips for big tech companies and makes the networking chips that link AI servers together.",
+    "why": "Broadcom is the go-to partner for companies that want their own AI chips instead of Nvidia's: it co-develops Google's TPUs and Meta's in-house accelerators, and has custom-chip deals with OpenAI and Anthropic. In September 2026 it said it expects Anthropic, which runs on Google-designed TPUs, to become its largest custom-chip customer. Its AI chip revenue was $16.7 billion in its latest quarter, up 221% year over year.",
+    "watch": "Whether its forecast of sharply higher AI revenue in fiscal 2027 holds as the Anthropic and OpenAI deployments ramp.",
+    "related": [
+      "google-cloud",
+      "anthropic",
+      "openai",
+      "meta",
+      "tsmc"
+    ]
+  },
+  {
+    "id": "intel",
+    "name": "Intel",
+    "layer": "chips",
+    "type": "Chipmaker and foundry",
+    "hq": "Santa Clara, CA",
+    "status": "Public (NASDAQ: INTC)",
+    "oneliner": "Designs PC and server processors and is building a contract chip-manufacturing business to rival TSMC.",
+    "why": "Intel is America's main bet on leading-edge chipmaking at home, and it has unusual backers: the US government took a roughly 10% stake in August 2025, SoftBank invested $2 billion, and Nvidia completed a $5 billion investment in December 2025. Under CEO Lip-Bu Tan it raised $20 billion in new stock in August 2026, and its data center business is growing again. As of September 2026, though, no major outside customer had publicly committed to its next manufacturing process, 14A.",
+    "watch": "Whether it lands an anchor customer for 14A, which Intel has said it needs before investing heavily in it.",
+    "related": [
+      "nvidia",
+      "tsmc",
+      "asml"
+    ]
+  },
+  {
+    "id": "asml",
+    "name": "ASML",
+    "layer": "chips",
+    "type": "Chipmaking equipment maker",
+    "hq": "Veldhoven, Netherlands",
+    "status": "Public (NASDAQ: ASML; Euronext Amsterdam: ASML)",
+    "oneliner": "Builds the extreme ultraviolet (EUV) lithography machines needed to print the most advanced chips.",
+    "why": "ASML has a near-monopoly on EUV machines, so every leading-edge chip from TSMC, Samsung or Intel depends on its equipment. In July 2026 it raised its full-year sales guidance on AI demand. It is also an AI investor: it led Mistral AI's September 2025 funding round with 1.3 billion euros for about 11% of the company.",
+    "watch": "Adoption of its newest High-NA machines and any progress by China toward building its own EUV tools.",
+    "related": [
+      "tsmc",
+      "intel",
+      "mistral"
+    ]
+  },
+  {
+    "id": "sk-hynix",
+    "name": "SK hynix",
+    "layer": "chips",
+    "type": "Memory chipmaker",
+    "hq": "Icheon, South Korea",
+    "status": "Public (KRX: 000660; NASDAQ: SKHY)",
+    "oneliner": "Makes the high-bandwidth memory (HBM) stacked next to AI chips, and is Nvidia's leading supplier of it.",
+    "why": "AI chips are only as fast as the memory feeding them, and SK hynix leads in HBM, the specialized memory every AI accelerator needs. AI demand has transformed its economics: it reported a 76% operating margin for the April to June 2026 quarter. In July 2026 it listed shares in New York, raising $26.5 billion.",
+    "watch": "Its share of Nvidia's next-generation HBM4 orders as Samsung and Micron compete for the same business.",
+    "related": [
+      "nvidia",
+      "tsmc",
+      "amd"
+    ]
+  },
+  {
+    "id": "arm",
+    "name": "Arm Holdings",
+    "layer": "chips",
+    "type": "Chip design licensor",
+    "hq": "Cambridge, UK",
+    "status": "Public (NASDAQ: ARM)",
+    "oneliner": "Licenses the chip designs behind nearly every smartphone and a growing share of data center processors.",
+    "why": "Arm-based processors increasingly sit alongside AI chips in data centers, including Nvidia's own CPUs and custom chips at Amazon, Google and Microsoft. In March 2026 it began selling its own data center chip, the Arm AGI CPU, with Meta as lead customer, which puts it in competition with some of its own licensees. SoftBank owns the large majority of its shares.",
+    "watch": "Whether selling its own chips adds more revenue than it costs in strained relationships with licensees.",
+    "related": [
+      "nvidia",
+      "meta",
+      "openai"
+    ]
+  },
+  {
+    "id": "cerebras",
+    "name": "Cerebras",
+    "layer": "chips",
+    "type": "AI chip challenger",
+    "hq": "Sunnyvale, CA",
+    "status": "Public (NASDAQ: CBRS)",
+    "oneliner": "Builds dinner-plate-sized wafer-scale AI chips and sells very fast AI inference as a cloud service.",
+    "why": "Cerebras is one of the few chip startups to win a major lab: in January 2026 OpenAI signed a deal for 750 megawatts of capacity through 2028, reported at more than $10 billion. It went public in May 2026 in one of the year's largest tech IPOs. Its revenue has been concentrated in a few customers, historically led by two Abu Dhabi organizations, G42 and the MBZUAI university.",
+    "watch": "Whether it diversifies beyond OpenAI and Abu Dhabi as insider share lockups expire and the stock stays volatile.",
+    "related": [
+      "openai",
+      "nvidia",
+      "amazon"
+    ]
+  },
+  {
+    "id": "amazon",
+    "name": "Amazon Web Services (AWS)",
+    "layer": "cloud",
+    "type": "Largest cloud provider",
+    "hq": "Seattle, WA",
+    "status": "Public (NASDAQ: AMZN)",
+    "oneliner": "Amazon's cloud division, the world's largest, renting computing power and AI services to businesses from startups to the NFL.",
+    "why": "AWS is Anthropic's primary training partner, running a cluster of hundreds of thousands of Amazon's own Trainium chips (Project Rainier), and in April 2026 Amazon agreed to invest up to $25 billion more in Anthropic. It also signed a $38 billion compute deal with OpenAI in November 2025 and agreed in early 2026 to invest up to $50 billion in OpenAI, backing both leading labs. AWS growth reaccelerated to 37% in the April to June 2026 quarter, though Amazon's heavy capex pushed its trailing free cash flow negative.",
+    "watch": "The value of its Anthropic stake if Anthropic goes public, and whether Trainium wins major customers beyond Anthropic.",
+    "related": [
+      "anthropic",
+      "openai",
+      "nvidia",
+      "microsoft",
+      "google-cloud"
+    ]
+  },
+  {
+    "id": "microsoft",
+    "name": "Microsoft Azure",
+    "layer": "cloud",
+    "type": "Cloud and AI platform",
+    "hq": "Redmond, WA",
+    "status": "Public (NASDAQ: MSFT)",
+    "oneliner": "Microsoft's cloud platform, the second largest, and the primary home of OpenAI's models.",
+    "why": "Microsoft is OpenAI's biggest shareholder, with about 27% after the October 2025 restructuring, and Azure revenue topped $100 billion in the fiscal year ending June 2026, up 41%. The relationship loosened in April 2026, when OpenAI gained the right to sell its products on any cloud. Microsoft is hedging by building its own models and, since November 2025, partnering with and investing in Anthropic.",
+    "watch": "How much of OpenAI's business moves to rival clouds now that exclusivity has ended, and whether its in-house models reach the frontier.",
+    "related": [
+      "openai",
+      "anthropic",
+      "microsoft-copilot",
+      "nvidia",
+      "coreweave",
+      "nebius"
+    ]
+  },
+  {
+    "id": "google-cloud",
+    "name": "Google Cloud",
+    "layer": "cloud",
+    "type": "Cloud and TPU provider",
+    "hq": "Mountain View, CA",
+    "status": "Public (parent Alphabet, NASDAQ: GOOGL)",
+    "oneliner": "Alphabet's cloud business, which rents out computing power and Google's own AI chips (TPUs) and sells the Gemini models.",
+    "why": "Google is the only big cloud with a mature in-house alternative to Nvidia: its TPUs, co-developed with Broadcom, now serve outside customers, most notably Anthropic, which agreed in October 2025 to use up to a million of them. Google Cloud revenue grew 82% year over year in the April to June 2026 quarter, to $24.8 billion, and Alphabet raised its 2026 capex guidance to as much as $205 billion. In January 2026 Apple chose Gemini to help power its next-generation models and Siri.",
+    "watch": "Whether Google starts selling TPUs for installation in other companies' data centers, including reported talks with Meta.",
+    "related": [
+      "google-deepmind",
+      "anthropic",
+      "broadcom",
+      "apple",
+      "meta"
+    ]
+  },
+  {
+    "id": "oracle",
+    "name": "Oracle",
+    "layer": "cloud",
+    "type": "Database and cloud company",
+    "hq": "Austin, TX",
+    "status": "Public (NYSE: ORCL)",
+    "oneliner": "The database and business-software giant that has become a major builder of AI data centers.",
+    "why": "Oracle is a central partner in OpenAI's Stargate project, with a reported $300 billion, five-year computing contract starting in 2027. That bet requires enormous borrowing, and investors have questioned how it will be financed; its stock was down more than 20% for 2026 as of mid-September. In September 2026 it issued a force majeure notice on a planned New Mexico Stargate site, citing permitting and pipeline delays, a sign of how hard building at this scale is.",
+    "watch": "Whether Stargate sites are delivered on schedule and how Oracle funds its capital spending.",
+    "related": [
+      "openai",
+      "crusoe",
+      "nvidia",
+      "amd"
+    ]
+  },
+  {
+    "id": "coreweave",
+    "name": "CoreWeave",
+    "layer": "cloud",
+    "type": "GPU cloud provider",
+    "hq": "Livingston, NJ",
+    "status": "Public (NASDAQ: CRWV)",
+    "oneliner": "A neocloud that rents out large clusters of Nvidia GPUs to AI labs and big tech companies.",
+    "why": "CoreWeave went public in March 2025 and grew by serving the biggest AI buyers: Microsoft was more than 60% of its 2024 revenue, and it has large contracts with OpenAI and Meta. Nvidia is both its chip supplier and an investor, adding $2 billion in January 2026. The model runs on heavy borrowing, so debt and customer concentration are the key risks.",
+    "watch": "How it refinances its debt and whether it diversifies beyond a handful of giant customers.",
+    "related": [
+      "nvidia",
+      "microsoft",
+      "openai",
+      "meta"
+    ]
+  },
+  {
+    "id": "nebius",
+    "name": "Nebius",
+    "layer": "cloud",
+    "type": "AI cloud provider",
+    "hq": "Amsterdam, Netherlands",
+    "status": "Public (NASDAQ: NBIS)",
+    "oneliner": "An AI-focused cloud company, spun out of Russia's Yandex, that rents Nvidia GPU capacity to large customers.",
+    "why": "Nebius signed a multibillion-dollar, multiyear capacity deal with Microsoft in September 2025 and a roughly $3 billion deal with Meta later that year. Nvidia is also an investor. Like other neoclouds, it is raising large amounts of debt and convertible bonds to fund its buildout.",
+    "watch": "Whether it signs more hyperscaler-sized contracts like its Microsoft deal.",
+    "related": [
+      "microsoft",
+      "meta",
+      "nvidia",
+      "coreweave"
+    ]
+  },
+  {
+    "id": "openai",
+    "name": "OpenAI",
+    "layer": "models",
+    "type": "AI model lab",
+    "hq": "San Francisco, CA",
+    "status": "Private",
+    "oneliner": "Makes ChatGPT and the GPT family of models, and sells access to consumers, businesses and developers.",
+    "why": "OpenAI turned AI into a mass consumer product with ChatGPT and launched a new flagship model, Astra, in September 2026. Since an October 2025 restructuring it is a public benefit corporation controlled by the nonprofit OpenAI Foundation, with Microsoft holding about 27%, and it raised $122 billion in a round that closed in March 2026. It has committed to hundreds of billions of dollars of computing from Oracle, Microsoft, AWS, Nvidia, AMD, Broadcom and others while still losing money, making it the stack's single biggest bet.",
+    "watch": "Its path to an IPO (Sam Altman said in September 2026 that going public this year would be ill-advised) and whether Stargate capacity arrives on time.",
+    "related": [
+      "microsoft",
+      "oracle",
+      "nvidia",
+      "amd",
+      "broadcom",
+      "amazon",
+      "cerebras"
+    ]
+  },
+  {
+    "id": "anthropic",
+    "name": "Anthropic",
+    "layer": "models",
+    "type": "AI model lab",
+    "hq": "San Francisco, CA",
+    "status": "Private",
+    "oneliner": "Makes the Claude family of AI models, used heavily by businesses and developers, especially for coding.",
+    "why": "Anthropic has grown into one of the two leading labs with a business-focused strategy; it said its revenue run rate passed $47 billion in May 2026. It buys computing from nearly every major supplier: Amazon (its primary training partner, on Trainium chips), Google and Broadcom (TPUs), Microsoft and Nvidia, AMD, and even SpaceX's xAI. It submitted a confidential draft IPO filing to the SEC in June 2026.",
+    "watch": "Its public IPO filing, which would show its real margins for the first time.",
+    "related": [
+      "amazon",
+      "google-cloud",
+      "microsoft",
+      "nvidia",
+      "broadcom",
+      "amd",
+      "xai"
+    ]
+  },
+  {
+    "id": "google-deepmind",
+    "name": "Google DeepMind",
+    "layer": "models",
+    "type": "AI research lab",
+    "hq": "London, UK",
+    "status": "Public (parent Alphabet, NASDAQ: GOOGL)",
+    "oneliner": "Alphabet's AI lab, which builds the Gemini models that run across Google Search, Android and Google Cloud.",
+    "why": "Google DeepMind pairs one of the deepest research benches in AI with the distribution of Search, Android and YouTube, and it trains on Google's own TPUs rather than renting Nvidia chips. Its Gemini models power Google's products and, under a January 2026 deal, will help power Apple's Siri. In August 2026 Demis Hassabis became chair and Alphabet's chief scientist, with Koray Kavukcuoglu taking over day-to-day leadership.",
+    "watch": "The launch of Gemini 4, which Google said in September 2026 would ship as soon as possible.",
+    "related": [
+      "google-cloud",
+      "apple",
+      "openai",
+      "anthropic"
+    ]
+  },
+  {
+    "id": "meta",
+    "name": "Meta",
+    "layer": "models",
+    "type": "Social media giant",
+    "hq": "Menlo Park, CA",
+    "status": "Public (NASDAQ: META)",
+    "oneliner": "Owns Facebook, Instagram and WhatsApp and builds AI models to power its apps, ads and devices.",
+    "why": "Meta has the distribution most labs lack, reaching billions of people daily, and guided to more than $130 billion of capex for 2026. It popularized open-weight models with Llama, then regrouped under Meta Superintelligence Labs, paid about $14.3 billion for 49% of Scale AI in 2025, and in April 2026 launched a closed flagship model, Muse Spark. Its AI pays off mainly through better ad targeting and engagement rather than selling models.",
+    "watch": "Whether Muse catches up with the leading labs and whether its capex turns into measurable revenue.",
+    "related": [
+      "scale-ai",
+      "amd",
+      "google-cloud",
+      "midjourney",
+      "constellation-energy",
+      "arm"
+    ]
+  },
+  {
+    "id": "xai",
+    "name": "xAI (SpaceXAI)",
+    "layer": "models",
+    "type": "AI model lab",
+    "hq": "Palo Alto, CA",
+    "status": "Public (parent SpaceX, NASDAQ: SPCX)",
+    "oneliner": "Elon Musk's AI lab, maker of the Grok models, now part of SpaceX.",
+    "why": "xAI built one of the largest AI supercomputers, Colossus in Memphis, at record speed, merged with X (formerly Twitter) in 2025, and was acquired by SpaceX in February 2026. SpaceX went public in June 2026 and completed its purchase of the coding tool Cursor in August. Unusually, it now also sells computing to a rival: Anthropic rents its original Colossus cluster.",
+    "watch": "Whether it keeps pushing its own frontier Grok models or becomes mainly a compute provider inside SpaceX.",
+    "related": [
+      "cursor",
+      "anthropic",
+      "nvidia"
+    ]
+  },
+  {
+    "id": "mistral",
+    "name": "Mistral AI",
+    "layer": "models",
+    "type": "AI model lab",
+    "hq": "Paris, France",
+    "status": "Private",
+    "oneliner": "Europe's leading AI lab, offering open-weight and commercial models and helping customers run AI on their own infrastructure.",
+    "why": "Mistral sells sovereign AI: models and data centers that let European governments and companies avoid depending on US or Chinese providers. Chipmaking-equipment giant ASML led its September 2025 funding round, and it raised another 3 billion euros in September 2026. It is building its own data center capacity near Paris and expanded its partnership with Microsoft in 2026.",
+    "watch": "Whether European demand for sovereign AI turns into durable revenue against far larger US and Chinese rivals.",
+    "related": [
+      "asml",
+      "microsoft",
+      "nvidia"
+    ]
+  },
+  {
+    "id": "deepseek",
+    "name": "DeepSeek",
+    "layer": "models",
+    "type": "AI model lab",
+    "hq": "Hangzhou, China",
+    "status": "Private",
+    "oneliner": "A Chinese lab, owned by the hedge fund High-Flyer, that releases powerful open-weight models at very low cost.",
+    "why": "DeepSeek's R1 reasoning model in January 2025 showed that near-frontier AI could be built far more cheaply than US labs spent, and Nvidia lost roughly $590 billion of market value in a day. It keeps releasing open-weight models, most recently its V4 family in 2026, which pressure prices across the industry. It operates under US export controls that limit its access to top Nvidia chips.",
+    "watch": "Its reported plans to raise outside money and eventually go public, and any new US restrictions on Chinese models or chips.",
+    "related": [
+      "nvidia",
+      "alibaba-qwen",
+      "moonshot-ai",
+      "hugging-face"
+    ]
+  },
+  {
+    "id": "alibaba-qwen",
+    "name": "Alibaba (Qwen)",
+    "layer": "models",
+    "type": "Cloud and AI lab",
+    "hq": "Hangzhou, China",
+    "status": "Public (NYSE: BABA; HKEX: 9988)",
+    "oneliner": "China's e-commerce and cloud giant, whose Qwen team makes some of the world's most widely used open-weight models.",
+    "why": "Qwen is among the most downloaded and most customized open model families on Hugging Face, which makes Alibaba a default building block for developers worldwide. Giving models away supports its real business, Alibaba Cloud, China's largest cloud provider. Alibaba is also a major investor in other Chinese labs, including Moonshot AI.",
+    "watch": "Whether its newest flagship models stay open-weight or go proprietary, as Meta's did.",
+    "related": [
+      "deepseek",
+      "moonshot-ai",
+      "hugging-face",
+      "meta"
+    ]
+  },
+  {
+    "id": "cohere",
+    "name": "Cohere",
+    "layer": "models",
+    "type": "Enterprise AI lab",
+    "hq": "Toronto, Canada",
+    "status": "Private",
+    "oneliner": "Builds AI models and an agent platform for businesses and governments that need privacy and control.",
+    "why": "Cohere skipped the consumer chatbot race to focus on enterprise and regulated customers, often deploying inside a client's own environment. It reported more than $240 million of annualized revenue for 2025, and in April 2026 announced a merger with Germany's Aleph Alpha to build a transatlantic sovereign AI company. Its leadership has signaled interest in an eventual IPO.",
+    "watch": "Completion of the Aleph Alpha deal and any IPO filing.",
+    "related": [
+      "mistral",
+      "anthropic",
+      "openai"
+    ]
+  },
+  {
+    "id": "moonshot-ai",
+    "name": "Moonshot AI",
+    "layer": "models",
+    "type": "AI model lab",
+    "hq": "Beijing, China",
+    "status": "Private",
+    "oneliner": "The Chinese lab behind the Kimi models, known for large open-weight releases.",
+    "why": "Moonshot's Kimi models are among the strongest Chinese open-weight models, and they show how far free models travel: in March 2026 Cursor acknowledged that its Composer 2 coding model was built on Kimi. Alibaba is a major shareholder. Its rise adds to the price pressure open models put on US labs.",
+    "watch": "Whether US companies keep building on Chinese open models as scrutiny of their security and origins grows.",
+    "related": [
+      "alibaba-qwen",
+      "cursor",
+      "deepseek"
+    ]
+  },
+  {
+    "id": "thinking-machines",
+    "name": "Thinking Machines Lab",
+    "layer": "models",
+    "type": "AI research startup",
+    "hq": "San Francisco, CA",
+    "status": "Private",
+    "oneliner": "An AI lab founded by former OpenAI CTO Mira Murati, building models and tools for customizing them.",
+    "why": "Thinking Machines raised a $2 billion seed round in July 2025, one of the largest ever, on the strength of its founding team. In March 2026 it signed a deal with Nvidia for at least a gigawatt of next-generation Vera Rubin systems from 2027, and in July 2026 it released an open-weight model. It is a test of whether a well-funded newcomer can still break into the frontier.",
+    "watch": "Whether it ships products that win paying customers and holds on to talent after several high-profile departures.",
+    "related": [
+      "nvidia",
+      "openai",
+      "meta"
+    ]
+  },
+  {
+    "id": "hugging-face",
+    "name": "Hugging Face",
+    "layer": "tools",
+    "type": "Open AI model hub",
+    "hq": "New York, NY",
+    "status": "Private (acquisition by Nvidia pending)",
+    "oneliner": "The main online hub where developers share and download AI models and datasets, a GitHub for AI.",
+    "why": "Hugging Face hosts millions of models, including most major open-weight releases, making it the neutral meeting place of the open-source AI world. In September 2026 Nvidia agreed to buy it for about $11.9 billion plus up to about $1 billion in employee retention equity, with closing expected in the first half of 2027 pending regulatory approval. Nvidia has committed to keep the platform open and to support other chipmakers.",
+    "watch": "Whether US and EU regulators approve the Nvidia deal and whether the platform stays neutral afterward.",
+    "related": [
+      "nvidia",
+      "meta",
+      "alibaba-qwen",
+      "deepseek"
+    ]
+  },
+  {
+    "id": "databricks",
+    "name": "Databricks",
+    "layer": "tools",
+    "type": "Data and AI platform",
+    "hq": "San Francisco, CA",
+    "status": "Private",
+    "oneliner": "Sells a platform where companies store, analyze and govern their data and build AI applications on top of it.",
+    "why": "AI is only as good as the data behind it, and Databricks sits where much enterprise data lives, which gives it a strong position as companies build AI agents. It reported passing a $7 billion revenue run rate in 2026, growing more than 80% a year, and has signed $100 million model partnerships with both Anthropic and OpenAI. It remains private; its CEO has said 2026 is a bad year to go public.",
+    "watch": "Whether it files for an IPO and how its steady stream of acquisitions fits together.",
+    "related": [
+      "snowflake",
+      "anthropic",
+      "openai"
+    ]
+  },
+  {
+    "id": "scale-ai",
+    "name": "Scale AI",
+    "layer": "tools",
+    "type": "AI training data",
+    "hq": "San Francisco, CA",
+    "status": "Private (Meta owns 49%)",
+    "oneliner": "Supplies the human-labeled data and model evaluations AI labs use to train and test models, and builds AI for governments.",
+    "why": "Scale was the leading data supplier to AI labs until Meta paid about $14.3 billion for a 49% non-voting stake in June 2025 and hired founder Alexandr Wang. Rival labs, including OpenAI, pulled back, and Scale cut about 14% of its staff that July. It has leaned into government and enterprise work and named former Google Cloud executive Francis deSouza CEO in July 2026.",
+    "watch": "Whether its new CEO can replace lost lab business with government and enterprise contracts.",
+    "related": [
+      "meta",
+      "mercor",
+      "openai"
+    ]
+  },
+  {
+    "id": "snowflake",
+    "name": "Snowflake",
+    "layer": "tools",
+    "type": "Cloud data platform",
+    "hq": "Menlo Park, CA",
+    "status": "Public (NYSE: SNOW)",
+    "oneliner": "Runs a cloud platform where companies store and analyze their data, now with built-in AI tools.",
+    "why": "Like Databricks, Snowflake holds the enterprise data that AI projects need, and it is racing to let customers build AI on that data without moving it. It signed $200 million partnerships with Anthropic (December 2025) and OpenAI (February 2026), and product revenue grew 37% in its most recent quarter. Because it charges by usage, AI adoption shows up directly in its revenue.",
+    "watch": "Whether its AI features keep growth near 40% as it competes head-on with Databricks.",
+    "related": [
+      "databricks",
+      "anthropic",
+      "openai"
+    ]
+  },
+  {
+    "id": "langchain",
+    "name": "LangChain",
+    "layer": "tools",
+    "type": "AI agent framework",
+    "hq": "San Francisco, CA",
+    "status": "Private",
+    "oneliner": "Makes popular open-source software for building AI agents, plus a paid platform to test and monitor them.",
+    "why": "LangChain became one of the most widely used toolkits for wiring AI models into applications, which gives it a large developer following. It raised $125 million in October 2025. Its challenge is that the model labs increasingly ship their own agent-building tools.",
+    "watch": "Whether it converts free open-source users into paying customers for its LangSmith platform.",
+    "related": [
+      "openai",
+      "anthropic",
+      "databricks"
+    ]
+  },
+  {
+    "id": "mercor",
+    "name": "Mercor",
+    "layer": "tools",
+    "type": "Expert data marketplace",
+    "hq": "San Francisco, CA",
+    "status": "Private",
+    "oneliner": "Recruits domain experts, from doctors to lawyers, to create and grade the training data that AI labs need.",
+    "why": "As models get smarter, labs need expert-level human feedback rather than simple labeling, and Mercor grew fast supplying it to labs including OpenAI and Anthropic. It raised $350 million in October 2025. Scale AI sued it in September 2025, alleging trade-secret theft.",
+    "watch": "The outcome of Scale AI's lawsuit and whether demand for expert training data keeps growing.",
+    "related": [
+      "scale-ai",
+      "openai",
+      "anthropic"
+    ]
+  },
+  {
+    "id": "microsoft-copilot",
+    "name": "Microsoft Copilot",
+    "layer": "apps",
+    "type": "AI assistant suite",
+    "hq": "Redmond, WA",
+    "status": "Public (parent Microsoft, NASDAQ: MSFT)",
+    "oneliner": "Microsoft's AI assistants built into its Office apps, Windows and GitHub.",
+    "why": "Copilot is the clearest test of distribution as a moat: Microsoft can put AI in front of hundreds of millions of workers who already use its software. It mixes models in practice, using OpenAI's and, increasingly, Anthropic's; Copilot Cowork, launched in June 2026, runs on Anthropic models. In September 2026 Microsoft moved Copilot to a mix of per-user licenses and usage-based billing for AI agent work.",
+    "watch": "Whether usage-based pricing lifts Copilot revenue and how Microsoft splits the work between OpenAI and Anthropic models.",
+    "related": [
+      "microsoft",
+      "openai",
+      "anthropic"
+    ]
+  },
+  {
+    "id": "cursor",
+    "name": "Cursor (Anysphere)",
+    "layer": "apps",
+    "type": "AI coding tool",
+    "hq": "San Francisco, CA",
+    "status": "Public (parent SpaceX, NASDAQ: SPCX)",
+    "oneliner": "An AI-powered code editor and coding agent used by professional software developers.",
+    "why": "Cursor became one of the fastest-growing software products ever by building on top of other companies' models, then began training its own, including one built on Moonshot AI's open-weight Kimi. SpaceX bought it in an all-stock deal that closed in August 2026, and Cursor now works with SpaceX's xAI on model training. It is the leading example of an app that started as a wrapper and moved down the stack.",
+    "watch": "Whether it stays neutral across models (it still offers Claude and GPT) or tilts toward xAI's Grok.",
+    "related": [
+      "xai",
+      "anthropic",
+      "openai",
+      "moonshot-ai",
+      "cognition"
+    ]
+  },
+  {
+    "id": "perplexity",
+    "name": "Perplexity",
+    "layer": "apps",
+    "type": "AI answer engine",
+    "hq": "San Francisco, CA",
+    "status": "Private",
+    "oneliner": "An AI answer engine that searches the web and responds with cited answers, plus an AI browser called Comet.",
+    "why": "Perplexity is the best-known challenger to Google search in the AI era, and it made headlines in August 2025 with an unsolicited $34.5 billion bid for Google's Chrome browser. It faces lawsuits from Dow Jones and Reddit over its use of their content, and a legal threat from Amazon over its shopping agent, making it a test case for how AI can use other people's content and websites.",
+    "watch": "Court outcomes in its publisher and Amazon disputes, which will shape what AI agents are allowed to do on the web.",
+    "related": [
+      "google-deepmind",
+      "openai",
+      "amazon"
+    ]
+  },
+  {
+    "id": "salesforce",
+    "name": "Salesforce",
+    "layer": "apps",
+    "type": "Business software giant",
+    "hq": "San Francisco, CA",
+    "status": "Public (NYSE: CRM)",
+    "oneliner": "Sells customer-relationship software for sales, service and marketing teams, now with AI agents called Agentforce.",
+    "why": "Salesforce is betting that AI agents will be sold as part of the business software companies already run on; it said Agentforce annual recurring revenue topped $1.5 billion in its latest quarter. It bought data-management company Informatica for about $8 billion (closed November 2025) to feed those agents clean data, and partners with both Anthropic and OpenAI. In live events, Live Nation is rolling out an Agentforce venue agent at US venues.",
+    "watch": "Whether Agentforce lifts Salesforce's roughly 11% overall growth, and how it absorbs its announced acquisition of AI customer-service firm Fin.",
+    "related": [
+      "anthropic",
+      "openai",
+      "sierra"
+    ]
+  },
+  {
+    "id": "palantir",
+    "name": "Palantir",
+    "layer": "apps",
+    "type": "Data and AI software",
+    "hq": "Miami, FL",
+    "status": "Public (NASDAQ: PLTR)",
+    "oneliner": "Sells software that lets governments and companies combine their data and put AI to work on real operations.",
+    "why": "Palantir has become one of the clearest AI winners at the application layer, with revenue up 93% year over year in the April to June 2026 quarter and US commercial revenue up 149%. Its edge is deep integration into customers' operations, from the US Army, under an enterprise agreement worth up to $10 billion over ten years, to corporate supply chains. Its premium valuation assumes that growth continues for years.",
+    "watch": "Whether it can sustain growth near 90% and how political pushback in Europe affects its government business.",
+    "related": [
+      "anthropic",
+      "nebius",
+      "microsoft"
+    ]
+  },
+  {
+    "id": "harvey",
+    "name": "Harvey",
+    "layer": "apps",
+    "type": "Legal AI platform",
+    "hq": "San Francisco, CA",
+    "status": "Private",
+    "oneliner": "Builds AI tools that help lawyers research, draft and review legal documents.",
+    "why": "Harvey is the leading example of a vertical AI app: software built for one profession and sold at premium prices. It says about 80% of the largest US law firms (the Am Law 100) use it, and it raised $550 million in September 2026. Its challenge is staying ahead as general-purpose models get better at legal work.",
+    "watch": "Whether it expands into corporate legal departments and international markets faster than rivals and the model labs themselves.",
+    "related": [
+      "openai",
+      "anthropic"
+    ]
+  },
+  {
+    "id": "elevenlabs",
+    "name": "ElevenLabs",
+    "layer": "apps",
+    "type": "AI voice company",
+    "hq": "London, UK / New York, NY",
+    "status": "Private",
+    "oneliner": "Makes AI voices for narration, dubbing and customer-service agents, plus AI music tools.",
+    "why": "ElevenLabs leads in realistic AI speech, used to dub content into other languages, voice audiobooks and run voice agents. It said its annual recurring revenue passed $500 million in May 2026, and in September 2026 it signed a multiyear licensing deal with Universal Music Group. For sports media, it is the kind of tool behind AI-generated commentary and instant translation.",
+    "watch": "An IPO filing, which its recent senior finance hires suggest may be coming, and how rights holders respond to AI voices.",
+    "related": [
+      "nvidia",
+      "salesforce",
+      "runway"
+    ]
+  },
+  {
+    "id": "runway",
+    "name": "Runway",
+    "layer": "apps",
+    "type": "AI video generator",
+    "hq": "New York, NY",
+    "status": "Private",
+    "oneliner": "Builds AI models that generate and edit video, used by filmmakers, studios and advertisers.",
+    "why": "Runway is one of the leading independent AI video companies, with studio and network partnerships including Lionsgate and AMC Networks. It raised $315 million in February 2026 and is expanding into world models that simulate environments. It competes with far larger rivals, including Google, on video generation.",
+    "watch": "Whether studios and advertisers adopt AI video at scale, and whether its world models open markets like gaming and robotics.",
+    "related": [
+      "midjourney",
+      "google-deepmind",
+      "elevenlabs"
+    ]
+  },
+  {
+    "id": "midjourney",
+    "name": "Midjourney",
+    "layer": "apps",
+    "type": "AI image generator",
+    "hq": "San Francisco, CA",
+    "status": "Private",
+    "oneliner": "A small, self-funded company whose AI models generate images and short videos from text prompts.",
+    "why": "Midjourney built a large paying user base with no outside investors, proof that a lean AI app can build a real business without a giant lab behind it. In August 2025 Meta licensed its technology for Meta's own models. It is also a defendant in copyright suits from Disney, Universal and Warner Bros. Discovery, a major test of AI and copyright.",
+    "watch": "Rulings in the studio copyright lawsuits, which could affect the entire image and video generation category.",
+    "related": [
+      "meta",
+      "runway"
+    ]
+  },
+  {
+    "id": "apple",
+    "name": "Apple",
+    "layer": "apps",
+    "type": "Consumer devices giant",
+    "hq": "Cupertino, CA",
+    "status": "Public (NASDAQ: AAPL)",
+    "oneliner": "Makes the iPhone, Mac and other devices, and builds AI features into them under the Apple Intelligence brand.",
+    "why": "Apple owns the most valuable distribution channel in consumer tech but has lagged in building frontier models. In January 2026 it chose Google's Gemini as the basis for its next-generation models, and a rebuilt Siri developed with Google began rolling out in September 2026. It also offers ChatGPT inside Siri for some requests.",
+    "watch": "How users respond to the new Siri, whether Apple charges for it, and when it launches in Europe and China.",
+    "related": [
+      "google-deepmind",
+      "google-cloud",
+      "openai",
+      "tsmc",
+      "broadcom"
+    ]
+  },
+  {
+    "id": "cognition",
+    "name": "Cognition",
+    "layer": "apps",
+    "type": "AI coding agents",
+    "hq": "San Francisco, CA",
+    "status": "Private",
+    "oneliner": "Builds Devin, an autonomous AI software engineer, and the Windsurf coding editor it acquired in 2025.",
+    "why": "Cognition is betting that coding will shift from AI assistants to AI agents that complete whole tasks on their own. It bought Windsurf in July 2025 after Google hired Windsurf's leaders, and it said its annualized revenue passed $1 billion in September 2026. It competes directly with Cursor and with coding tools from the labs themselves.",
+    "watch": "Whether autonomous coding agents win enterprise budgets against Cursor and the labs' own tools.",
+    "related": [
+      "cursor",
+      "anthropic",
+      "openai",
+      "amazon"
+    ]
+  },
+  {
+    "id": "sierra",
+    "name": "Sierra",
+    "layer": "apps",
+    "type": "Customer service AI",
+    "hq": "San Francisco, CA",
+    "status": "Private",
+    "oneliner": "Builds AI agents that handle customer-service conversations for large brands.",
+    "why": "Co-founded by Bret Taylor, who is also OpenAI's board chair, Sierra is a leading example of AI agents taking over call-center work. It prices partly on outcomes, such as resolved conversations, rather than per seat, a model many software companies are studying. Its customers include ticket marketplace Vivid Seats and SiriusXM.",
+    "watch": "Whether outcome-based pricing sticks, and how it fares against Salesforce's push into the same market.",
+    "related": [
+      "salesforce",
+      "openai"
+    ]
+  },
+  {
+    "id": "genius-sports",
+    "name": "Genius Sports",
+    "layer": "sports",
+    "type": "Sports data and technology",
+    "hq": "London / New York",
+    "status": "Public (NYSE: GENI)",
+    "oneliner": "Captures and distributes official sports data, powers betting and fan products, and sells sports advertising.",
+    "why": "Genius Sports holds official data rights with major leagues, including the NFL and English football through Football DataCo, and folded in optical-tracking company Second Spectrum, acquired in 2021. Its GeniusIQ platform applies AI and computer vision to tracking, officiating tools such as the Premier League's semi-automated offside system, and data-driven advertising. In 2026 it completed the acquisition of Legend (Covers.com, Casino.org) in a deal valued at up to $1.2 billion and signed data deals with prediction markets Kalshi and Polymarket.",
+    "watch": "How much revenue the Legend media business and prediction markets add, and how the market values official data as more AI products depend on live inputs.",
+    "related": [
+      "sportradar",
+      "stats-perform",
+      "hawk-eye",
+      "draftkings",
+      "flutter-fanduel"
+    ]
+  },
+  {
+    "id": "sportradar",
+    "name": "Sportradar",
+    "layer": "sports",
+    "type": "Sports data and technology",
+    "hq": "St. Gallen, Switzerland",
+    "status": "Public (NASDAQ: SRAD)",
+    "oneliner": "Supplies sports data, odds, streaming and integrity monitoring to sportsbooks and media companies worldwide.",
+    "why": "Sportradar is Genius Sports' largest direct competitor, with official partnerships including the NBA, NHL and MLB, and it took over IMG Arena's portfolio of betting rights in November 2025. It uses AI in products such as its UFDS system, which monitors betting patterns for signs of match-fixing. In April 2026 short sellers Muddy Waters and Callisto alleged that a meaningful share of its revenue came from illegal-market operators, which the company denies, and a shareholder class action followed.",
+    "watch": "The class action and any regulatory response to the short-seller claims, alongside growth from its Kalshi and Polymarket deals.",
+    "related": [
+      "genius-sports",
+      "stats-perform",
+      "draftkings",
+      "flutter-fanduel"
+    ]
+  },
+  {
+    "id": "stats-perform",
+    "name": "Stats Perform (Opta)",
+    "layer": "sports",
+    "type": "Sports data provider",
+    "hq": "London, UK",
+    "status": "Private (owned by Vista Equity Partners)",
+    "oneliner": "Collects and sells sports data and content under the Opta brand to media, betting companies and teams.",
+    "why": "Opta data is a staple of football coverage, and Stats Perform uses AI heavily: Opta Vision uses generative models to estimate the positions of players who are off camera, and OptaAI Studio helps media produce stats-driven content. It says it serves all of the top 10 sportsbooks. It competes with Genius Sports and Sportradar for betting and media data rights.",
+    "watch": "Which major rights deals it wins or loses, and how its private-equity-owned balance sheet holds up as rights get more expensive.",
+    "related": [
+      "genius-sports",
+      "sportradar",
+      "hudl"
+    ]
+  },
+  {
+    "id": "hawk-eye",
+    "name": "Hawk-Eye Innovations",
+    "layer": "sports",
+    "type": "Sports vision technology",
+    "hq": "Basingstoke, UK",
+    "status": "Private (owned by Sony, NYSE: SONY)",
+    "oneliner": "Uses multi-camera computer vision to track balls and players for officiating, broadcast graphics and analytics.",
+    "why": "Hawk-Eye's cameras make line calls in tennis, where Wimbledon replaced line judges with electronic calling from 2025, and support video review in football. It supplies the tracking behind MLB's Statcast and its automated ball-strike challenge system, which debuted in 2026, and the NFL's virtual first-down measurement from 2025. Owned by Sony since 2011, it is building predictive AI tools on top of its tracking data.",
+    "watch": "How accurate automated officiating proves over full seasons, and how many more leagues adopt it.",
+    "related": [
+      "genius-sports",
+      "sportradar",
+      "stats-perform"
+    ]
+  },
+  {
+    "id": "wsc-sports",
+    "name": "WSC Sports",
+    "layer": "sports",
+    "type": "AI highlights platform",
+    "hq": "Ramat Gan, Israel",
+    "status": "Private",
+    "oneliner": "Uses AI to spot key moments in live sports broadcasts and automatically cut and publish highlight clips.",
+    "why": "WSC Sports turns hours of video into thousands of personalized, platform-ready clips within minutes, work that used to take rooms of editors. It says it works with more than 650 teams, leagues and broadcasters, including the NBA, NHL, MLS, LaLiga and NASCAR. It is a clear example of AI lowering the cost of content so rights holders can serve every platform and fan segment.",
+    "watch": "How it adapts as rights holders demand more vertical, personalized and multilingual content and general AI video tools improve.",
+    "related": [
+      "genius-sports",
+      "stats-perform",
+      "elevenlabs"
+    ]
+  },
+  {
+    "id": "catapult",
+    "name": "Catapult Sports",
+    "layer": "sports",
+    "type": "Athlete performance technology",
+    "hq": "Melbourne, Australia",
+    "status": "Public (ASX: CAT)",
+    "oneliner": "Makes wearable trackers and video tools that teams use to monitor athlete workload and analyze performance.",
+    "why": "Catapult's GPS-based wearables are standard equipment for many professional teams, and it says it serves more than 5,500 elite teams in more than 120 countries. It has been adding video and scouting analytics, including the October 2025 acquisition of German football-analytics firm IMPECT for up to 78 million euros. Its data feeds the performance and injury-prevention models that teams increasingly build.",
+    "watch": "Whether it can cross-sell IMPECT and video products to its wearables customers and keep growing subscription revenue.",
+    "related": [
+      "kinexon",
+      "hudl",
+      "stats-perform"
+    ]
+  },
+  {
+    "id": "kinexon",
+    "name": "KINEXON Sports",
+    "layer": "sports",
+    "type": "Player and ball tracking",
+    "hq": "Munich, Germany",
+    "status": "Private",
+    "oneliner": "Provides real-time player and ball tracking using sensors, wearables and connected balls.",
+    "why": "Kinexon's sensor-based tracking gives teams and leagues precise, low-latency data on movement and ball position, complementing camera-based systems. It works with European handball's governing body through 2028, supplies connected-ball technology for LaLiga with Puma, and serves hundreds of teams, including NBA clubs. It also uses AI computer vision for basketball shot tracking.",
+    "watch": "Whether connected-ball technology becomes standard for officiating decisions in major leagues.",
+    "related": [
+      "catapult",
+      "hawk-eye",
+      "genius-sports"
+    ]
+  },
+  {
+    "id": "flutter-fanduel",
+    "name": "Flutter Entertainment (FanDuel)",
+    "layer": "sports",
+    "type": "Sportsbook operator",
+    "hq": "New York, NY",
+    "status": "Public (NYSE: FLUT; LSE: FLTR)",
+    "oneliner": "The largest online sports betting and gaming company by revenue and the owner of FanDuel, the leading US sportsbook.",
+    "why": "FanDuel held about 41% of US online sports betting in the states where it operated, per Flutter's 2025 annual report, making it the scale leader in the market. Flutter says it uses AI and machine learning in its business and cites its data science and marketing analytics as a competitive advantage. It launched FanDuel Predicts, a prediction-market product first built with CME Group, to reach states without legal sports betting, and new CEO Dan Taylor takes over on October 1, 2026.",
+    "watch": "How the new CEO balances sportsbook margins against the prediction-market push, and whether Fox exercises its option to buy 18.6% of FanDuel.",
+    "related": [
+      "draftkings",
+      "genius-sports",
+      "sportradar"
+    ]
+  },
+  {
+    "id": "draftkings",
+    "name": "DraftKings",
+    "layer": "sports",
+    "type": "Sportsbook operator",
+    "hq": "Boston, MA",
+    "status": "Public (NASDAQ: DKNG)",
+    "oneliner": "A leading US sportsbook, online casino and daily fantasy sports operator.",
+    "why": "DraftKings says it uses data science and machine learning to personalize each customer's home screen, recommend bets based on past play and improve conversion. It has bought betting technology firms including Simplebet, which automates pricing for fast in-game micro-bets, and in October 2025 acquired Railbird, a federally licensed exchange that underpins DraftKings Predictions, launched that December. Its revenue fell 5% year over year in the April to June 2026 quarter.",
+    "watch": "Legal challenges over who regulates sports prediction markets, which could make or break its Predictions business.",
+    "related": [
+      "flutter-fanduel",
+      "genius-sports",
+      "sportradar"
+    ]
+  },
+  {
+    "id": "hudl",
+    "name": "Hudl",
+    "layer": "sports",
+    "type": "Sports video analysis",
+    "hq": "Lincoln, NE",
+    "status": "Private",
+    "oneliner": "Provides video and data tools that teams from high schools to pro clubs use to review games and scout players.",
+    "why": "Hudl is the default video platform for many amateur and professional teams and has assembled a data portfolio that includes Wyscout and StatsBomb. It uses computer vision in cameras that film games without an operator and in StatsBomb's data collection, and it launched AI-generated player summaries in August 2026. Its reach into youth and college sports gives it data few rivals have.",
+    "watch": "Whether it unifies StatsBomb, Wyscout and its video tools into a single AI scouting product.",
+    "related": [
+      "catapult",
+      "stats-perform",
+      "genius-sports"
+    ]
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "name": "the-edge",
+  "private": true,
+  "type": "module",
+  "description": "The Edge: a living AI study guide that updates itself every week.",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "pdf": "node scripts/pdf.mjs",
+    "update": "node scripts/weekly-update.mjs",
+    "serve": "npx --yes serve dist -l 4173"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.128.0",
+    "marked": "^18.0.14"
+  },
+  "devDependencies": {
+    "playwright": "^1.63.0"
+  }
+}

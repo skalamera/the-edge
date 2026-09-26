@@ -1,0 +1,3372 @@
+[
+  {
+    "id": "accelerationism",
+    "term": "Accelerationism",
+    "aka": [
+      "e/acc",
+      "effective accelerationism",
+      "accelerationist",
+      "accelerationists"
+    ],
+    "category": "Safety, risk & policy",
+    "short": "The view that AI progress should move as fast as possible, because its benefits vastly outweigh the risks and slowing down is itself dangerous.",
+    "explain": "Accelerationists argue that AI will drive growth, science and abundance, and that heavy regulation mainly protects incumbents or hands the lead to rivals like China. Critics see the stance as dismissive of real risks. Most people in the industry sit somewhere between this camp and the safety-focused one.",
+    "related": [
+      "doomer",
+      "existential-risk",
+      "us-ai-policy",
+      "ai-safety"
+    ]
+  },
+  {
+    "id": "agent-loop",
+    "term": "Agent loop",
+    "aka": [
+      "agentic loop"
+    ],
+    "category": "Agents",
+    "short": "The repeating cycle an agent runs: understand the goal, decide the next step, act with a tool, check the result, repeat.",
+    "explain": "Each pass through the loop is a fresh model call informed by everything that has happened so far. The loop is what lets agents adapt and recover from mistakes, and also why small errors can compound over many steps. Most agent products are this loop plus good tools, instructions and rules for when to stop or ask a human.",
+    "analogy": "It's a live trading desk: read the market, move the price, watch the response, adjust again.",
+    "related": [
+      "agent",
+      "tool-use",
+      "compounding-errors",
+      "long-horizon-task"
+    ]
+  },
+  {
+    "id": "agentic-ai",
+    "term": "Agentic AI",
+    "aka": [
+      "agentic",
+      "agentic systems",
+      "agentic workflow",
+      "agentic workflows"
+    ],
+    "category": "Agents",
+    "short": "The broad shift toward AI that takes actions and completes multi-step tasks, not just answers questions.",
+    "explain": "'Agentic' describes a degree of autonomy more than a specific product: the more a system plans, acts and corrects itself without a human at each step, the more agentic it is. It's the dominant theme in AI product strategy as of 2026. Because the word is so popular, it's also a favorite of AI-washing, so ask what the system actually does unsupervised.",
+    "related": [
+      "agent",
+      "autonomy",
+      "copilot",
+      "ai-washing",
+      "orchestration"
+    ]
+  },
+  {
+    "id": "agi",
+    "term": "AGI (artificial general intelligence)",
+    "aka": [
+      "artificial general intelligence"
+    ],
+    "category": "Safety, risk & policy",
+    "short": "AI that can match or exceed human ability across most cognitive tasks, not just narrow ones.",
+    "explain": "There's no agreed definition, which is part of why timeline debates get heated. Some lab leaders have suggested it could arrive within a few years; many researchers are more skeptical, or argue the term is too vague to be useful. It also appears in company missions and contracts, including the partnership between Microsoft and OpenAI, so how it's defined can carry real commercial consequences.",
+    "related": [
+      "narrow-ai",
+      "superintelligence",
+      "frontier-model",
+      "existential-risk",
+      "alignment"
+    ]
+  },
+  {
+    "id": "agent",
+    "term": "AI agent",
+    "aka": [
+      "ai agent",
+      "agents",
+      "ai agents"
+    ],
+    "category": "Agents",
+    "short": "An AI system that works toward a goal on its own: planning steps, using tools, checking results and continuing until the job is done.",
+    "explain": "A chatbot answers a question; an agent takes actions, such as searching, running code, updating a spreadsheet or drafting and sending a message, in a loop. Under the hood it's usually an LLM plus tools, instructions and permissions. Agents are genuinely useful for well-defined tasks today, but reliability drops on long, messy, open-ended work.",
+    "analogy": "A chatbot is a scout who writes you a report; an agent is a scout who also books the flights, sets up the workout and updates the draft board.",
+    "related": [
+      "agentic-ai",
+      "agent-loop",
+      "tool-use",
+      "autonomy",
+      "human-in-the-loop"
+    ]
+  },
+  {
+    "id": "ai-bubble",
+    "term": "AI bubble",
+    "aka": [
+      "bubble",
+      "ai bubble debate",
+      "bubble debate"
+    ],
+    "category": "Business & strategy",
+    "short": "The debate over whether AI investment and valuations have run far ahead of the revenue and profits the technology will actually produce.",
+    "explain": "Skeptics point to enormous capex, circular deals in which companies invest in their own customers or suppliers, and unproven business models. Optimists point to fast-growing revenue, real productivity gains and the fact that past bubbles, like the dot-com era, still left lasting infrastructure. Both can be true: a technology can be transformative and still overbuilt in the short run.",
+    "related": [
+      "capex",
+      "ai-winter",
+      "neocloud",
+      "commoditization"
+    ]
+  },
+  {
+    "id": "ai-commentary",
+    "term": "AI commentary",
+    "aka": [
+      "ai commentators",
+      "synthetic commentary",
+      "automated commentary",
+      "ai translation",
+      "ai dubbing"
+    ],
+    "category": "Sports, betting & media",
+    "short": "AI-generated play-by-play, analysis or translation for sports broadcasts and clips, often delivered in synthetic voices.",
+    "explain": "AI can generate commentary for lower-tier games that would never get a human broadcaster, and translate or dub content into many languages quickly. Quality is improving but still uneven on nuance, emotion and accuracy. Rights, disclosure and the use of real commentators' voices are live issues.",
+    "related": [
+      "voice-ai",
+      "automated-highlights",
+      "deepfake",
+      "personalization"
+    ]
+  },
+  {
+    "id": "ai-employee",
+    "term": "AI employee",
+    "aka": [
+      "digital worker",
+      "digital workers",
+      "digital employee",
+      "ai coworker",
+      "ai workforce"
+    ],
+    "category": "Agents",
+    "short": "An AI agent that performs a defined job role largely on its own, managed more like a team member than a tool.",
+    "explain": "It's a popular framing in vendor pitches and in debates about jobs. Today's reality is closer to a capable but inconsistent junior helper that needs clear tasks, tools and supervision. The useful question is which specific workflows it can own end to end, and who checks its work.",
+    "related": [
+      "agent",
+      "long-horizon-task",
+      "augmentation-vs-automation",
+      "ai-washing"
+    ]
+  },
+  {
+    "id": "ai-governance",
+    "term": "AI governance",
+    "aka": [
+      "ai policy",
+      "ai policies",
+      "acceptable use policy",
+      "responsible ai",
+      "responsible use"
+    ],
+    "category": "Safety, risk & policy",
+    "short": "The internal rules, roles and processes a company uses to decide how AI is used, reviewed and monitored responsibly.",
+    "explain": "Good governance covers which tools are approved, what data can go into them, when human review is required, who owns the risk and how incidents are handled. It's increasingly expected by regulators, partners and customers, especially in regulated industries like gaming. Done well, it speeds adoption by making the rules clear rather than blocking everything.",
+    "related": [
+      "human-in-the-loop",
+      "shadow-ai",
+      "enterprise-plan",
+      "eu-ai-act",
+      "responsible-gaming"
+    ]
+  },
+  {
+    "id": "ai-lab",
+    "term": "AI lab",
+    "aka": [
+      "ai labs",
+      "frontier lab",
+      "frontier labs",
+      "model lab",
+      "model labs",
+      "model provider",
+      "model providers"
+    ],
+    "category": "Business & strategy",
+    "short": "A company that builds its own large foundation models, such as OpenAI, Anthropic, Google DeepMind, Meta, xAI, Mistral or DeepSeek.",
+    "explain": "Labs sit in the middle of the AI stack: they buy huge amounts of compute and sell access to models through apps and APIs. Their costs are enormous and their competitive positions shift fast. 'Frontier lab' refers to the handful at the leading edge of capability.",
+    "related": [
+      "foundation-model",
+      "frontier-model",
+      "hyperscaler",
+      "closed-model",
+      "ai-stack"
+    ]
+  },
+  {
+    "id": "ai-safety",
+    "term": "AI safety",
+    "aka": [
+      "safety",
+      "frontier safety",
+      "ai safety research"
+    ],
+    "category": "Safety, risk & policy",
+    "short": "The field focused on preventing AI systems from causing harm, from everyday failures and misuse up to catastrophic risks.",
+    "explain": "It spans near-term work, such as blocking harmful outputs and misuse for cyberattacks or weapons, and long-term work on keeping far more capable systems under human control. Labs test models before release and publish safety frameworks, and several governments have set up institutes to evaluate frontier models. The debate is less about whether safety matters than about how much caution should slow progress.",
+    "related": [
+      "alignment",
+      "red-teaming",
+      "responsible-scaling-policy",
+      "existential-risk",
+      "frontier-model"
+    ]
+  },
+  {
+    "id": "ai-stack",
+    "term": "AI stack",
+    "aka": [
+      "the stack",
+      "stack",
+      "ai value chain"
+    ],
+    "category": "Business & strategy",
+    "short": "The layers of the AI industry, from energy and data centers to chips, cloud, models, tooling and applications, each with its own economics.",
+    "explain": "Thinking in layers tells you who pays whom: apps pay model labs, labs pay clouds, clouds pay chipmakers, and everyone pays for power. So far, profits have concentrated near the bottom, especially in chips, while the model and app layers spend heavily to grow. When you read an AI headline, first ask which layer it's about.",
+    "analogy": "It's like the sports media value chain: leagues, rights holders, broadcasters, platforms and advertisers each capture a different slice.",
+    "related": [
+      "hyperscaler",
+      "ai-lab",
+      "gpu",
+      "data-center",
+      "moat"
+    ]
+  },
+  {
+    "id": "ai-winter",
+    "term": "AI winter",
+    "aka": [
+      "ai winters"
+    ],
+    "category": "Foundations",
+    "short": "A period when AI hype collapsed, funding dried up and progress slowed; the best-known ones hit in the 1970s and late 1980s.",
+    "explain": "Each winter followed promises that ran well ahead of what the technology could deliver. Skeptics cite them as a warning about today's spending; optimists argue this cycle differs because the products already earn real revenue. Knowing the history helps you discuss the bubble debate calmly.",
+    "related": [
+      "ai-bubble",
+      "ai",
+      "deep-learning"
+    ]
+  },
+  {
+    "id": "ai-native",
+    "term": "AI-native",
+    "aka": [
+      "ai-native company",
+      "ai-native companies",
+      "ai-first"
+    ],
+    "category": "Business & strategy",
+    "short": "A company or product designed from the start around AI, rather than an existing business bolting AI features onto old workflows.",
+    "explain": "AI-native startups can run with very small teams because agents handle work that used to need many people. They often redesign the workflow itself rather than speeding up the old one. Incumbents' advantages, like data, distribution and trust, matter only if they adapt fast enough.",
+    "related": [
+      "saas",
+      "agent",
+      "ai-employee",
+      "coding-agent"
+    ]
+  },
+  {
+    "id": "ai-washing",
+    "term": "AI-washing",
+    "aka": [
+      "ai-washed"
+    ],
+    "category": "Business & strategy",
+    "short": "Overstating how much AI a product really uses, or how capable it is, to ride the hype; the AI version of greenwashing.",
+    "explain": "Red flags include vague claims ('powered by AI') with no specifics, slick demos you can't test on your own data, and no evaluation results. US regulators, including the SEC, have taken enforcement action against companies over misleading AI claims. A few precise questions usually separate real AI from marketing.",
+    "related": [
+      "evals",
+      "wrapper",
+      "pilot",
+      "agentic-ai"
+    ]
+  },
+  {
+    "id": "alignment",
+    "term": "Alignment",
+    "aka": [
+      "ai alignment",
+      "misalignment",
+      "misaligned",
+      "aligned"
+    ],
+    "category": "Safety, risk & policy",
+    "short": "The challenge of making AI systems reliably pursue the goals and values their developers and users intend, and not something else.",
+    "explain": "Today, alignment work covers making models honest, helpful and resistant to misuse. Longer term, researchers worry about far more capable systems pursuing goals subtly different from ours in ways we can't easily detect or correct. Techniques like RLHF and constitutional AI are the current tools; whether they'll hold up for much more powerful systems is an open question.",
+    "analogy": "It's like writing incentives into a contract: pay a salesperson only on volume and you may get volume at any cost.",
+    "related": [
+      "ai-safety",
+      "rlhf",
+      "constitutional-ai",
+      "reward-hacking",
+      "interpretability"
+    ]
+  },
+  {
+    "id": "aml",
+    "term": "AML (anti-money laundering)",
+    "aka": [
+      "anti-money laundering",
+      "money laundering"
+    ],
+    "category": "Sports, betting & media",
+    "short": "The rules and systems that detect and prevent criminals from using betting or financial accounts to disguise illicit money.",
+    "explain": "Operators must monitor transactions for suspicious patterns, such as large deposits with little betting followed by withdrawals, and report them. Machine learning helps find complex patterns and cut false alarms, which are costly to investigate. Regulators hold operators accountable for gaps, and fines for AML failures can be large.",
+    "related": [
+      "kyc",
+      "fraud-detection",
+      "integrity-monitoring",
+      "predictive-ai"
+    ]
+  },
+  {
+    "id": "api",
+    "term": "API",
+    "aka": [
+      "apis",
+      "application programming interface"
+    ],
+    "category": "Business & strategy",
+    "short": "Application programming interface: a standard way for one piece of software to request data or services from another.",
+    "explain": "Most businesses use AI models through APIs: your app sends a prompt to the provider's API and gets a response back, paying per token. APIs are also how agents connect to tools and how data feeds reach sportsbooks. 'Do you have an API?' is often the first question in any integration conversation.",
+    "analogy": "It's like an official data feed: partners don't need to know how the data is collected, only how to plug in and receive it.",
+    "related": [
+      "token-pricing",
+      "function-calling",
+      "mcp",
+      "saas"
+    ]
+  },
+  {
+    "id": "ai",
+    "term": "Artificial intelligence (AI)",
+    "aka": [
+      "artificial intelligence"
+    ],
+    "category": "Foundations",
+    "short": "The broad field of building computer systems that do things we'd normally say require human intelligence: recognizing, predicting, deciding and creating.",
+    "explain": "AI is an umbrella term, not a single technology. Older AI was mostly rules written by hand; nearly everything called AI today is machine learning, where the system learns patterns from examples instead. When someone says 'AI' in a meeting, it helps to ask which kind they mean: a prediction model, a chatbot or an agent.",
+    "analogy": "AI is like 'analytics' in a front office: one word covering everything from a spreadsheet to a full player-tracking model.",
+    "related": [
+      "machine-learning",
+      "generative-ai",
+      "narrow-ai",
+      "agent"
+    ]
+  },
+  {
+    "id": "asic",
+    "term": "ASIC (custom chip)",
+    "aka": [
+      "asics",
+      "custom silicon",
+      "custom chip",
+      "custom chips",
+      "ai accelerator",
+      "ai accelerators",
+      "application-specific integrated circuit"
+    ],
+    "category": "Infrastructure & compute",
+    "short": "A chip designed for one specific job; in AI, custom chips built to run models more efficiently than general-purpose GPUs.",
+    "explain": "Hyperscalers, including Google (TPU) and Amazon (Trainium), along with a wave of startups, are building AI-specific chips. They can be cheaper and more power-efficient for particular workloads but are less flexible than GPUs. The more AI shifts toward inference at massive scale, the stronger the case for custom silicon.",
+    "related": [
+      "gpu",
+      "tpu",
+      "semiconductor",
+      "hyperscaler",
+      "inference"
+    ]
+  },
+  {
+    "id": "augmentation-vs-automation",
+    "term": "Augmentation vs. automation",
+    "aka": [
+      "augmentation vs. automation",
+      "augmentation",
+      "automation",
+      "job automation",
+      "job displacement",
+      "automation vs augmentation"
+    ],
+    "category": "Business & strategy",
+    "short": "The difference between AI helping people do their jobs better (augmentation) and AI doing the job instead of people (automation).",
+    "explain": "Most AI today augments: it speeds up drafting, research and analysis. Automation is growing in narrow, repetitive tasks, and agents push that line further. History suggests technology changes the mix of tasks within jobs before it eliminates whole occupations, but the speed of this wave makes the transition a genuine concern.",
+    "related": [
+      "ai-employee",
+      "copilot",
+      "agent",
+      "change-management"
+    ]
+  },
+  {
+    "id": "automated-highlights",
+    "term": "Automated highlights",
+    "aka": [
+      "ai highlights",
+      "auto highlights",
+      "automated clipping",
+      "highlight generation"
+    ],
+    "category": "Sports, betting & media",
+    "short": "Using AI to detect key moments in live video and automatically cut, caption and publish highlight clips within seconds or minutes.",
+    "explain": "Computer vision and audio cues, like crowd noise and commentator excitement, identify big plays, and AI assembles clips tailored to different platforms or even individual fans. It lets rights holders cover far more games, leagues and angles than human editors could. The usual rights questions about who may clip and distribute what still apply.",
+    "related": [
+      "computer-vision",
+      "personalization",
+      "ai-commentary",
+      "multimodal"
+    ]
+  },
+  {
+    "id": "automation-bias",
+    "term": "Automation bias",
+    "aka": [
+      "over-reliance",
+      "overreliance"
+    ],
+    "category": "Safety, risk & policy",
+    "short": "The human tendency to trust a machine’s answer too much, even when it’s wrong or when your own judgment says otherwise.",
+    "explain": "When a system is usually right, people stop checking it, and that is exactly when its mistakes slip through. It’s why “a human reviews it” only works if the reviewer is trained, has time and is expected to push back.",
+    "analogy": "A trader who stops watching the feed because the model has been right all season, right up until the night it isn’t.",
+    "related": [
+      "human-in-the-loop",
+      "hallucination",
+      "evals"
+    ]
+  },
+  {
+    "id": "autonomy",
+    "term": "Autonomy",
+    "aka": [
+      "levels of autonomy",
+      "autonomy spectrum",
+      "autonomous",
+      "autonomous agent",
+      "autonomous agents"
+    ],
+    "category": "Agents",
+    "short": "How much an AI system decides and acts on its own versus waiting for human direction; the dial separating chatbots, copilots and agents.",
+    "explain": "At one end the AI only suggests; in the middle it acts but checks in; at the far end it runs a whole task unsupervised. More autonomy means more output per person and more risk. The right setting depends on how costly a mistake is and how easily it can be undone.",
+    "analogy": "It's how much freedom you give a quarterback at the line: a rookie runs the called play, a veteran gets to audible.",
+    "related": [
+      "agent",
+      "copilot",
+      "chatbot",
+      "human-in-the-loop"
+    ]
+  },
+  {
+    "id": "benchmark",
+    "term": "Benchmark",
+    "aka": [
+      "benchmarks",
+      "leaderboard",
+      "leaderboards"
+    ],
+    "category": "Business & strategy",
+    "short": "A standard public test used to compare AI models on areas such as math, coding, reasoning or expert knowledge.",
+    "explain": "Benchmarks make model launches comparable, but they have limits: top models often max them out quickly, and some test questions leak into training data, inflating scores. Strong benchmark results don't guarantee performance on your task. Use them as a rough filter, then run your own evals.",
+    "related": [
+      "evals",
+      "overfitting",
+      "frontier-model",
+      "turing-test"
+    ]
+  },
+  {
+    "id": "bettor-profiling",
+    "term": "Bettor profiling",
+    "aka": [
+      "customer profiling",
+      "player profiling",
+      "risk profiling",
+      "stake factoring",
+      "sharp detection"
+    ],
+    "category": "Sports, betting & media",
+    "short": "Analyzing how a customer bets to classify them, for example as recreational, sharp or at risk, and adjusting how they're treated.",
+    "explain": "Sportsbooks use models to set betting limits, target promotions and flag risk based on patterns in customer behavior. The same techniques support responsible gaming by spotting harmful behavior early. Limiting winning customers is controversial, and regulators in some markets scrutinize how these decisions are made and explained.",
+    "related": [
+      "sportsbook-trading",
+      "responsible-gaming",
+      "personalization",
+      "fraud-detection",
+      "bias"
+    ]
+  },
+  {
+    "id": "bias",
+    "term": "Bias",
+    "aka": [
+      "ai bias",
+      "algorithmic bias",
+      "fairness"
+    ],
+    "category": "Safety, risk & policy",
+    "short": "When an AI system produces systematically unfair or skewed results, usually because of patterns in its training data or design.",
+    "explain": "A model trained on historical data can absorb historical inequities, like a hiring model that downgrades certain schools or a credit model that penalizes certain zip codes. Bias can also be subtler: a model that works well for one league, language or demographic and poorly for others. Testing across groups and monitoring in production are the main defenses, and regulators increasingly require both for high-risk uses.",
+    "related": [
+      "training-data",
+      "high-risk-ai",
+      "evals",
+      "ai-governance"
+    ]
+  },
+  {
+    "id": "build-vs-buy",
+    "term": "Build vs. buy",
+    "aka": [
+      "build vs. buy",
+      "build or buy",
+      "build versus buy",
+      "build vs buy vs partner",
+      "make or buy"
+    ],
+    "category": "Business & strategy",
+    "short": "The decision whether to develop an AI capability in-house, purchase it from a vendor, or partner with someone to build it.",
+    "explain": "Build when the capability is core to your competitive advantage and you have the data and talent; buy when it's a commodity; partner when you bring something unique (like data or distribution) and they bring the technology. AI shifts the math because models improve so fast that what you build in-house can be matched by an off-the-shelf tool within a year.",
+    "related": [
+      "pilot",
+      "vendor-lock-in",
+      "moat",
+      "wrapper",
+      "proprietary-data"
+    ]
+  },
+  {
+    "id": "capex",
+    "term": "Capex",
+    "aka": [
+      "capital expenditure",
+      "capital expenditures",
+      "capital spending",
+      "ai capex"
+    ],
+    "category": "Business & strategy",
+    "short": "Capital expenditure: money spent on long-lived physical assets; in AI, mostly chips, data centers and power infrastructure.",
+    "explain": "Big tech's combined AI capex has grown to hundreds of billions of dollars a year as of 2026, one of the largest investment waves in corporate history. Bulls see it as building the infrastructure of a new era; bears worry revenue won't catch up fast enough to justify it. Capex guidance on earnings calls is one of the most-watched signals in AI investing.",
+    "related": [
+      "data-center",
+      "hyperscaler",
+      "ai-bubble",
+      "energy-demand",
+      "gpu"
+    ]
+  },
+  {
+    "id": "change-management",
+    "term": "Change management",
+    "aka": [
+      "adoption",
+      "ai adoption",
+      "ai champion",
+      "ai champions"
+    ],
+    "category": "Business & strategy",
+    "short": "The work of getting people to actually adopt a new tool or process: training, incentives, communication and redesigned workflows.",
+    "explain": "Buying AI licenses is easy; getting people to change how they work is hard. Successful rollouts pair tools with training, visible leadership use and updated processes, often led by 'AI champions', respected people in each team who show peers what works. Most failed AI deployments are adoption failures more than technology failures.",
+    "related": [
+      "pilot-purgatory",
+      "roi",
+      "shadow-ai",
+      "ai-governance"
+    ]
+  },
+  {
+    "id": "chatbot",
+    "term": "Chatbot",
+    "aka": [
+      "chatbots",
+      "ai assistant",
+      "ai assistants",
+      "assistant",
+      "chat assistant"
+    ],
+    "category": "Foundations",
+    "short": "A conversational interface where you type or speak and the AI replies; the most familiar way people use LLMs.",
+    "explain": "Modern chatbots like ChatGPT, Claude and Gemini are LLMs wrapped in an app with extras such as memory, file uploads and web search. A chatbot answers; an agent acts. Many products marketed as agents are still chatbots underneath, so it's fair to ask what the system can actually do on its own.",
+    "related": [
+      "llm",
+      "copilot",
+      "agent",
+      "autonomy",
+      "deep-research"
+    ]
+  },
+  {
+    "id": "closed-model",
+    "term": "Closed model",
+    "aka": [
+      "closed models",
+      "proprietary model",
+      "proprietary models",
+      "closed-source model",
+      "closed weights"
+    ],
+    "category": "How models work",
+    "short": "A model whose weights are kept private by its maker, so it can only be used through that company's apps or API.",
+    "explain": "Many of the most capable models, including those from OpenAI, Anthropic and Google, are closed. Customers get the latest capabilities without managing infrastructure, but depend on the vendor's pricing, policies and uptime. Closed versus open is as much a business strategy as a technical choice.",
+    "related": [
+      "open-weight-model",
+      "api",
+      "ai-lab",
+      "vendor-lock-in"
+    ]
+  },
+  {
+    "id": "cloud-computing",
+    "term": "Cloud computing",
+    "aka": [
+      "cloud",
+      "the cloud",
+      "cloud provider",
+      "cloud providers"
+    ],
+    "category": "Infrastructure & compute",
+    "short": "Renting computing power, storage and software over the internet instead of owning the hardware yourself.",
+    "explain": "Nearly all AI products run in the cloud, which lets companies scale up or down without building data centers. For AI buyers, it means your data usually travels to a provider's servers, so where it goes and how it's handled matters. Cloud marketplaces are also a major channel through which companies buy AI models.",
+    "related": [
+      "hyperscaler",
+      "neocloud",
+      "data-center",
+      "saas"
+    ]
+  },
+  {
+    "id": "coding-agent",
+    "term": "Coding agent",
+    "aka": [
+      "coding agents",
+      "ai coding assistant",
+      "ai coding tools",
+      "coding assistant",
+      "vibe coding"
+    ],
+    "category": "Agents",
+    "short": "An AI agent that writes, edits, tests and fixes software, often working across a whole codebase with little step-by-step direction.",
+    "explain": "Coding went first among agent use cases because code can be checked automatically: tests pass or fail, giving the AI fast, clear feedback. Tools such as Claude Code, OpenAI's Codex and Cursor are widely used by developers as of 2026, and 'vibe coding' describes non-engineers building working software just by describing what they want. That's great for prototypes and internal tools; anything secure or customer-facing still needs real engineering review.",
+    "related": [
+      "agent",
+      "evals",
+      "long-horizon-task",
+      "ai-native"
+    ]
+  },
+  {
+    "id": "commoditization",
+    "term": "Commoditization",
+    "aka": [
+      "commoditize",
+      "commoditized",
+      "model commoditization"
+    ],
+    "category": "Business & strategy",
+    "short": "When a product becomes so widely available and interchangeable that competition is mostly on price; a real risk for AI model makers.",
+    "explain": "As many labs release models of similar quality, and open-weight models close the gap, customers can switch more easily and prices fall. That pushes value toward whoever controls distribution, proprietary data or the customer relationship. It's a central question for investors: which layers commoditize and which keep pricing power.",
+    "related": [
+      "open-weight-model",
+      "moat",
+      "token-pricing",
+      "proprietary-data"
+    ]
+  },
+  {
+    "id": "compounding-errors",
+    "term": "Compounding errors",
+    "aka": [
+      "compounding error",
+      "error compounding"
+    ],
+    "category": "Agents",
+    "short": "How small mistakes pile up across an agent's many steps, so a system that's usually right per step can still fail the whole job.",
+    "explain": "If an agent gets each step right 95% of the time, a 20-step task succeeds only about 36% of the time. That simple math explains why agents shine on short tasks and struggle on long ones, and why checkpoints and human review matter. Small gains in per-step reliability pay off hugely on long tasks.",
+    "analogy": "It's the parlay math every bettor knows: each leg looks likely, but string enough together and the odds of hitting them all collapse.",
+    "related": [
+      "agent-loop",
+      "long-horizon-task",
+      "human-in-the-loop",
+      "same-game-parlay"
+    ]
+  },
+  {
+    "id": "compute",
+    "term": "Compute",
+    "aka": [
+      "computing power",
+      "compute capacity",
+      "ai compute"
+    ],
+    "category": "Infrastructure & compute",
+    "short": "Industry shorthand for computing power: the chips, servers and energy used to train and run AI models.",
+    "explain": "Compute is the raw input of AI: more of it, spent well, has reliably produced better models. It's measured in chips, in FLOPs, or increasingly in gigawatts of data center power. Access to compute is a key competitive advantage for labs and a strategic priority for governments.",
+    "related": [
+      "gpu",
+      "flops",
+      "data-center",
+      "scaling-laws",
+      "energy-demand"
+    ]
+  },
+  {
+    "id": "computer-use",
+    "term": "Computer use",
+    "aka": [
+      "computer-use agent",
+      "computer-use agents",
+      "browser agent",
+      "browser agents",
+      "browser use"
+    ],
+    "category": "Agents",
+    "short": "An AI agent operating a computer the way a person does: looking at the screen, moving the cursor, clicking and typing.",
+    "explain": "Computer use lets agents work with software that has no API, like an old back-office system or an ordinary website. It's powerful but slower and more error-prone than direct integrations, and it raises security concerns because the agent can see and act on whatever is on screen. Think of it as the fallback when a clean connection doesn't exist.",
+    "related": [
+      "agent",
+      "tool-use",
+      "prompt-injection",
+      "guardrails"
+    ]
+  },
+  {
+    "id": "computer-vision",
+    "term": "Computer vision",
+    "aka": [
+      "cv",
+      "machine vision",
+      "image recognition"
+    ],
+    "category": "Sports, betting & media",
+    "short": "AI that interprets images and video: recognizing players, the ball, logos, actions and events.",
+    "explain": "Computer vision turns raw broadcast or venue video into structured data, such as who is where and what just happened. It powers player tracking, automated highlights, officiating aids and sponsorship measurement. Its accuracy depends heavily on camera angles, lighting, players blocking each other and how much labeled footage exists for that sport.",
+    "related": [
+      "optical-tracking",
+      "automated-highlights",
+      "sponsorship-valuation",
+      "multimodal",
+      "imagenet"
+    ]
+  },
+  {
+    "id": "constitutional-ai",
+    "term": "Constitutional AI",
+    "aka": [
+      "constitution",
+      "rlaif",
+      "reinforcement learning from ai feedback"
+    ],
+    "category": "How models work",
+    "short": "An approach, developed by Anthropic, where a model is trained to critique and improve its answers against a written set of principles.",
+    "explain": "Instead of relying on human raters for every judgment, the lab writes a 'constitution' describing how the model should behave, and AI feedback guided by those principles does much of the training. That makes the rules more explicit and scales more cheaply than human labeling. Other labs use similar AI-feedback techniques under different names.",
+    "related": [
+      "rlhf",
+      "alignment",
+      "post-training",
+      "ai-safety"
+    ]
+  },
+  {
+    "id": "context-engineering",
+    "term": "Context engineering",
+    "aka": [
+      "context management"
+    ],
+    "category": "Agents",
+    "short": "Deciding what information, tools and instructions go into a model's context window at each step, so it has exactly what it needs.",
+    "explain": "As agents run longer, the challenge shifts from writing one good prompt to managing a constantly changing context: which documents to fetch, what to summarize, what to drop. Too little context and the model guesses; too much and it gets distracted and expensive. Many practitioners now see this as the core skill in building agents.",
+    "related": [
+      "prompt-engineering",
+      "context-window",
+      "rag",
+      "agent"
+    ]
+  },
+  {
+    "id": "context-window",
+    "term": "Context window",
+    "aka": [
+      "context windows",
+      "context length",
+      "context limit",
+      "context"
+    ],
+    "category": "How models work",
+    "short": "The maximum amount of text, measured in tokens, a model can consider at once, including your prompt, any documents and its own reply.",
+    "explain": "Anything outside the context window is invisible to the model. Windows have grown from a few pages to hundreds of thousands of tokens or more, enough for long contracts or entire codebases. Bigger isn't free, though: long inputs cost more, run slower, and models can still miss details buried in the middle.",
+    "analogy": "It's the whiteboard in the film room: whatever fits on it, the team can work with; anything erased is gone.",
+    "related": [
+      "token",
+      "memory",
+      "rag",
+      "context-engineering"
+    ]
+  },
+  {
+    "id": "copilot",
+    "term": "Copilot",
+    "aka": [
+      "copilots",
+      "ai copilot",
+      "ai copilots"
+    ],
+    "category": "Business & strategy",
+    "short": "An AI assistant built into software you already use, which helps you work but leaves you in control of the decisions.",
+    "explain": "A copilot drafts the email, suggests the formula or summarizes the meeting; you review and decide. It sits between a chatbot (answers questions) and an agent (acts on its own). Microsoft uses Copilot as a brand name, but the word is used broadly across the industry.",
+    "analogy": "A copilot is the assistant coach suggesting the next call; the head coach still makes it.",
+    "related": [
+      "chatbot",
+      "agent",
+      "autonomy",
+      "human-in-the-loop"
+    ]
+  },
+  {
+    "id": "copyright",
+    "term": "Copyright and AI",
+    "aka": [
+      "copyright and ai",
+      "intellectual property",
+      "ip",
+      "fair use",
+      "copyright lawsuits"
+    ],
+    "category": "Safety, risk & policy",
+    "short": "The legal fight over whether AI companies can train on copyrighted material without permission, and who owns AI-generated output.",
+    "explain": "Authors, news publishers, artists, music labels and others have sued AI labs, arguing that training on their work without a license is infringement; labs argue it's fair use or its equivalent. Early court rulings have been mixed, and some cases have ended in settlements or licensing deals. The outcomes will shape the value of content and data libraries, including sports footage and data.",
+    "related": [
+      "data-licensing",
+      "training-data",
+      "indemnification",
+      "data-rights"
+    ]
+  },
+  {
+    "id": "cuda",
+    "term": "CUDA",
+    "aka": [
+      "cuda moat"
+    ],
+    "category": "Infrastructure & compute",
+    "short": "Nvidia's software platform for programming its GPUs, widely seen as a core part of Nvidia's competitive moat.",
+    "explain": "Over nearly two decades, researchers and engineers built their tools on CUDA, so switching to a rival chip often means rewriting and re-tuning software. That lock-in helps Nvidia hold its lead even when competitors match its hardware on paper. Rivals and hyperscalers are working hard to reduce this dependence.",
+    "analogy": "It's like an established data standard: once every partner has built to it, a rival format has to be far better, not just as good.",
+    "related": [
+      "gpu",
+      "moat",
+      "vendor-lock-in"
+    ]
+  },
+  {
+    "id": "data-center",
+    "term": "Data center",
+    "aka": [
+      "data centers",
+      "datacenter",
+      "datacenters",
+      "ai data center",
+      "ai data centers",
+      "ai factory",
+      "gpu cluster",
+      "gpu clusters",
+      "cluster",
+      "ai supercomputer"
+    ],
+    "category": "Infrastructure & compute",
+    "short": "A large building full of servers, networking and cooling; AI data centers pack in huge numbers of chips and draw enormous power.",
+    "explain": "Inside, thousands of GPUs are networked into clusters that act like one giant computer, which is how frontier models are trained. The biggest planned AI campuses are measured in gigawatts of power, and power supply, cooling, land and permits have become real bottlenecks. The data center buildout is the physical backbone of the AI capex boom.",
+    "related": [
+      "hyperscaler",
+      "energy-demand",
+      "gpu",
+      "capex",
+      "compute"
+    ]
+  },
+  {
+    "id": "data-leakage",
+    "term": "Data leakage",
+    "aka": [
+      "data leak",
+      "data leaks",
+      "leakage"
+    ],
+    "category": "Safety, risk & policy",
+    "short": "Sensitive information escaping to places it shouldn't go, for example confidential documents pasted into a consumer AI tool.",
+    "explain": "Leakage can happen through employees using unapproved tools, vendors retaining data, agents with overly broad access, or prompt injection attacks that trick an AI into revealing information. Enterprise accounts, tight limits on what agents can reach and staff training are the basic defenses. When in doubt, don't paste anything you wouldn't send to an outside vendor.",
+    "related": [
+      "shadow-ai",
+      "enterprise-plan",
+      "prompt-injection",
+      "data-privacy"
+    ]
+  },
+  {
+    "id": "data-licensing",
+    "term": "Data licensing",
+    "aka": [
+      "data license",
+      "data licenses",
+      "data licensing deal",
+      "data licensing deals",
+      "training rights"
+    ],
+    "category": "Business & strategy",
+    "short": "Selling or granting rights to use data, increasingly including the right to use it to train AI models.",
+    "explain": "Publishers, platforms and sports data owners are signing deals with AI labs, while others are suing over unlicensed use. Contract terms matter: whether data can be used for training, whether trained models must be deleted if the deal ends, and who owns the outputs. Many older contracts never contemplated AI training at all.",
+    "related": [
+      "proprietary-data",
+      "data-rights",
+      "copyright",
+      "indemnification"
+    ]
+  },
+  {
+    "id": "data-privacy",
+    "term": "Data privacy",
+    "aka": [
+      "privacy",
+      "data protection",
+      "personal data",
+      "pii",
+      "personally identifiable information",
+      "gdpr",
+      "general data protection regulation"
+    ],
+    "category": "Safety, risk & policy",
+    "short": "Protecting personal information from misuse, including how AI systems collect, store, learn from and reveal it.",
+    "explain": "AI raises new privacy questions: whether customer data trains a vendor's model, whether a model can leak personal details, and whether automated profiling is lawful. Europe's GDPR (General Data Protection Regulation) is the best-known rulebook, applying to any company handling EU residents' data, alongside a growing set of US state laws. Betting companies hold especially sensitive data (identity, finances, behavior), which raises the stakes.",
+    "related": [
+      "enterprise-plan",
+      "data-leakage",
+      "kyc",
+      "on-device-ai",
+      "eu-ai-act"
+    ]
+  },
+  {
+    "id": "data-readiness",
+    "term": "Data readiness",
+    "aka": [
+      "ai readiness",
+      "data quality",
+      "ai-ready data"
+    ],
+    "category": "Business & strategy",
+    "short": "Whether an organization's data is clean, organized, accessible and legally usable enough to actually power AI.",
+    "explain": "Many AI projects stall not because of the model but because the data is scattered, inconsistent, locked in old systems or restricted by contracts. Getting data ready is unglamorous and often the biggest hidden cost. Companies whose core product is already well-structured data, like live sports feeds, start with a real head start.",
+    "related": [
+      "proprietary-data",
+      "pilot-purgatory",
+      "rag",
+      "data-licensing"
+    ]
+  },
+  {
+    "id": "data-rights",
+    "term": "Data rights",
+    "aka": [
+      "sports data rights",
+      "betting data rights"
+    ],
+    "category": "Sports, betting & media",
+    "short": "The commercial rights to collect, distribute and license the data a sporting event generates, usually controlled by leagues and their partners.",
+    "explain": "Leagues sell data rights much as they sell broadcast rights, often to exclusive partners. AI raises new questions for these deals: whether licensed data can be used to train models, who owns the models and insights built on it, and how to stop unlicensed scraping. Contracts written before generative AI may not answer these questions clearly.",
+    "related": [
+      "official-data",
+      "data-licensing",
+      "proprietary-data",
+      "copyright"
+    ]
+  },
+  {
+    "id": "deep-learning",
+    "term": "Deep learning",
+    "aka": [
+      "deep neural network",
+      "deep neural networks"
+    ],
+    "category": "Foundations",
+    "short": "Machine learning that uses large neural networks with many layers, able to learn very complex patterns from huge amounts of data.",
+    "explain": "'Deep' refers to the many stacked layers, each learning slightly more abstract features than the one before: edges, then shapes, then players. Deep learning took off around 2012, once GPUs and big datasets made it practical. It powers modern image recognition, speech recognition and every large language model.",
+    "related": [
+      "neural-network",
+      "machine-learning",
+      "imagenet",
+      "gpu",
+      "llm"
+    ]
+  },
+  {
+    "id": "deep-research",
+    "term": "Deep research",
+    "aka": [
+      "deep research mode",
+      "research agent",
+      "research agents"
+    ],
+    "category": "Agents",
+    "short": "A feature in major AI assistants where an agent searches the web and your files for several minutes, then writes a sourced report.",
+    "explain": "Instead of one quick answer, the agent runs dozens of searches, reads the sources and pulls them together. It's excellent for partner research, market scans and first drafts of briefing memos. The output still needs checking: sources can be weak, and the report can sound more certain than the evidence.",
+    "related": [
+      "agent",
+      "rag",
+      "hallucination",
+      "tool-use"
+    ]
+  },
+  {
+    "id": "deepfake",
+    "term": "Deepfake",
+    "aka": [
+      "deepfakes",
+      "synthetic media",
+      "voice cloning",
+      "voice clone",
+      "watermarking",
+      "watermark",
+      "content provenance",
+      "c2pa",
+      "content credentials"
+    ],
+    "category": "Safety, risk & policy",
+    "short": "Realistic fake video, audio or images of real people, generated by AI and used for entertainment, fraud or misinformation.",
+    "explain": "Deepfakes make convincing impersonation cheap: fake executive calls authorizing payments, fake athlete endorsements, bogus 'leaked' clips. Defenses include call-back checks before payments, watermarking and content-provenance standards (such as C2PA 'content credentials') that label AI-made or authentic media, and detection tools; none are foolproof. For sports and betting, fake injury news or fake official announcements are an integrity and reputational risk.",
+    "related": [
+      "diffusion-model",
+      "voice-ai",
+      "integrity-monitoring",
+      "kyc",
+      "eu-ai-act"
+    ]
+  },
+  {
+    "id": "diffusion-model",
+    "term": "Diffusion model",
+    "aka": [
+      "diffusion models",
+      "image generation",
+      "image generator",
+      "image generators",
+      "video generation",
+      "text-to-image",
+      "text-to-video"
+    ],
+    "category": "How models work",
+    "short": "A type of generative model, common for images and video, that learns to turn random noise step by step into a picture matching a description.",
+    "explain": "Most AI image and video generators use diffusion or a close relative, trained on huge collections of images and clips paired with descriptions. They power creative tools and ad production at a fraction of traditional cost. They're also behind many deepfakes, which is why provenance labels and watermarking matter.",
+    "related": [
+      "generative-ai",
+      "multimodal",
+      "deepfake"
+    ]
+  },
+  {
+    "id": "distillation",
+    "term": "Distillation",
+    "aka": [
+      "model distillation",
+      "knowledge distillation",
+      "distilled model"
+    ],
+    "category": "How models work",
+    "short": "Training a smaller, cheaper model to imitate a larger, smarter one, keeping much of its ability at a fraction of the cost.",
+    "explain": "The big 'teacher' model generates answers, and the small 'student' learns from them. It's a major reason capable models keep getting cheaper and faster. It's also contentious: labs' terms of service typically forbid using their outputs to train competing models.",
+    "related": [
+      "small-language-model",
+      "fine-tuning",
+      "open-weight-model",
+      "training-data"
+    ]
+  },
+  {
+    "id": "doomer",
+    "term": "Doomer",
+    "aka": [
+      "doomers",
+      "ai doomer",
+      "ai doomers"
+    ],
+    "category": "Safety, risk & policy",
+    "short": "An informal, often dismissive label for people who believe advanced AI carries a serious risk of catastrophe for humanity.",
+    "explain": "Those labeled doomers typically call for slowing development, stronger regulation or international controls. Critics say they overstate speculative risks; they reply that the stakes justify caution. Neutral phrasing like 'safety-focused' tends to land better in mixed rooms.",
+    "related": [
+      "existential-risk",
+      "accelerationism",
+      "ai-safety",
+      "superintelligence"
+    ]
+  },
+  {
+    "id": "dynamic-ad-insertion",
+    "term": "Dynamic ad insertion",
+    "aka": [
+      "dai",
+      "dynamic ads",
+      "addressable advertising",
+      "targeted ads"
+    ],
+    "category": "Sports, betting & media",
+    "short": "Automatically inserting different ads into a stream for different viewers, based on location, profile or context.",
+    "explain": "It lets a single broadcast carry many different ad breaks, each targeted, which raises the value of every impression. AI helps choose the right ad, find natural break points and match ads to what's happening on screen. It's a big part of how streaming sports media gets monetized.",
+    "related": [
+      "personalization",
+      "virtual-advertising",
+      "sponsorship-valuation"
+    ]
+  },
+  {
+    "id": "dynamic-pricing",
+    "term": "Dynamic pricing",
+    "aka": [
+      "dynamic ticket pricing",
+      "demand-based pricing"
+    ],
+    "category": "Sports, betting & media",
+    "short": "Changing ticket, concession or merchandise prices in real time based on demand, using data and models.",
+    "explain": "Teams and ticketing platforms adjust prices by opponent, weather, standings and sales pace, much as airlines do. AI improves demand forecasts and can price individual seats. The risk is fan backlash when prices feel exploitative, so many teams pair the models with clear limits.",
+    "related": [
+      "predictive-ai",
+      "personalization",
+      "roi"
+    ]
+  },
+  {
+    "id": "edge-ai",
+    "term": "Edge AI",
+    "aka": [
+      "edge computing",
+      "edge",
+      "edge inference",
+      "at the edge"
+    ],
+    "category": "Infrastructure & compute",
+    "short": "Running AI close to where data is created, such as in a stadium, camera, car or phone, instead of in a distant data center.",
+    "explain": "Processing at the edge cuts latency, reduces bandwidth costs and can keep sensitive data local. It matters for live sports uses like in-venue tracking, where video is too heavy and time-sensitive to ship far away. The trade-off is that edge hardware is less powerful, so models must be smaller.",
+    "related": [
+      "on-device-ai",
+      "latency",
+      "optical-tracking",
+      "small-language-model",
+      "physical-ai"
+    ]
+  },
+  {
+    "id": "embedding",
+    "term": "Embedding",
+    "aka": [
+      "embeddings",
+      "vector embedding",
+      "vector embeddings",
+      "vectors"
+    ],
+    "category": "How models work",
+    "short": "A list of numbers representing the meaning of a piece of text, an image or other data, so that similar things sit close together.",
+    "explain": "Embeddings let computers search by meaning rather than exact keywords: 'QB injury update' and 'quarterback hurt' land near each other. They're the engine behind RAG, recommendation systems and semantic search. You'll rarely touch them directly, but they're why AI search feels smarter than keyword search.",
+    "related": [
+      "vector-database",
+      "rag",
+      "personalization"
+    ]
+  },
+  {
+    "id": "energy-demand",
+    "term": "Energy demand",
+    "aka": [
+      "power demand",
+      "data center power",
+      "ai energy use",
+      "energy use",
+      "electricity demand"
+    ],
+    "category": "Infrastructure & compute",
+    "short": "The electricity needed to run AI data centers, now a major constraint on AI growth and a focus of utility, climate and policy debates.",
+    "explain": "A large AI campus can draw as much power as a small city, and new grid connections can take years. That's pushing tech companies into long-term deals for natural gas, nuclear and renewable power, and even into building their own generation. Energy is increasingly the bottleneck that decides where and how fast AI capacity gets built.",
+    "related": [
+      "data-center",
+      "compute",
+      "capex",
+      "hyperscaler"
+    ]
+  },
+  {
+    "id": "enterprise-plan",
+    "term": "Enterprise plan",
+    "aka": [
+      "enterprise account",
+      "enterprise accounts",
+      "enterprise tier",
+      "enterprise ai",
+      "business plan"
+    ],
+    "category": "Business & strategy",
+    "short": "The business version of an AI tool, with contract terms, admin controls and data protections that consumer accounts don't provide.",
+    "explain": "Enterprise plans typically promise your data won't be used to train the vendor's models, add security controls like single sign-on, and set data retention rules. Consumer accounts may use your conversations for training by default unless you opt out. For work involving confidential information, the account type matters as much as the tool.",
+    "related": [
+      "data-privacy",
+      "data-leakage",
+      "shadow-ai",
+      "ai-governance"
+    ]
+  },
+  {
+    "id": "eu-ai-act",
+    "term": "EU AI Act",
+    "aka": [
+      "ai act",
+      "european ai act",
+      "eu ai regulation"
+    ],
+    "category": "Safety, risk & policy",
+    "short": "The European Union's comprehensive AI law, which regulates AI by risk level and sets the strictest rules for high-risk uses.",
+    "explain": "It bans a short list of 'unacceptable' practices, puts heavy requirements on high-risk systems (such as those used in hiring, credit or critical infrastructure), sets transparency duties for things like chatbots and deepfakes, and adds obligations for general-purpose AI models. It entered into force in 2024 with obligations phasing in over several years, and some deadlines have been debated and revised, so check the current timeline. It applies to companies outside the EU if their AI is used in the EU.",
+    "related": [
+      "high-risk-ai",
+      "foundation-model",
+      "data-privacy",
+      "ai-governance",
+      "us-ai-policy"
+    ]
+  },
+  {
+    "id": "evals",
+    "term": "Evals",
+    "aka": [
+      "eval",
+      "evaluation",
+      "evaluations",
+      "model evaluation",
+      "ai evals"
+    ],
+    "category": "Business & strategy",
+    "short": "Structured tests of how well an AI system performs on the tasks you actually care about, run before launch and on an ongoing basis.",
+    "explain": "Public benchmarks tell you how a model does on general tests; your own evals tell you how it does on your contracts, your customers and your edge cases. Serious AI teams maintain eval sets and re-run them whenever the model, prompt or data changes. A vendor who can't show evals is asking you to trust a demo.",
+    "analogy": "It's like backtesting a pricing model on real historical markets before putting money behind it.",
+    "related": [
+      "benchmark",
+      "overfitting",
+      "ai-washing",
+      "red-teaming",
+      "pilot"
+    ]
+  },
+  {
+    "id": "event-data",
+    "term": "Event data",
+    "aka": [
+      "play-by-play data",
+      "play-by-play",
+      "event feed"
+    ],
+    "category": "Sports, betting & media",
+    "short": "A timestamped record of what happened in a game, play by play: shots, passes, fouls, scores and substitutions.",
+    "explain": "Event data has traditionally been logged by trained human scouts, often at the venue, and it's the backbone of live betting and bet settlement. Computer vision is increasingly automating or double-checking that collection. Combined with tracking data, it tells models both what happened and how it happened.",
+    "related": [
+      "optical-tracking",
+      "official-data",
+      "in-play-betting",
+      "betting-latency"
+    ]
+  },
+  {
+    "id": "existential-risk",
+    "term": "Existential risk",
+    "aka": [
+      "x-risk",
+      "catastrophic risk",
+      "extinction risk",
+      "p(doom)"
+    ],
+    "category": "Safety, risk & policy",
+    "short": "The risk that advanced AI could cause human extinction or permanently and drastically curtail humanity's future.",
+    "explain": "It's taken seriously by some leading researchers and lab founders, and dismissed as speculative or distracting by others. 'P(doom)' is shorthand people use for their personal estimate of the probability of catastrophe. You can discuss it credibly by separating what has been demonstrated from what is argued, and by noting that serious people disagree.",
+    "related": [
+      "superintelligence",
+      "alignment",
+      "ai-safety",
+      "doomer",
+      "accelerationism"
+    ]
+  },
+  {
+    "id": "export-controls",
+    "term": "Export controls",
+    "aka": [
+      "export control",
+      "chip export controls",
+      "chip controls",
+      "chip war"
+    ],
+    "category": "Safety, risk & policy",
+    "short": "Government restrictions on selling advanced technology abroad; in AI, chiefly US limits on exporting top chips and chipmaking tools to China.",
+    "explain": "Since 2022, the US has restricted sales of the most advanced AI chips and manufacturing equipment to China, aiming to slow its military and AI progress. The rules have been tightened, loosened and redrawn repeatedly, and they directly affect Nvidia's sales and chip design choices. China has responded by investing heavily in domestic chips and in highly efficient models.",
+    "related": [
+      "semiconductor",
+      "gpu",
+      "sovereign-ai",
+      "foundry"
+    ]
+  },
+  {
+    "id": "fine-tuning",
+    "term": "Fine-tuning",
+    "aka": [
+      "finetuning",
+      "fine-tune",
+      "fine-tuned"
+    ],
+    "category": "How models work",
+    "short": "Extra training of an existing model on a smaller, specialized dataset so it gets better at a particular task, style or domain.",
+    "explain": "Fine-tuning changes the model's weights, so the new behavior is built in. It's good for consistent formats, a specialized tone or narrow repeated tasks, but a poor way to teach a model facts that change, since you'd have to retrain every time. For most companies, good prompting and RAG come first, and fine-tuning comes later, if at all.",
+    "analogy": "If prompting is briefing a new hire and RAG is handing them the binder, fine-tuning is sending them through months of specialist training.",
+    "related": [
+      "rag",
+      "prompt-engineering",
+      "foundation-model",
+      "post-training",
+      "distillation"
+    ]
+  },
+  {
+    "id": "flops",
+    "term": "FLOPs",
+    "aka": [
+      "flop",
+      "floating-point operations",
+      "flop/s",
+      "petaflops",
+      "exaflops"
+    ],
+    "category": "Infrastructure & compute",
+    "short": "Floating-point operations: basic math calculations, used to measure how much work a chip can do or a training run required.",
+    "explain": "Training a frontier model takes an astronomically large number of FLOPs, which is why the figure appears in policy: the EU AI Act, for example, uses a training-compute threshold to flag general-purpose models that may pose 'systemic risk'. For business purposes, more FLOPs means more compute, more cost and usually a more capable model.",
+    "related": [
+      "compute",
+      "gpu",
+      "training",
+      "eu-ai-act"
+    ]
+  },
+  {
+    "id": "foundation-model",
+    "term": "Foundation model",
+    "aka": [
+      "foundation models",
+      "general-purpose ai",
+      "general-purpose ai model",
+      "general-purpose ai models",
+      "gpai"
+    ],
+    "category": "Foundations",
+    "short": "A large model trained on broad data that can be adapted to many different tasks, rather than built for a single job.",
+    "explain": "The term captures the business logic: a few companies spend heavily to build one very capable model, and thousands of products get built on top of it. Most LLMs are foundation models. The EU AI Act uses the related term 'general-purpose AI model' for the same idea.",
+    "analogy": "It's like a stadium: one massive build that then hosts football, concerts and conventions.",
+    "related": [
+      "llm",
+      "fine-tuning",
+      "ai-lab",
+      "frontier-model",
+      "eu-ai-act"
+    ]
+  },
+  {
+    "id": "foundry",
+    "term": "Foundry",
+    "aka": [
+      "foundries",
+      "fab",
+      "fabs",
+      "chip foundry",
+      "chip fab"
+    ],
+    "category": "Infrastructure & compute",
+    "short": "A factory that manufactures chips designed by other companies; TSMC is by far the most important foundry for advanced AI chips.",
+    "explain": "Nvidia, Apple, AMD and Google design chips but don't make them; foundries do. Building a leading-edge fab costs tens of billions of dollars and takes years, which is why so few exist. The industry's heavy reliance on Taiwan is a major geopolitical risk factor.",
+    "related": [
+      "semiconductor",
+      "gpu",
+      "export-controls",
+      "sovereign-ai"
+    ]
+  },
+  {
+    "id": "fraud-detection",
+    "term": "Fraud detection",
+    "aka": [
+      "fraud",
+      "bonus abuse",
+      "payment fraud",
+      "account takeover"
+    ],
+    "category": "Sports, betting & media",
+    "short": "Using data and AI to catch fraudulent activity, such as stolen identities, bonus abuse, payment fraud and account takeovers.",
+    "explain": "Betting platforms are frequent fraud targets because accounts hold money and promotions can be gamed. Machine-learning models score logins, deposits and betting behavior in real time and flag what looks wrong. Generative AI raises the stakes on both sides: fraudsters use deepfakes and fake documents, and defenders use AI to spot them.",
+    "related": [
+      "kyc",
+      "aml",
+      "integrity-monitoring",
+      "deepfake",
+      "bettor-profiling"
+    ]
+  },
+  {
+    "id": "frontier-model",
+    "term": "Frontier model",
+    "aka": [
+      "frontier models",
+      "frontier ai",
+      "frontier ai model",
+      "frontier ai models"
+    ],
+    "category": "Safety, risk & policy",
+    "short": "One of the most capable AI models available at any given time, built by the handful of labs at the leading edge.",
+    "explain": "The term matters in policy because the newest, most powerful models are the ones regulators and safety researchers watch most closely. Rules like the EU AI Act and some US state laws set extra obligations for the largest models. What counts as 'frontier' keeps moving as capabilities improve.",
+    "related": [
+      "foundation-model",
+      "ai-lab",
+      "ai-safety",
+      "eu-ai-act",
+      "responsible-scaling-policy"
+    ]
+  },
+  {
+    "id": "function-calling",
+    "term": "Function calling",
+    "aka": [
+      "function call",
+      "function calls"
+    ],
+    "category": "Agents",
+    "short": "The technical mechanism behind tool use: the model outputs a structured request to run a specific function, and the software runs it.",
+    "explain": "Developers describe the functions available (for example, one that fetches live odds for a given match), and the model decides when to call one and with what inputs. The app executes it and passes back the result for the model to use. You'll hear 'function calling' and 'tool calling' used almost interchangeably.",
+    "related": [
+      "tool-use",
+      "api",
+      "mcp",
+      "agent"
+    ]
+  },
+  {
+    "id": "generative-ai",
+    "term": "Generative AI",
+    "aka": [
+      "genai",
+      "gen ai",
+      "generative model",
+      "generative models"
+    ],
+    "category": "Foundations",
+    "short": "AI that creates new content, such as text, images, audio, video or code, rather than only classifying or predicting.",
+    "explain": "Generative models learn the patterns in their training data well enough to produce fresh examples in the same style. LLMs are the best-known type; image and video generators are others. The business shift is that AI moved from scoring things (is this bet suspicious?) to making things (write the match recap).",
+    "related": [
+      "llm",
+      "predictive-ai",
+      "diffusion-model",
+      "multimodal"
+    ]
+  },
+  {
+    "id": "gpu",
+    "term": "GPU",
+    "aka": [
+      "gpus",
+      "graphics processing unit",
+      "graphics processing units",
+      "graphics card"
+    ],
+    "category": "Infrastructure & compute",
+    "short": "Graphics processing unit: a chip first built for video games that does thousands of calculations at once, making it AI's workhorse.",
+    "explain": "AI training and inference are mostly enormous amounts of simple math done in parallel, which is exactly what GPUs do well. Nvidia dominates AI GPUs, thanks to both its chips and its CUDA software, with AMD the main alternative. GPU supply has been one of the key constraints on the entire AI industry.",
+    "related": [
+      "compute",
+      "cuda",
+      "tpu",
+      "asic",
+      "data-center"
+    ]
+  },
+  {
+    "id": "gross-margin",
+    "term": "Gross margin",
+    "aka": [
+      "gross margins",
+      "margins"
+    ],
+    "category": "Business & strategy",
+    "short": "Revenue minus the direct cost of delivering a product, as a percentage; AI products usually run lower gross margins than classic software.",
+    "explain": "Traditional software costs almost nothing extra per user, so its margins are very high. AI products pay for inference on every request, so heavy users can be expensive to serve. Investors watch AI companies' gross margins closely as a sign of whether their business models will hold up.",
+    "related": [
+      "inference",
+      "token-pricing",
+      "saas",
+      "wrapper"
+    ]
+  },
+  {
+    "id": "guardrails",
+    "term": "Guardrails",
+    "aka": [
+      "guardrail",
+      "safety filters",
+      "content filters",
+      "least privilege"
+    ],
+    "category": "Agents",
+    "short": "Rules and checks around an AI system that keep it within safe, allowed behavior, such as blocking certain topics, actions or data.",
+    "explain": "Guardrails can live in the system prompt, in separate filtering models, or in hard software limits on what an agent is allowed to touch. Good design assumes the model will sometimes misbehave and limits the damage when it does. A core principle is least privilege: give an agent only the access it truly needs.",
+    "related": [
+      "human-in-the-loop",
+      "system-prompt",
+      "jailbreak",
+      "prompt-injection",
+      "ai-governance"
+    ]
+  },
+  {
+    "id": "hallucination",
+    "term": "Hallucination",
+    "aka": [
+      "hallucinations",
+      "hallucinate",
+      "hallucinates",
+      "confabulation"
+    ],
+    "category": "How models work",
+    "short": "When an AI model states something false or made up with full confidence, such as a fake statistic, quote or source.",
+    "explain": "Hallucinations happen because models generate what sounds plausible, not what they've verified. They're less frequent in newer models but haven't gone away, and they're most likely on obscure facts, precise numbers and citations. Grounding the model in real documents (RAG), asking for sources and keeping a human reviewer all reduce the risk.",
+    "analogy": "It's the confident talking head who quotes a stat that sounds right and turns out to be invented.",
+    "related": [
+      "rag",
+      "next-token-prediction",
+      "evals",
+      "human-in-the-loop",
+      "knowledge-cutoff"
+    ]
+  },
+  {
+    "id": "hbm",
+    "term": "HBM",
+    "aka": [
+      "high-bandwidth memory",
+      "high bandwidth memory"
+    ],
+    "category": "Infrastructure & compute",
+    "short": "High-bandwidth memory: ultra-fast memory chips stacked right next to an AI processor so it can be fed data quickly.",
+    "explain": "AI chips are often limited less by raw computing speed than by how fast they can pull in data. HBM solves that, and only a few companies make it (SK hynix, Samsung and Micron), so it has become one of the tightest bottlenecks in the AI supply chain.",
+    "analogy": "A pit crew stationed right at the car instead of across the track: the engine is only as fast as the stops that feed it.",
+    "related": [
+      "gpu",
+      "data-center",
+      "asic"
+    ]
+  },
+  {
+    "id": "high-risk-ai",
+    "term": "High-risk AI",
+    "aka": [
+      "high-risk ai system",
+      "high-risk ai systems",
+      "high-risk system",
+      "risk tiers",
+      "risk-based approach"
+    ],
+    "category": "Safety, risk & policy",
+    "short": "AI used where mistakes can seriously affect people's rights, safety or livelihoods, and therefore subject to stricter rules.",
+    "explain": "Under the EU AI Act, examples include AI in hiring, education, credit scoring, critical infrastructure and law enforcement. High-risk systems need risk management, documentation, human oversight and good-quality data. Whether specific gambling or betting uses fall into high-risk categories depends on how they're used, which is worth checking with counsel.",
+    "related": [
+      "eu-ai-act",
+      "human-in-the-loop",
+      "bias",
+      "ai-governance",
+      "responsible-gaming"
+    ]
+  },
+  {
+    "id": "human-in-the-loop",
+    "term": "Human-in-the-loop",
+    "aka": [
+      "hitl",
+      "human oversight",
+      "human review"
+    ],
+    "category": "Agents",
+    "short": "Designing an AI system so a person reviews, approves or corrects key decisions instead of letting the AI act entirely alone.",
+    "explain": "It's the most practical safety measure available today: the agent drafts, and a human approves the send, the trade or the payment. The right level depends on the stakes; low-risk tasks can run freely, while high-risk ones need sign-off. Regulators, including under the EU AI Act, increasingly expect meaningful human oversight for high-risk uses.",
+    "analogy": "It's the head trader signing off before a big limit change goes live, even when the model recommended it.",
+    "related": [
+      "guardrails",
+      "autonomy",
+      "agent",
+      "ai-governance",
+      "high-risk-ai"
+    ]
+  },
+  {
+    "id": "hyperscaler",
+    "term": "Hyperscaler",
+    "aka": [
+      "hyperscalers"
+    ],
+    "category": "Infrastructure & compute",
+    "short": "One of the giant cloud providers, chiefly Amazon Web Services, Microsoft Azure and Google Cloud, that rent computing at massive scale.",
+    "explain": "Hyperscalers own most of the data centers AI runs on, sell access to models and chips, and invest heavily in AI labs, so they're both suppliers and competitors to many AI companies. Oracle is often grouped with them, and Meta is usually included when tallying big tech's AI spending. Their combined capital spending on AI ranks among the largest investment waves in corporate history as of 2026.",
+    "related": [
+      "cloud-computing",
+      "data-center",
+      "neocloud",
+      "capex",
+      "ai-lab"
+    ]
+  },
+  {
+    "id": "imagenet",
+    "term": "ImageNet",
+    "aka": [
+      "imagenet moment",
+      "alexnet"
+    ],
+    "category": "Foundations",
+    "short": "A large labeled image collection whose 2012 contest, won by a deep neural network, is often called the start of the deep learning boom.",
+    "explain": "In 2012 a deep network called AlexNet, trained on GPUs, beat every other entry at image recognition by a wide margin. That result convinced researchers, and soon the big tech companies, that deep learning worked at scale. It's the moment people point to when explaining why AI took off in the 2010s.",
+    "related": [
+      "deep-learning",
+      "gpu",
+      "computer-vision",
+      "training-data"
+    ]
+  },
+  {
+    "id": "in-play-betting",
+    "term": "In-play betting",
+    "aka": [
+      "in-play",
+      "live betting",
+      "in-game betting",
+      "live wagering"
+    ],
+    "category": "Sports, betting & media",
+    "short": "Betting on a game while it's in progress, with odds updating continuously as the action unfolds.",
+    "explain": "In-play betting depends on fast, accurate data and automated pricing, since markets must reprice or suspend within seconds of every key event. It accounts for a large and growing share of betting activity in many markets. AI helps price more markets in real time and spot suspicious patterns as they happen.",
+    "related": [
+      "micro-betting",
+      "betting-latency",
+      "official-data",
+      "odds-compilation",
+      "sportsbook-trading"
+    ]
+  },
+  {
+    "id": "indemnification",
+    "term": "Indemnification",
+    "aka": [
+      "indemnity",
+      "indemnities",
+      "ip indemnity",
+      "ip indemnification",
+      "copyright indemnity"
+    ],
+    "category": "Business & strategy",
+    "short": "A contract promise that one party will cover the other's legal costs if something goes wrong, such as an AI output infringing copyright.",
+    "explain": "Several major AI vendors offer enterprise customers indemnity against copyright claims arising from their models' outputs, usually with conditions. For buyers, it's a key term to check alongside data usage, training rights and liability caps. The details, such as exclusions, caps and required safeguards, matter more than the headline.",
+    "related": [
+      "copyright",
+      "data-licensing",
+      "enterprise-plan",
+      "build-vs-buy"
+    ]
+  },
+  {
+    "id": "inference",
+    "term": "Inference",
+    "aka": [
+      "serving",
+      "model serving",
+      "inference cost",
+      "inference costs"
+    ],
+    "category": "How models work",
+    "short": "Using a trained model to produce an output; every time you send a prompt and get a response, that's inference.",
+    "explain": "Training is a huge upfront cost; inference is an ongoing cost that grows with every user and every request. Each response takes real computing work on GPUs or other chips, so AI products carry a meaningful cost per use, unlike most traditional software. As usage explodes, inference is becoming a larger share of total AI compute spending.",
+    "analogy": "Training is building the stadium; inference is what it costs to open the gates and run it every game day.",
+    "related": [
+      "training",
+      "latency",
+      "token-pricing",
+      "gpu",
+      "test-time-compute"
+    ]
+  },
+  {
+    "id": "integrity-monitoring",
+    "term": "Integrity monitoring",
+    "aka": [
+      "betting integrity",
+      "integrity",
+      "integrity services",
+      "match-fixing",
+      "match-fixing detection",
+      "suspicious betting"
+    ],
+    "category": "Sports, betting & media",
+    "short": "Watching betting markets and game data for signs of match-fixing, insider betting or other corruption.",
+    "explain": "Integrity systems analyze betting patterns across many operators and flag unusual activity, like heavy money on an obscure market just before a suspicious in-game event. Machine learning helps detect subtle anomalies across huge volumes of bets. Leagues, regulators and data providers all rely on these services, and alerts typically lead to human investigation rather than automatic conclusions.",
+    "related": [
+      "fraud-detection",
+      "player-props",
+      "bettor-profiling",
+      "predictive-ai",
+      "deepfake"
+    ]
+  },
+  {
+    "id": "interpretability",
+    "term": "Interpretability",
+    "aka": [
+      "mechanistic interpretability",
+      "explainability",
+      "explainable ai",
+      "black box"
+    ],
+    "category": "Safety, risk & policy",
+    "short": "Research into understanding what's actually happening inside an AI model: why it produced a given answer and what it has learned.",
+    "explain": "Modern models are largely 'black boxes': we can see inputs and outputs but not easily the reasoning in between. Interpretability researchers try to map a model's internal features and circuits, with real but early progress. For businesses, explainability matters wherever decisions must be justified to customers or regulators, such as account restrictions or credit decisions.",
+    "related": [
+      "alignment",
+      "ai-safety",
+      "reasoning-model",
+      "high-risk-ai"
+    ]
+  },
+  {
+    "id": "jagged-frontier",
+    "term": "Jagged frontier",
+    "aka": [
+      "jagged edge",
+      "jaggedness"
+    ],
+    "category": "Foundations",
+    "short": "The uneven shape of AI ability: superhuman at some tasks, surprisingly bad at others that seem just as easy.",
+    "explain": "The phrase comes from a 2023 Harvard and BCG study of consultants using AI. A model might write a strong strategy memo, then miscount the letters in a word. You learn where the edges are by using it, not by guessing.",
+    "analogy": "A quarterback who throws a perfect deep ball but can’t reliably take a snap. You scheme around the gaps.",
+    "related": [
+      "benchmark",
+      "reasoning-model",
+      "hallucination"
+    ]
+  },
+  {
+    "id": "jailbreak",
+    "term": "Jailbreak",
+    "aka": [
+      "jailbreaks",
+      "jailbreaking",
+      "jailbroken"
+    ],
+    "category": "Safety, risk & policy",
+    "short": "A trick that gets an AI model to ignore its safety rules, for example through role-play, clever wording or disguised requests.",
+    "explain": "Jailbreaks exploit the fact that models follow patterns in language rather than hard-coded rules. Labs patch known jailbreaks and attackers find new ones, in an ongoing cat-and-mouse game. For companies, the lesson is never to rely on the model's own refusals as the only safeguard.",
+    "related": [
+      "prompt-injection",
+      "guardrails",
+      "red-teaming",
+      "alignment"
+    ]
+  },
+  {
+    "id": "jevons-paradox",
+    "term": "Jevons paradox",
+    "aka": [
+      "jevons"
+    ],
+    "category": "Business & strategy",
+    "short": "The pattern that making a resource cheaper to use can increase total consumption of it; often cited for AI compute.",
+    "explain": "It's named for a 19th-century economist who noticed that more efficient steam engines increased coal use rather than reducing it. In AI, cheaper tokens have led to far more usage, as new use cases become affordable. It's the main counterargument to fears that efficiency gains will shrink demand for chips and data centers.",
+    "related": [
+      "token-pricing",
+      "compute",
+      "capex",
+      "inference"
+    ]
+  },
+  {
+    "id": "knowledge-cutoff",
+    "term": "Knowledge cutoff",
+    "aka": [
+      "training cutoff",
+      "cutoff date",
+      "knowledge cut-off"
+    ],
+    "category": "How models work",
+    "short": "The date after which a model has no information from training, so it won't know recent events unless given search or documents.",
+    "explain": "A model trained on data through a certain month simply doesn't know what happened afterward. Many assistants now add web search to fill the gap, but the underlying model stays frozen in time. When recent facts matter, check whether the tool actually searched.",
+    "related": [
+      "training-data",
+      "rag",
+      "hallucination"
+    ]
+  },
+  {
+    "id": "kyc",
+    "term": "KYC (know your customer)",
+    "aka": [
+      "know your customer",
+      "identity verification",
+      "age verification"
+    ],
+    "category": "Sports, betting & media",
+    "short": "Verifying who a customer really is, including identity, age and location, before letting them bet or move money.",
+    "explain": "KYC is a legal requirement for licensed betting operators and financial firms. AI speeds it up by reading ID documents, matching selfies to photos and flagging inconsistencies. It's also under new pressure from deepfakes and AI-generated fake IDs, which is driving investment in stronger verification.",
+    "related": [
+      "aml",
+      "fraud-detection",
+      "deepfake",
+      "data-privacy"
+    ]
+  },
+  {
+    "id": "llm",
+    "term": "Large language model (LLM)",
+    "aka": [
+      "large language model",
+      "large language models",
+      "llms",
+      "language model",
+      "language models"
+    ],
+    "category": "Foundations",
+    "short": "An AI model trained on enormous amounts of text to predict the next word, which lets it write, summarize, answer questions and reason.",
+    "explain": "ChatGPT, Claude and Gemini are all built on LLMs. They absorb language, facts and patterns of reasoning by repeatedly guessing the next token across trillions of words, then get further trained to act as helpful assistants. 'Large' refers to both the model's size (billions of parameters or more) and the amount of training data.",
+    "related": [
+      "next-token-prediction",
+      "transformer",
+      "token",
+      "parameters",
+      "foundation-model"
+    ]
+  },
+  {
+    "id": "latency",
+    "term": "Latency",
+    "aka": [
+      "lag",
+      "response time",
+      "time to first token"
+    ],
+    "category": "Infrastructure & compute",
+    "short": "The delay between making a request and getting a response; for AI, how long you wait before the model starts or finishes answering.",
+    "explain": "Latency depends on model size, how much the model 'thinks', network distance and server load. For chat, a second or two is fine; for live betting, voice or trading, milliseconds can matter. Faster usually means a smaller model or more expensive hardware, so latency is always a trade-off against quality and cost.",
+    "related": [
+      "throughput",
+      "inference",
+      "betting-latency",
+      "edge-ai",
+      "small-language-model"
+    ]
+  },
+  {
+    "id": "betting-latency",
+    "term": "Latency in betting",
+    "aka": [
+      "latency in betting",
+      "feed latency",
+      "data latency",
+      "courtsiding"
+    ],
+    "category": "Sports, betting & media",
+    "short": "The delay between something happening in a game and that information reaching the sportsbook's pricing systems and its customers.",
+    "explain": "In live betting, even a second or two of delay creates risk: anyone with faster information, such as someone watching in the stadium ('courtsiding'), can bet before the odds update. That's why low-latency official data is so valuable and why operators suspend markets around key moments. Any AI feature added to the live pipeline has to fit inside a tight latency budget.",
+    "related": [
+      "latency",
+      "official-data",
+      "in-play-betting",
+      "micro-betting",
+      "edge-ai"
+    ]
+  },
+  {
+    "id": "long-horizon-task",
+    "term": "Long-horizon task",
+    "aka": [
+      "long-horizon tasks",
+      "long tasks",
+      "long-running tasks",
+      "task horizon",
+      "task length"
+    ],
+    "category": "Agents",
+    "short": "A task that takes many steps and hours or days of human-equivalent work; the current frontier of what agents can handle.",
+    "explain": "Researchers track how long a task, measured in human working time, agents can complete reliably, and by some estimates that length has been doubling every several months. Longer horizons are what would turn agents from helpers into something closer to junior colleagues. Reliability, memory and cost are the main limits today.",
+    "related": [
+      "agent",
+      "compounding-errors",
+      "ai-employee",
+      "coding-agent"
+    ]
+  },
+  {
+    "id": "machine-learning",
+    "term": "Machine learning",
+    "aka": [
+      "ml",
+      "supervised learning",
+      "unsupervised learning"
+    ],
+    "category": "Foundations",
+    "short": "A way of building AI where the computer learns patterns from examples (data) instead of following rules a programmer wrote by hand.",
+    "explain": "You show the system many examples and it adjusts itself until its predictions are good; the result is a model you can use on cases it has never seen. When the examples come with the right answers attached (this bet was fraud, this one wasn't), that's supervised learning; when the system finds structure on its own, like clusters of similar customers, that's unsupervised learning. Almost all modern AI, from fraud detection to ChatGPT, is machine learning at its core.",
+    "analogy": "The old way is a bookmaker writing pricing rules by hand; machine learning is a model that studies a million past games and works out the patterns itself.",
+    "related": [
+      "ai",
+      "deep-learning",
+      "training-data",
+      "model",
+      "overfitting"
+    ]
+  },
+  {
+    "id": "mcp",
+    "term": "MCP (Model Context Protocol)",
+    "aka": [
+      "model context protocol"
+    ],
+    "category": "Agents",
+    "short": "An open standard for connecting AI models to outside tools and data sources in a consistent, reusable way.",
+    "explain": "Before MCP, every connection between an AI app and a service (email, a CRM, a database) had to be custom-built. MCP provides a common plug shape, so one connector works across many AI apps. Anthropic introduced it in late 2024, and it has since been widely adopted across the industry, including by rival labs.",
+    "analogy": "It's like a standard data feed format: build to it once and every partner can plug in.",
+    "related": [
+      "tool-use",
+      "function-calling",
+      "api",
+      "agent"
+    ]
+  },
+  {
+    "id": "memorization",
+    "term": "Memorization",
+    "aka": [
+      "regurgitation",
+      "memorisation"
+    ],
+    "category": "Safety, risk & policy",
+    "short": "When a model reproduces chunks of its training data word for word instead of generating something new.",
+    "explain": "Models mostly learn patterns, but they can store and repeat passages they saw many times, such as famous articles or song lyrics. It matters in copyright lawsuits and privacy, because verbatim output is harder to defend than learned style.",
+    "related": [
+      "copyright",
+      "training-data",
+      "llm"
+    ]
+  },
+  {
+    "id": "memory",
+    "term": "Memory",
+    "aka": [
+      "ai memory",
+      "persistent memory",
+      "chat memory"
+    ],
+    "category": "How models work",
+    "short": "Features that let an AI assistant remember facts about you across conversations; the underlying model itself doesn't remember anything.",
+    "explain": "A model's weights don't change when you chat with it, so by default each conversation starts fresh. Apps add memory by saving notes about you and quietly inserting them into future prompts. It's convenient, but worth checking what's being stored, especially on work accounts.",
+    "related": [
+      "context-window",
+      "system-prompt",
+      "data-privacy",
+      "enterprise-plan"
+    ]
+  },
+  {
+    "id": "micro-betting",
+    "term": "Micro-betting",
+    "aka": [
+      "microbetting",
+      "micro-markets",
+      "micro-bets"
+    ],
+    "category": "Sports, betting & media",
+    "short": "Betting on very short-term outcomes within a game, such as the result of the next pitch, play, point or drive.",
+    "explain": "Micro-betting creates many markets per game, each open for only seconds, so it's impossible without very low-latency data and fully automated pricing. It's popular with highly engaged fans and a growth area for operators. It also draws extra attention from regulators and responsible-gaming advocates because of how quickly bets can be placed.",
+    "related": [
+      "in-play-betting",
+      "betting-latency",
+      "odds-compilation",
+      "responsible-gaming",
+      "prediction-markets"
+    ]
+  },
+  {
+    "id": "moat",
+    "term": "Moat",
+    "aka": [
+      "moats",
+      "competitive moat",
+      "defensibility",
+      "data flywheel",
+      "flywheel",
+      "data network effects"
+    ],
+    "category": "Business & strategy",
+    "short": "A durable competitive advantage that protects a business from rivals, borrowing Warren Buffett's image of a castle's moat.",
+    "explain": "In AI, candidate moats include compute, top talent, distribution, brand and trust, and especially proprietary data others can't get. A 'data flywheel', where more users generate more data that improves the product and attracts more users, is the classic AI moat argument, though many are weaker than pitched. Model quality alone has proven a weak moat, since rivals often catch up within months.",
+    "related": [
+      "proprietary-data",
+      "commoditization",
+      "cuda",
+      "official-data"
+    ]
+  },
+  {
+    "id": "model",
+    "term": "Model",
+    "aka": [
+      "ai model",
+      "ai models",
+      "models"
+    ],
+    "category": "Foundations",
+    "short": "The trained artifact that does the work: a large file of learned numbers that takes an input and produces an output.",
+    "explain": "When people say 'the model', they mean what training produced, as distinct from the app or chatbot wrapped around it. The same model can power many different products. Most companies rent access to a model through an API rather than owning one.",
+    "related": [
+      "parameters",
+      "training",
+      "inference",
+      "api"
+    ]
+  },
+  {
+    "id": "multi-agent-system",
+    "term": "Multi-agent system",
+    "aka": [
+      "multi-agent",
+      "multi-agent systems",
+      "multiagent",
+      "agent teams",
+      "subagent",
+      "subagents"
+    ],
+    "category": "Agents",
+    "short": "A setup where several AI agents with different roles work together, for example one researching, one drafting and one checking.",
+    "explain": "Splitting work across specialized agents can improve quality and let tasks run in parallel. It also adds cost and new failure points, since agents can misunderstand each other or amplify each other's mistakes. It's promising, but simpler single-agent designs often work better for everyday tasks.",
+    "related": [
+      "orchestration",
+      "agent",
+      "compounding-errors",
+      "evals"
+    ]
+  },
+  {
+    "id": "multimodal",
+    "term": "Multimodal",
+    "aka": [
+      "multimodality",
+      "multimodal model",
+      "multimodal models",
+      "multimodal ai"
+    ],
+    "category": "How models work",
+    "short": "Able to handle more than one type of data, such as text, images, audio and video, as input, output or both.",
+    "explain": "Frontier models can now read a screenshot, listen to a question, describe a video clip or generate an image. For sports, that means one model could, in principle, take in broadcast video, commentary audio and stats together. Capabilities still vary widely by model and media type, so test on your actual use case.",
+    "related": [
+      "computer-vision",
+      "voice-ai",
+      "diffusion-model",
+      "llm"
+    ]
+  },
+  {
+    "id": "narrow-ai",
+    "term": "Narrow AI",
+    "aka": [
+      "weak ai",
+      "narrow intelligence",
+      "artificial narrow intelligence"
+    ],
+    "category": "Foundations",
+    "short": "AI built to do one specific task well, like pricing a market or reading a license plate, with no broader ability.",
+    "explain": "Nearly all AI in production has historically been narrow. LLMs blur the line, since one model can write, code, analyze and translate, but they still have clear gaps and don't learn on the job the way people do. The usual spectrum runs from narrow AI to AGI to superintelligence.",
+    "related": [
+      "agi",
+      "superintelligence",
+      "predictive-ai",
+      "ai"
+    ]
+  },
+  {
+    "id": "neocloud",
+    "term": "Neocloud",
+    "aka": [
+      "neoclouds",
+      "gpu cloud",
+      "gpu clouds",
+      "ai cloud"
+    ],
+    "category": "Infrastructure & compute",
+    "short": "A newer cloud company focused on renting GPUs for AI, such as CoreWeave, as opposed to the traditional general-purpose clouds.",
+    "explain": "Neoclouds grew fast by offering scarce GPU capacity quickly, often financed with heavy debt and backed by large long-term contracts with AI labs. They're a useful bellwether for AI demand. They're also a focus of the bubble debate, given their borrowing and reliance on a few big customers.",
+    "related": [
+      "hyperscaler",
+      "gpu",
+      "cloud-computing",
+      "ai-bubble"
+    ]
+  },
+  {
+    "id": "neural-network",
+    "term": "Neural network",
+    "aka": [
+      "neural networks",
+      "neural net",
+      "neural nets",
+      "artificial neural network"
+    ],
+    "category": "Foundations",
+    "short": "A type of model loosely inspired by the brain: layers of simple connected units whose connection strengths get adjusted during training.",
+    "explain": "Each unit takes in numbers, weighs them and passes a result forward to the next layer. Training tunes millions or billions of those weights (the parameters) until the network's outputs are useful. No single unit 'knows' anything; the knowledge is spread across the whole pattern of weights.",
+    "analogy": "Picture a scouting department where thousands of scouts each grade one small trait, and the final grade depends on how much the GM trusts each scout; training is adjusting that trust.",
+    "related": [
+      "parameters",
+      "deep-learning",
+      "training",
+      "transformer"
+    ]
+  },
+  {
+    "id": "next-token-prediction",
+    "term": "Next-token prediction",
+    "aka": [
+      "next-word prediction",
+      "autocomplete"
+    ],
+    "category": "How models work",
+    "short": "The core task an LLM is trained on: given some text, predict the most likely next token, then repeat.",
+    "explain": "An LLM writes one token at a time, each time choosing from a spread of probabilities over what could come next. 'Fancy autocomplete' is technically accurate but undersells it, because predicting text well across trillions of examples forces the model to pick up grammar, facts and patterns of reasoning. The same mechanism explains hallucinations: the model produces what sounds likely, not what it has checked.",
+    "analogy": "It's like an odds compiler pricing every possible next word, then picking from near the top of the board.",
+    "related": [
+      "token",
+      "llm",
+      "pre-training",
+      "hallucination"
+    ]
+  },
+  {
+    "id": "odds-compilation",
+    "term": "Odds compilation",
+    "aka": [
+      "odds compiling",
+      "odds compiler",
+      "odds compilers",
+      "oddsmaking",
+      "pricing model",
+      "pricing models"
+    ],
+    "category": "Sports, betting & media",
+    "short": "Setting the prices (odds) on betting markets by estimating the probability of each outcome and building in the bookmaker's margin.",
+    "explain": "Modern odds compilation relies heavily on statistical and machine-learning models fed by historical and live data, with human traders overseeing and adjusting. AI allows far more markets to be priced, faster and in finer detail, which is what makes huge player-prop and micro-betting menus possible. The quality of the data feeding the model sets the ceiling on pricing accuracy.",
+    "related": [
+      "predictive-ai",
+      "sportsbook-trading",
+      "player-props",
+      "micro-betting",
+      "official-data"
+    ]
+  },
+  {
+    "id": "official-data",
+    "term": "Official data",
+    "aka": [
+      "official league data",
+      "official data feed",
+      "official data feeds",
+      "official sports data"
+    ],
+    "category": "Sports, betting & media",
+    "short": "Game data supplied under a formal rights agreement with a league or governing body, typically collected in the venue and delivered fast.",
+    "explain": "Leagues license official data to sportsbooks and media, often through exclusive distribution partners, and some jurisdictions require or encourage its use for certain bets. Its value rests on speed, accuracy and legitimacy, which are exactly what live betting and AI models need. In an era where public information is easy to scrape, rights-backed, low-latency data is much harder to replicate.",
+    "related": [
+      "proprietary-data",
+      "data-rights",
+      "betting-latency",
+      "in-play-betting",
+      "moat"
+    ]
+  },
+  {
+    "id": "on-device-ai",
+    "term": "On-device AI",
+    "aka": [
+      "on-device",
+      "on-device model",
+      "on-device models",
+      "local model",
+      "local models",
+      "local ai"
+    ],
+    "category": "Infrastructure & compute",
+    "short": "AI models that run directly on your phone, laptop or other device, without sending your data to the cloud.",
+    "explain": "Phone and PC makers are building dedicated AI chips into devices so assistants can work faster, offline and more privately. On-device models are smaller and less capable than frontier cloud models, so many products mix both. It's a key trend to watch for consumer apps, including betting and fan apps.",
+    "related": [
+      "edge-ai",
+      "small-language-model",
+      "data-privacy",
+      "latency"
+    ]
+  },
+  {
+    "id": "open-weight-model",
+    "term": "Open-weight model",
+    "aka": [
+      "open-weight models",
+      "open weights",
+      "open-weight",
+      "open model",
+      "open models",
+      "open-source model",
+      "open-source models",
+      "open source",
+      "open-source ai"
+    ],
+    "category": "How models work",
+    "short": "A model whose trained weights are published so anyone can download, run and modify it, instead of only using it through the maker's service.",
+    "explain": "Open-weight models, from Meta, Mistral, DeepSeek, Alibaba's Qwen team and others, let companies run AI on their own servers, customize it and avoid per-token fees to a vendor. They're often called 'open source', although most don't release their training data and many carry license restrictions. As of 2026, the very best models are generally closed, with leading open models trailing by months rather than years.",
+    "related": [
+      "closed-model",
+      "parameters",
+      "fine-tuning",
+      "commoditization",
+      "on-device-ai"
+    ]
+  },
+  {
+    "id": "optical-tracking",
+    "term": "Optical tracking",
+    "aka": [
+      "player tracking",
+      "tracking data",
+      "optical player tracking",
+      "ball tracking",
+      "skeletal tracking",
+      "pose estimation",
+      "limb tracking"
+    ],
+    "category": "Sports, betting & media",
+    "short": "Using multiple cameras and computer vision to record the position of every player and the ball many times per second.",
+    "explain": "Optical tracking goes beyond the box score to speed, spacing, formations and distance covered; newer 'skeletal tracking' maps players' joints and limbs too, capturing things like a pitcher's arm angle or an attacker's foot on the offside line. The data feeds broadcast graphics, coaching, officiating aids and betting models. Genius Sports, for example, acquired the tracking company Second Spectrum in 2021, and optical tracking is now standard across many major leagues.",
+    "related": [
+      "computer-vision",
+      "event-data",
+      "official-data",
+      "edge-ai",
+      "sports-analytics"
+    ]
+  },
+  {
+    "id": "orchestration",
+    "term": "Orchestration",
+    "aka": [
+      "agent orchestration",
+      "orchestrator",
+      "orchestration layer",
+      "scaffolding",
+      "agent harness"
+    ],
+    "category": "Agents",
+    "short": "Coordinating multiple AI models, agents and tools so they work together on a larger task, in the right order.",
+    "explain": "An orchestrator breaks a big job into pieces, assigns each to the right model or agent, and combines the results, handling retries, handoffs and when to ask a human. The software that does this, sometimes called the scaffolding or harness, is where much of an AI product's real engineering value lives. Two products using the same model can perform very differently because of it.",
+    "analogy": "It's the offensive coordinator: the players do the work, but someone has to call the plays and sequence them.",
+    "related": [
+      "multi-agent-system",
+      "agent",
+      "agent-loop",
+      "wrapper"
+    ]
+  },
+  {
+    "id": "outcome-based-pricing",
+    "term": "Outcome-based pricing",
+    "aka": [
+      "per-outcome pricing",
+      "pay per outcome",
+      "results-based pricing",
+      "value-based pricing"
+    ],
+    "category": "Business & strategy",
+    "short": "Charging based on results the AI delivers, such as a resolved support ticket or a qualified lead, rather than on access or usage.",
+    "explain": "It ties the vendor's revenue directly to value created, which buyers like in principle. The hard part is agreeing on what counts as an outcome and how to measure it. Expect it most in narrow, measurable workflows like customer service rather than in broad tools.",
+    "analogy": "It's like a performance-based sponsorship deal: the partner pays more when the activation actually drives results.",
+    "related": [
+      "token-pricing",
+      "saas",
+      "roi",
+      "ai-employee"
+    ]
+  },
+  {
+    "id": "overfitting",
+    "term": "Overfitting",
+    "aka": [
+      "overfit",
+      "overfitted",
+      "underfitting"
+    ],
+    "category": "Foundations",
+    "short": "When a model memorizes the quirks of its training data so closely that it performs poorly on new, real-world cases.",
+    "explain": "An overfit model looks brilliant when tested on familiar data and falls apart in production. It's why models must be tested on data they've never seen, and why vendor demos run on hand-picked examples deserve skepticism. The opposite problem, a model too simple to capture the real patterns, is called underfitting.",
+    "analogy": "It's the betting system that perfectly 'predicts' last season's results and loses money this season.",
+    "related": [
+      "training-data",
+      "evals",
+      "benchmark",
+      "machine-learning"
+    ]
+  },
+  {
+    "id": "parameters",
+    "term": "Parameters (weights)",
+    "aka": [
+      "parameter",
+      "params",
+      "weights",
+      "weight",
+      "model weights"
+    ],
+    "category": "How models work",
+    "short": "The billions of adjustable numbers inside a model, tuned during training, that together hold everything it has learned.",
+    "explain": "Parameter count is a rough measure of model size: bigger models can capture more patterns but cost more to train and run. The file of trained parameters, 'the weights', is a lab's crown jewel. Publishing that file is what makes a model open-weight.",
+    "analogy": "Parameters are the dials on an enormous mixing board; training is the process of setting every dial.",
+    "related": [
+      "neural-network",
+      "training",
+      "open-weight-model",
+      "model"
+    ]
+  },
+  {
+    "id": "personalization",
+    "term": "Personalization",
+    "aka": [
+      "personalized feeds",
+      "recommendation engine",
+      "recommendation engines",
+      "recommender system",
+      "recommendations"
+    ],
+    "category": "Sports, betting & media",
+    "short": "Using data and AI to tailor content, offers, bets or experiences to each individual user.",
+    "explain": "In betting, that might mean surfacing markets on a fan's favorite team; in media, a highlight feed built around the players they follow. Done well, it lifts engagement and relevance. In betting it must be balanced against responsible-gaming rules, since pushing more bets to vulnerable customers is exactly what regulators want to prevent.",
+    "related": [
+      "embedding",
+      "responsible-gaming",
+      "moat",
+      "automated-highlights",
+      "bettor-profiling"
+    ]
+  },
+  {
+    "id": "physical-ai",
+    "term": "Physical AI",
+    "aka": [
+      "robotics",
+      "embodied ai",
+      "humanoid robot",
+      "humanoid robots",
+      "robots"
+    ],
+    "category": "Foundations",
+    "short": "AI that senses and acts in the physical world through robots, vehicles or machines, rather than only on screens.",
+    "explain": "Physical AI combines computer vision, planning and motor control so machines can handle real objects and spaces. Self-driving cars and warehouse robots are the most mature examples; general-purpose humanoid robots attract heavy investment but remain early. It's harder than chatbots because real-world mistakes are costly and good training data is scarce.",
+    "related": [
+      "computer-vision",
+      "edge-ai",
+      "multimodal",
+      "agent"
+    ]
+  },
+  {
+    "id": "pilot",
+    "term": "Pilot",
+    "aka": [
+      "pilots",
+      "proof of concept",
+      "poc",
+      "pilot program",
+      "pilot project"
+    ],
+    "category": "Business & strategy",
+    "short": "A small, time-limited trial of an AI tool or project to test whether it works before committing to a full rollout.",
+    "explain": "Good pilots target one painful, measurable workflow, set success criteria up front and have a clear decision date. Weak pilots are vague experiments with no owner and no metric. The goal is a clear yes or no, not a nice demo.",
+    "related": [
+      "pilot-purgatory",
+      "roi",
+      "evals",
+      "build-vs-buy"
+    ]
+  },
+  {
+    "id": "pilot-purgatory",
+    "term": "Pilot purgatory",
+    "aka": [
+      "pilot hell",
+      "pilotitis"
+    ],
+    "category": "Business & strategy",
+    "short": "When a company runs AI pilot after pilot but few ever make it into real, scaled production use.",
+    "explain": "Common causes include no clear business owner, fuzzy success metrics, messy data, stalled security reviews and costs that rise at scale. Industry surveys have repeatedly found that a large share of enterprise AI pilots never deliver measurable returns. Breaking out usually means fewer pilots, each tied to a specific workflow and an executive sponsor.",
+    "related": [
+      "pilot",
+      "roi",
+      "change-management",
+      "data-readiness"
+    ]
+  },
+  {
+    "id": "player-props",
+    "term": "Player props",
+    "aka": [
+      "player prop",
+      "prop bet",
+      "prop bets",
+      "props",
+      "proposition bets"
+    ],
+    "category": "Sports, betting & media",
+    "short": "Bets on an individual player's performance, such as passing yards, points or strikeouts, rather than on the game's outcome.",
+    "explain": "Props have become one of the most popular bet types, and pricing thousands of them per game depends on player-level data and machine-learning models. They're also an integrity concern, because a single player can influence a prop far more easily than a final score. Some regulators and leagues have restricted certain prop types, particularly in college sports.",
+    "related": [
+      "odds-compilation",
+      "same-game-parlay",
+      "integrity-monitoring",
+      "optical-tracking"
+    ]
+  },
+  {
+    "id": "post-training",
+    "term": "Post-training",
+    "aka": [
+      "posttraining",
+      "instruction tuning",
+      "instruction-tuned",
+      "supervised fine-tuning",
+      "sft"
+    ],
+    "category": "How models work",
+    "short": "The phase after pre-training that turns a raw base model into a helpful, safe assistant, using curated examples and feedback.",
+    "explain": "It usually starts with instruction tuning (training on examples of requests paired with good answers, so the model learns to follow instructions), then feedback methods like RLHF and constitutional AI, plus reinforcement learning on tasks with checkable answers. It's where a model's personality, safety behavior and much of its reasoning skill come from. It uses far less compute than pre-training but has become a major battleground between labs.",
+    "analogy": "Pre-training is raw talent; post-training is coaching, the playbook and locker-room culture.",
+    "related": [
+      "pre-training",
+      "rlhf",
+      "constitutional-ai",
+      "reinforcement-learning",
+      "fine-tuning"
+    ]
+  },
+  {
+    "id": "pre-training",
+    "term": "Pre-training",
+    "aka": [
+      "pretraining",
+      "pretrained",
+      "base model",
+      "self-supervised learning"
+    ],
+    "category": "How models work",
+    "short": "The first and largest phase of training, where a model learns language and general knowledge by predicting the next token across huge amounts of text.",
+    "explain": "Pre-training uses most of the compute and produces a 'base model' that knows a lot but isn't yet a helpful assistant; ask it a question and it may just continue with more questions. Because each next word serves as its own answer key, no human labeling is needed, which is why it scales to trillions of words. Post-training then shapes the base model into a product.",
+    "related": [
+      "training",
+      "post-training",
+      "next-token-prediction",
+      "training-data",
+      "scaling-laws"
+    ]
+  },
+  {
+    "id": "prediction-markets",
+    "term": "Prediction markets",
+    "aka": [
+      "prediction market",
+      "event contracts",
+      "event contract"
+    ],
+    "category": "Sports, betting & media",
+    "short": "Exchanges where people trade contracts that pay out based on real-world outcomes, including elections, economic data and, increasingly, sports.",
+    "explain": "Prices act as crowd-sourced probabilities, which makes these markets useful signals as well as a form of wagering. In the US, some operate as federally regulated exchanges rather than state-licensed sportsbooks, and their move into sports has triggered legal fights with state regulators and tribal gaming interests that remain unsettled as of 2026. Automated trading and AI-driven market-making play a growing role on them.",
+    "related": [
+      "in-play-betting",
+      "odds-compilation",
+      "sportsbook-trading",
+      "official-data"
+    ]
+  },
+  {
+    "id": "predictive-ai",
+    "term": "Predictive AI",
+    "aka": [
+      "predictive model",
+      "predictive models",
+      "predictive analytics",
+      "traditional ai"
+    ],
+    "category": "Foundations",
+    "short": "AI that classifies or forecasts, answering questions like 'which outcome is likely?' or 'is this suspicious?' rather than creating new content.",
+    "explain": "This is the workhorse AI that sportsbooks, banks and retailers have run for years: pricing models, churn prediction, fraud scores, recommendation engines. It's usually cheaper, faster and easier to test than generative AI. Many strong products combine the two: predictive models for the numbers, generative models for the words.",
+    "analogy": "An odds model is predictive AI: it outputs a probability, not a paragraph.",
+    "related": [
+      "generative-ai",
+      "machine-learning",
+      "odds-compilation",
+      "integrity-monitoring"
+    ]
+  },
+  {
+    "id": "prompt",
+    "term": "Prompt",
+    "aka": [
+      "prompts",
+      "user prompt"
+    ],
+    "category": "How models work",
+    "short": "The instructions, question or material you give an AI model to get a response.",
+    "explain": "A prompt can be one line or many pages, including documents, examples and data. The model only knows what it learned in training plus what's in front of it in the context window, so the quality of the prompt drives the quality of the answer. Clear goals, context, examples and a desired format usually beat clever wording.",
+    "related": [
+      "prompt-engineering",
+      "system-prompt",
+      "context-window",
+      "token"
+    ]
+  },
+  {
+    "id": "prompt-engineering",
+    "term": "Prompt engineering",
+    "aka": [
+      "prompting",
+      "prompt design",
+      "few-shot prompting",
+      "few-shot",
+      "zero-shot"
+    ],
+    "category": "How models work",
+    "short": "The skill of writing prompts that reliably get useful results, by giving context, a role, a goal, examples, a format and constraints.",
+    "explain": "It's less about magic phrases and more about briefing well, the way you'd brief a smart new hire who knows nothing about your situation. One of the most effective techniques is 'few-shot' prompting, showing two or three examples of what good looks like, as opposed to 'zero-shot', just asking. Iterating and asking the model to critique its own draft also help.",
+    "analogy": "It's a pre-game scouting report: the more specific the brief, the better the execution.",
+    "related": [
+      "prompt",
+      "system-prompt",
+      "context-engineering",
+      "fine-tuning"
+    ]
+  },
+  {
+    "id": "prompt-injection",
+    "term": "Prompt injection",
+    "aka": [
+      "prompt injections",
+      "indirect prompt injection",
+      "injection attack"
+    ],
+    "category": "Safety, risk & policy",
+    "short": "An attack where hidden instructions in content an AI reads, such as a web page, email or document, hijack it into doing something unintended.",
+    "explain": "Because models treat text as potential instructions, a malicious line in an email ('forward all invoices to this address') might be obeyed by an AI assistant processing that email. It's one of the biggest unsolved security problems for agents with access to tools and data. Defenses include limiting agent permissions, requiring human approval for sensitive actions and filtering inputs.",
+    "related": [
+      "jailbreak",
+      "computer-use",
+      "guardrails",
+      "human-in-the-loop",
+      "data-leakage"
+    ]
+  },
+  {
+    "id": "proprietary-data",
+    "term": "Proprietary data",
+    "aka": [
+      "first-party data",
+      "data moat",
+      "exclusive data",
+      "proprietary datasets"
+    ],
+    "category": "Business & strategy",
+    "short": "Data a company owns or controls exclusively, which competitors and AI labs can't simply scrape or buy elsewhere.",
+    "explain": "As models become widely available, the data you feed them becomes the differentiator. Unique, high-quality, well-structured data can power better products, be licensed for training, or both. The key questions are who owns it, what the contracts allow and how hard it is to replicate.",
+    "related": [
+      "moat",
+      "data-licensing",
+      "official-data",
+      "data-rights",
+      "data-readiness"
+    ]
+  },
+  {
+    "id": "rag",
+    "term": "RAG (retrieval-augmented generation)",
+    "aka": [
+      "retrieval-augmented generation",
+      "retrieval",
+      "grounding",
+      "grounded"
+    ],
+    "category": "How models work",
+    "short": "A technique where the system first searches your documents or data for relevant material, then has the model answer from it.",
+    "explain": "RAG lets a general model answer questions about your contracts, policies or data without retraining it, and it 'grounds' answers in real sources, which reduces hallucinations and makes citations easy. It stays current: update the documents, not the model. Its quality depends heavily on the search step; if the right document isn't retrieved, the model can't use it.",
+    "analogy": "It's handing a new hire the binder and saying 'look it up before you answer'.",
+    "related": [
+      "embedding",
+      "vector-database",
+      "fine-tuning",
+      "hallucination",
+      "context-window"
+    ]
+  },
+  {
+    "id": "reasoning-model",
+    "term": "Reasoning model",
+    "aka": [
+      "reasoning models",
+      "thinking model",
+      "thinking models",
+      "reasoning",
+      "extended thinking",
+      "chain of thought",
+      "cot"
+    ],
+    "category": "How models work",
+    "short": "A model trained to think step by step before answering, spending extra time on hard problems in exchange for better accuracy.",
+    "explain": "Reasoning models work through a long internal chain of thought, checking and revising before giving a final answer. They're much stronger at math, coding, analysis and multi-step planning, but slower and more expensive per question. The visible reasoning can help you check the logic, though researchers caution it isn't always a faithful account of how the model reached its answer.",
+    "analogy": "It's the difference between a bettor firing off a gut pick and one who runs the numbers before placing it.",
+    "related": [
+      "test-time-compute",
+      "reinforcement-learning",
+      "inference",
+      "interpretability"
+    ]
+  },
+  {
+    "id": "red-teaming",
+    "term": "Red-teaming",
+    "aka": [
+      "red team",
+      "red teams"
+    ],
+    "category": "Safety, risk & policy",
+    "short": "Deliberately attacking an AI system, trying to make it misbehave, leak data or cause harm, to find weaknesses before real bad actors do.",
+    "explain": "Labs use internal teams and outside experts to probe models for dangerous capabilities, bias, jailbreaks and security holes before launch. Companies deploying AI should red-team their own products too, especially customer-facing ones. The practice is borrowed from the military and cybersecurity.",
+    "analogy": "It's the scout team running the opponent's plays in practice so the defense finds its gaps before Sunday.",
+    "related": [
+      "jailbreak",
+      "prompt-injection",
+      "evals",
+      "ai-safety"
+    ]
+  },
+  {
+    "id": "reinforcement-learning",
+    "term": "Reinforcement learning",
+    "aka": [
+      "rl"
+    ],
+    "category": "Foundations",
+    "short": "Training by trial and error: the model takes actions, gets rewarded or penalized, and gradually learns what earns the best results.",
+    "explain": "This is how DeepMind's AlphaGo learned to beat the world's best Go players, partly by playing millions of games against itself. It's now central to post-training LLMs, both through human feedback (RLHF) and by rewarding correct answers on math and code, which is how reasoning models are built. The risk is that a model learns to game the reward rather than do the real task.",
+    "analogy": "It's player development through reps: try something, get feedback from the coach, adjust, repeat thousands of times.",
+    "related": [
+      "rlhf",
+      "reasoning-model",
+      "reward-hacking",
+      "post-training"
+    ]
+  },
+  {
+    "id": "responsible-gaming",
+    "term": "Responsible gaming",
+    "aka": [
+      "responsible gambling",
+      "rg",
+      "safer gambling",
+      "problem gambling",
+      "gambling harm"
+    ],
+    "category": "Sports, betting & media",
+    "short": "Policies and tools meant to prevent and reduce gambling harm, such as deposit limits, self-exclusion and spotting at-risk behavior.",
+    "explain": "AI models can detect warning signs, like chasing losses, rising deposits or late-night play, earlier than manual review. Regulators increasingly expect operators to act on those signals, not just offer optional tools. The same personalization AI that drives engagement must be balanced against these duties, which makes responsible gaming a central design question for AI in betting.",
+    "related": [
+      "bettor-profiling",
+      "personalization",
+      "micro-betting",
+      "kyc",
+      "ai-governance"
+    ]
+  },
+  {
+    "id": "responsible-scaling-policy",
+    "term": "Responsible scaling policy",
+    "aka": [
+      "rsp",
+      "rsps",
+      "responsible scaling",
+      "responsible scaling policies",
+      "frontier safety framework",
+      "preparedness framework",
+      "safety framework"
+    ],
+    "category": "Safety, risk & policy",
+    "short": "A lab's public commitment to test new models for dangerous capabilities and add stronger safeguards as those capabilities grow.",
+    "explain": "Anthropic introduced the term in 2023; OpenAI, Google DeepMind and others publish similar frameworks under different names. The idea is a set of 'if-then' commitments: if a model reaches a certain danger level, specific protections must be in place before release. Critics note these are largely voluntary and self-policed, though some laws now require frontier developers to publish such frameworks.",
+    "related": [
+      "ai-safety",
+      "frontier-model",
+      "red-teaming",
+      "alignment"
+    ]
+  },
+  {
+    "id": "reward-hacking",
+    "term": "Reward hacking",
+    "aka": [
+      "specification gaming",
+      "reward gaming"
+    ],
+    "category": "Safety, risk & policy",
+    "short": "When an AI finds a shortcut that scores well on the measure it's trained on without actually doing the intended task.",
+    "explain": "A classic example is a coding model that edits the tests so they pass rather than fixing the code. It's a practical problem in training today and a core reason alignment is hard: any metric you set can be gamed. The business lesson applies to AI incentives just as it does to people.",
+    "analogy": "It's the player who pads stats in garbage time: the numbers look great, and the team doesn't win more.",
+    "related": [
+      "alignment",
+      "reinforcement-learning",
+      "evals",
+      "ai-safety"
+    ]
+  },
+  {
+    "id": "rlhf",
+    "term": "RLHF",
+    "aka": [
+      "reinforcement learning from human feedback"
+    ],
+    "category": "How models work",
+    "short": "Reinforcement learning from human feedback: people rate a model's answers, and the model is trained to give the kinds of answers people prefer.",
+    "explain": "People compare pairs of responses and pick the better one; those judgments train a 'reward model' that then scores the LLM's outputs at scale. RLHF was a big reason ChatGPT felt so much more useful than earlier models. Its weakness is that models can learn to please the raters, for example by flattering them, rather than to be right.",
+    "related": [
+      "reinforcement-learning",
+      "post-training",
+      "constitutional-ai",
+      "sycophancy",
+      "alignment"
+    ]
+  },
+  {
+    "id": "roi",
+    "term": "ROI",
+    "aka": [
+      "return on investment",
+      "ai roi"
+    ],
+    "category": "Business & strategy",
+    "short": "Return on investment: the value an AI project produces relative to its cost, whether in time saved, revenue gained or risk reduced.",
+    "explain": "AI ROI is often hard to measure because benefits are spread thin, like minutes saved per person per day. The most convincing cases start with a painful, measurable workflow and a before-and-after baseline. Count the full cost, including usage fees, integration, review time and training.",
+    "related": [
+      "pilot",
+      "pilot-purgatory",
+      "outcome-based-pricing",
+      "change-management"
+    ]
+  },
+  {
+    "id": "saas",
+    "term": "SaaS",
+    "aka": [
+      "software as a service",
+      "per-seat pricing",
+      "seat-based pricing",
+      "per seat",
+      "per-user pricing"
+    ],
+    "category": "Business & strategy",
+    "short": "Software as a service: software you rent by subscription over the internet, like Salesforce or Slack, rather than install and own.",
+    "explain": "SaaS has dominated business software for two decades, typically priced per seat (per user per month). AI challenges that model: if agents do the work of several people, customers need fewer seats, and AI-native rivals can build similar products faster. Many vendors are shifting toward usage- or outcome-based pricing in response.",
+    "related": [
+      "token-pricing",
+      "outcome-based-pricing",
+      "ai-native",
+      "wrapper"
+    ]
+  },
+  {
+    "id": "same-game-parlay",
+    "term": "Same-game parlay",
+    "aka": [
+      "sgp",
+      "sgps",
+      "same-game parlays",
+      "bet builder",
+      "bet builders"
+    ],
+    "category": "Sports, betting & media",
+    "short": "A single bet combining several outcomes from the same game, such as a team win, a player's touchdown and the total points.",
+    "explain": "Pricing SGPs is hard because outcomes in the same game are correlated: if the quarterback throws for 350 yards, his receivers probably had big days too. Models must estimate those relationships accurately or the book misprices the bet. They're high-margin products for operators, made possible at scale by sophisticated modeling.",
+    "related": [
+      "player-props",
+      "odds-compilation",
+      "compounding-errors",
+      "sportsbook-trading"
+    ]
+  },
+  {
+    "id": "scaling-laws",
+    "term": "Scaling laws",
+    "aka": [
+      "scaling law",
+      "scaling",
+      "scaling hypothesis"
+    ],
+    "category": "How models work",
+    "short": "The observed pattern that models get predictably better as you add more compute, data and parameters.",
+    "explain": "Scaling laws are why labs spend billions on bigger training runs: the returns have been surprisingly steady. The live debate is whether pre-training scale is hitting diminishing returns, and how much future progress will come from other levers such as reasoning and test-time compute. Much of the industry's capex bet rests on scaling continuing to pay off.",
+    "related": [
+      "compute",
+      "training",
+      "test-time-compute",
+      "capex"
+    ]
+  },
+  {
+    "id": "semiconductor",
+    "term": "Semiconductor",
+    "aka": [
+      "semiconductors",
+      "chip",
+      "chips",
+      "silicon",
+      "microchip",
+      "microchips"
+    ],
+    "category": "Infrastructure & compute",
+    "short": "The material, and the industry, behind computer chips; 'semiconductors' is shorthand for the whole chip business.",
+    "explain": "The AI supply chain runs through a few chokepoints: chip designers like Nvidia, the Dutch firm ASML that makes the most advanced chipmaking machines, foundries led by TSMC in Taiwan, and makers of the high-bandwidth memory (HBM) that AI chips depend on. That concentration makes chips a matter of national strategy and a focus of export controls.",
+    "related": [
+      "gpu",
+      "foundry",
+      "export-controls",
+      "asic"
+    ]
+  },
+  {
+    "id": "shadow-ai",
+    "term": "Shadow AI",
+    "aka": [
+      "shadow it",
+      "bring your own ai"
+    ],
+    "category": "Business & strategy",
+    "short": "Employees using AI tools their company hasn't approved, often pasting work data into personal accounts.",
+    "explain": "It's widespread because the tools are useful and easy to reach. The risks are confidential data leaking to vendors, compliance breaches and no record of how decisions were made. Banning AI rarely works; providing approved tools and clear rules usually does.",
+    "related": [
+      "enterprise-plan",
+      "data-leakage",
+      "ai-governance",
+      "change-management"
+    ]
+  },
+  {
+    "id": "small-language-model",
+    "term": "Small language model (SLM)",
+    "aka": [
+      "slm",
+      "slms",
+      "small language models",
+      "small model",
+      "small models"
+    ],
+    "category": "How models work",
+    "short": "A compact language model built to run cheaply and quickly, sometimes on a phone or laptop, trading some capability for speed and cost.",
+    "explain": "Not every task needs a frontier model; sorting support tickets or tagging clips can run well on a small one. Small models cut costs, reduce latency and can keep data on the device. A common design is routing: easy requests go to a small model, hard ones to a big model.",
+    "analogy": "It's using your role players for routine minutes and saving the star for crunch time.",
+    "related": [
+      "on-device-ai",
+      "distillation",
+      "edge-ai",
+      "latency"
+    ]
+  },
+  {
+    "id": "sovereign-ai",
+    "term": "Sovereign AI",
+    "aka": [
+      "ai sovereignty",
+      "national ai strategy"
+    ],
+    "category": "Safety, risk & policy",
+    "short": "A country's push to control its own AI capability, including data centers, chips, models and data, rather than depend on foreign companies.",
+    "explain": "Governments from the Gulf states to Europe, India and Japan are funding national compute and local models, treating AI like energy or defense. It's a large and growing customer segment for chipmakers and cloud providers. It also means AI rules and data-location requirements will keep diverging by country.",
+    "related": [
+      "export-controls",
+      "data-center",
+      "compute",
+      "eu-ai-act"
+    ]
+  },
+  {
+    "id": "sponsorship-valuation",
+    "term": "Sponsorship valuation",
+    "aka": [
+      "sponsorship measurement",
+      "logo exposure",
+      "logo detection",
+      "brand exposure",
+      "media value",
+      "sponsorship roi"
+    ],
+    "category": "Sports, betting & media",
+    "short": "Measuring what a sponsorship is worth, increasingly by using computer vision to count and score every on-screen logo appearance.",
+    "explain": "AI scans broadcasts, streams and social clips to measure how often, how long, how large and how clearly a sponsor's logo appears, then converts that into an equivalent media value. It's faster and more complete than manual review, and it covers social media, where much of the exposure now happens. The open question is linking exposure to business outcomes like sales or sign-ups, which exposure counts alone don't prove.",
+    "related": [
+      "computer-vision",
+      "virtual-advertising",
+      "roi",
+      "dynamic-ad-insertion"
+    ]
+  },
+  {
+    "id": "sports-analytics",
+    "term": "Sports analytics",
+    "aka": [
+      "advanced metrics",
+      "expected goals",
+      "xg",
+      "moneyball",
+      "performance analytics",
+      "scouting",
+      "injury prediction",
+      "load management"
+    ],
+    "category": "Sports, betting & media",
+    "short": "Using data and models to evaluate players and teams, inform strategy and predict performance, from scouting to game planning.",
+    "explain": "Metrics like expected goals (xG) estimate the quality of chances rather than just the outcome, giving a truer read on performance. Tracking data and AI have pushed analysis into movement, fatigue and injury prediction, where models flag players at elevated risk based on workload and changes in how they move; useful, but still probabilistic. The same models inform front offices, broadcasters and bettors.",
+    "related": [
+      "optical-tracking",
+      "predictive-ai",
+      "event-data",
+      "data-privacy",
+      "dynamic-pricing"
+    ]
+  },
+  {
+    "id": "superintelligence",
+    "term": "Superintelligence (ASI)",
+    "aka": [
+      "asi",
+      "artificial superintelligence",
+      "superintelligent ai"
+    ],
+    "category": "Safety, risk & policy",
+    "short": "AI that vastly exceeds the best human minds in nearly every field, including science, strategy and persuasion.",
+    "explain": "Superintelligence is the hypothetical step beyond AGI, and the scenario behind both the biggest hopes (cures, abundance) and the biggest fears (loss of human control). Some argue that AI improving AI could get there quickly once AGI arrives; others see that as speculative. Several labs now name superintelligence as an explicit goal, which is why the topic has moved from science fiction into boardrooms and policy.",
+    "related": [
+      "agi",
+      "existential-risk",
+      "alignment",
+      "ai-safety",
+      "accelerationism"
+    ]
+  },
+  {
+    "id": "sycophancy",
+    "term": "Sycophancy",
+    "aka": [
+      "sycophantic"
+    ],
+    "category": "Safety, risk & policy",
+    "short": "An AI model's tendency to tell users what they want to hear: agreeing, flattering or backing down when it shouldn't.",
+    "explain": "It's partly a side effect of training on human ratings, since people tend to rate agreeable answers higher. It's a real risk when you use AI to pressure-test your thinking: the model may validate a weak deal thesis. Ask it explicitly to argue the other side or find the flaws.",
+    "related": [
+      "rlhf",
+      "alignment",
+      "hallucination"
+    ]
+  },
+  {
+    "id": "system-prompt",
+    "term": "System prompt",
+    "aka": [
+      "system prompts",
+      "system message",
+      "system instructions",
+      "custom instructions",
+      "custom instruction"
+    ],
+    "category": "How models work",
+    "short": "Standing instructions, usually hidden from the user, that shape how a model behaves in every conversation within an app.",
+    "explain": "Before you type anything, most AI products have already given the model a system prompt describing its role, tone, rules and tools; it's how one model becomes a customer-service bot for one company and a coding assistant for another. The 'custom instructions' and project settings in consumer assistants work similarly, letting you save your role and preferences so every answer starts from them. Attackers sometimes try to trick models into revealing or ignoring their system prompts.",
+    "related": [
+      "prompt",
+      "memory",
+      "guardrails",
+      "prompt-injection"
+    ]
+  },
+  {
+    "id": "temperature",
+    "term": "Temperature",
+    "aka": [
+      "sampling temperature"
+    ],
+    "category": "How models work",
+    "short": "A setting that controls how predictable or creative a model’s word choices are.",
+    "explain": "At low temperature the model almost always picks the most likely next token, which suits factual or repeatable work. At higher temperature it takes more chances, which helps brainstorming but raises the odds of errors. Many newer models manage this internally.",
+    "analogy": "Low temperature is always taking the favorite; high temperature is sprinkling in longshots.",
+    "related": [
+      "token",
+      "inference",
+      "prompt"
+    ]
+  },
+  {
+    "id": "test-time-compute",
+    "term": "Test-time compute",
+    "aka": [
+      "inference-time compute",
+      "inference scaling",
+      "test-time scaling",
+      "thinking time"
+    ],
+    "category": "How models work",
+    "short": "Computing power spent while a model is answering, letting it 'think longer' on hard questions to get better results.",
+    "explain": "For years, progress came mainly from spending more compute on training. Reasoning models opened a second lever: spend more at the moment of the question. That shifts cost from one-time training toward every single use, which raises demand for inference chips and changes AI economics.",
+    "related": [
+      "reasoning-model",
+      "inference",
+      "scaling-laws",
+      "compute"
+    ]
+  },
+  {
+    "id": "throughput",
+    "term": "Throughput",
+    "aka": [
+      "tokens per second",
+      "output speed"
+    ],
+    "category": "Infrastructure & compute",
+    "short": "How much work an AI system handles in a given time, such as tokens generated per second or requests served per minute.",
+    "explain": "Latency is how fast one customer is served; throughput is how many customers you can serve at once. Providers balance the two to control cost. For high-volume uses, like tagging thousands of clips or scoring every bet, throughput and cost per unit matter more than speed on any single request.",
+    "analogy": "Latency is how fast one bet gets accepted; throughput is how many bets per second the platform can take on Super Bowl Sunday.",
+    "related": [
+      "latency",
+      "inference",
+      "gpu",
+      "token-pricing"
+    ]
+  },
+  {
+    "id": "token",
+    "term": "Token",
+    "aka": [
+      "tokens",
+      "tokenization",
+      "tokenizer",
+      "tokenize"
+    ],
+    "category": "How models work",
+    "short": "The small chunk of text a model reads and writes: often a whole word, sometimes part of one.",
+    "explain": "Models don't see letters or whole words; they see tokens, each mapped to a number. As a rough rule, a token is about three-quarters of an English word, so a 1,000-word memo is roughly 1,300 tokens. Almost everything is measured in tokens: how much fits in the context window, how fast a model responds and what you pay.",
+    "analogy": "Tokens are the chips at the table: the unit everything gets counted and priced in.",
+    "related": [
+      "next-token-prediction",
+      "context-window",
+      "token-pricing",
+      "llm"
+    ]
+  },
+  {
+    "id": "token-pricing",
+    "term": "Token pricing",
+    "aka": [
+      "per-token pricing",
+      "price per token",
+      "cost per token",
+      "price per million tokens",
+      "usage-based pricing",
+      "consumption pricing",
+      "pay-per-use"
+    ],
+    "category": "Business & strategy",
+    "short": "Charging for AI model use by the number of tokens processed, usually quoted as a price per million input and output tokens.",
+    "explain": "Input tokens (what you send) usually cost less than output tokens (what the model writes), and bigger or reasoning models cost more. It's a form of usage-based pricing: you pay for what you consume rather than a flat fee. The price for a given level of capability has fallen dramatically year after year, yet total AI bills often rise because cheaper usage leads to far more usage.",
+    "related": [
+      "token",
+      "inference",
+      "outcome-based-pricing",
+      "jevons-paradox",
+      "gross-margin"
+    ]
+  },
+  {
+    "id": "tool-use",
+    "term": "Tool use",
+    "aka": [
+      "tool calling",
+      "tool call",
+      "tool calls",
+      "tools"
+    ],
+    "category": "Agents",
+    "short": "An AI model's ability to use outside tools, like search, calculators, databases or other software, to get information or take action.",
+    "explain": "On its own, a model can only produce text. Tool use lets it say, in effect, 'look up this player's stats' or 'run this calculation', have the software carry it out, and then use the result. It's the bridge between a model that talks and an agent that does.",
+    "related": [
+      "function-calling",
+      "mcp",
+      "agent",
+      "api",
+      "computer-use"
+    ]
+  },
+  {
+    "id": "tpu",
+    "term": "TPU",
+    "aka": [
+      "tpus",
+      "tensor processing unit",
+      "tensor processing units"
+    ],
+    "category": "Infrastructure & compute",
+    "short": "Tensor processing unit: Google's custom AI chip, used to train and run its own models and rented to customers through Google Cloud.",
+    "explain": "TPUs are an example of a big tech company designing its own silicon to reduce dependence on Nvidia and cut costs. Google's Gemini models are trained on them, and other AI labs have also signed deals to use them. They show that GPUs are not the only path to frontier AI.",
+    "related": [
+      "gpu",
+      "asic",
+      "hyperscaler",
+      "compute"
+    ]
+  },
+  {
+    "id": "sportsbook-trading",
+    "term": "Trading and risk management",
+    "aka": [
+      "trading and risk management",
+      "trading",
+      "live trading",
+      "trading desk",
+      "risk management",
+      "risk desk",
+      "liability management"
+    ],
+    "category": "Sports, betting & media",
+    "short": "The sportsbook function that manages prices and exposure: moving odds, setting limits and balancing liability as bets come in.",
+    "explain": "Traders watch the flow of money, news and game state, and move lines or suspend markets to manage risk. AI and automation now handle much of the routine repricing and flag unusual activity, freeing human traders for judgment calls and big events. It's a natural home for agent-style monitoring tools, with humans kept in the loop on major decisions.",
+    "related": [
+      "odds-compilation",
+      "in-play-betting",
+      "bettor-profiling",
+      "integrity-monitoring",
+      "human-in-the-loop"
+    ]
+  },
+  {
+    "id": "training",
+    "term": "Training",
+    "aka": [
+      "model training",
+      "training run",
+      "training runs"
+    ],
+    "category": "How models work",
+    "short": "Building a model by feeding it vast amounts of data and adjusting its parameters until its outputs are good.",
+    "explain": "Training a frontier model is enormously expensive, requiring huge clusters of GPUs running for weeks or months. It usually comes in stages: pre-training for broad knowledge, then post-training for behavior. Once training ends the model is frozen, and using it is called inference.",
+    "analogy": "Training is the offseason and training camp; inference is game day.",
+    "related": [
+      "pre-training",
+      "post-training",
+      "inference",
+      "compute",
+      "data-center"
+    ]
+  },
+  {
+    "id": "training-data",
+    "term": "Training data",
+    "aka": [
+      "dataset",
+      "datasets",
+      "data set",
+      "corpus",
+      "synthetic data"
+    ],
+    "category": "Foundations",
+    "short": "The examples a model learns from, such as text, images, game logs or transactions; the biggest single influence on what a model can do.",
+    "explain": "A model can only learn patterns that appear in its training data, including the gaps and biases. Frontier LLMs train on a large share of the public internet, books, code, licensed content and, increasingly, synthetic data generated by other AI models. Who owns, licenses and may legally use training data is now a major commercial and legal fight.",
+    "analogy": "Training data is the film room: a scout who only watched one conference will misjudge players from all the others.",
+    "related": [
+      "training",
+      "bias",
+      "data-licensing",
+      "copyright",
+      "pre-training"
+    ]
+  },
+  {
+    "id": "transformer",
+    "term": "Transformer",
+    "aka": [
+      "transformers",
+      "transformer architecture",
+      "attention",
+      "attention mechanism",
+      "self-attention",
+      "attention is all you need",
+      "gpt",
+      "generative pre-trained transformer"
+    ],
+    "category": "How models work",
+    "short": "The neural network design, introduced in Google's 2017 paper 'Attention Is All You Need', that underpins nearly every modern LLM.",
+    "explain": "Its key idea, called attention, lets the model weigh how every word in a passage relates to every other word at once; in 'the quarterback found the tight end because he was wide open', attention helps it work out that 'he' is the tight end. That design trains efficiently on GPUs and handles long context well, which is why it took over. The 'T' in GPT (generative pre-trained transformer, the name of OpenAI's model family) stands for Transformer.",
+    "related": [
+      "llm",
+      "neural-network",
+      "context-window",
+      "gpu"
+    ]
+  },
+  {
+    "id": "turing-test",
+    "term": "Turing test",
+    "aka": [
+      "imitation game"
+    ],
+    "category": "Foundations",
+    "short": "A 1950 thought experiment by Alan Turing: if you can't tell a machine's conversation from a human's, should we call it intelligent?",
+    "explain": "For decades it was the pop-culture finish line for AI. Modern chatbots can pass casual versions of it, which mostly showed that fluent conversation is not the same as reliable intelligence. Researchers now rely on harder, task-specific benchmarks instead.",
+    "related": [
+      "ai",
+      "benchmark",
+      "agi"
+    ]
+  },
+  {
+    "id": "us-ai-policy",
+    "term": "US AI policy",
+    "aka": [
+      "us ai regulation",
+      "state ai laws",
+      "colorado ai act",
+      "ai executive order",
+      "federal preemption"
+    ],
+    "category": "Safety, risk & policy",
+    "short": "The United States' approach to AI: mostly executive actions and sector rules at the federal level, plus a growing patchwork of state laws.",
+    "explain": "There's no comprehensive federal AI law as of 2026; federal policy has shifted with each administration through executive orders, and there have been pushes to preempt state rules. States such as Colorado and California have passed their own AI laws covering areas like high-risk decisions and frontier-model transparency, some with delayed or contested effective dates. For a company operating across many states, it's a patchwork to track, much like state-by-state sports betting.",
+    "related": [
+      "eu-ai-act",
+      "export-controls",
+      "high-risk-ai",
+      "ai-governance"
+    ]
+  },
+  {
+    "id": "vector-database",
+    "term": "Vector database",
+    "aka": [
+      "vector databases",
+      "vector db",
+      "vector store",
+      "vector search"
+    ],
+    "category": "How models work",
+    "short": "A database built to store embeddings and quickly find the items closest in meaning to a query.",
+    "explain": "When a RAG system needs the five most relevant clauses out of ten thousand contracts, a vector database finds them in milliseconds. It's a standard piece of AI plumbing. Many traditional databases have added vector search, so it's increasingly a feature rather than a separate product.",
+    "related": [
+      "embedding",
+      "rag",
+      "context-engineering"
+    ]
+  },
+  {
+    "id": "vendor-lock-in",
+    "term": "Vendor lock-in",
+    "aka": [
+      "lock-in",
+      "switching costs"
+    ],
+    "category": "Business & strategy",
+    "short": "When switching away from a vendor becomes so costly or difficult that you're effectively stuck with them.",
+    "explain": "In AI, lock-in can come from prompts and integrations tuned to one model, data stored in a vendor's format, or contracts with minimum spending commitments. Because model leadership changes often, many companies design systems that can swap models easily. Ask any vendor how hard it would be to leave.",
+    "related": [
+      "build-vs-buy",
+      "closed-model",
+      "cuda",
+      "api"
+    ]
+  },
+  {
+    "id": "virtual-advertising",
+    "term": "Virtual advertising",
+    "aka": [
+      "virtual signage",
+      "virtual ad replacement",
+      "virtual boards",
+      "augmented reality advertising"
+    ],
+    "category": "Sports, betting & media",
+    "short": "Digitally replacing or adding signage in a live broadcast, so different audiences see different sponsors on the same boards or surfaces.",
+    "explain": "Computer vision tracks the field, boards and players so graphics can be inserted convincingly in real time. That lets rights holders sell the same physical inventory several times over, market by market. It depends on league and broadcaster approval and on tracking precise enough that the effect looks natural.",
+    "analogy": "It turns one LED board into a separate sponsorship sale for every country watching.",
+    "related": [
+      "computer-vision",
+      "dynamic-ad-insertion",
+      "sponsorship-valuation",
+      "optical-tracking"
+    ]
+  },
+  {
+    "id": "voice-ai",
+    "term": "Voice AI",
+    "aka": [
+      "voice mode",
+      "voice assistant",
+      "voice agents",
+      "speech recognition",
+      "speech-to-text",
+      "text-to-speech"
+    ],
+    "category": "How models work",
+    "short": "AI that listens and talks: turning speech into text, text into natural-sounding speech, or holding a live spoken conversation.",
+    "explain": "Newer models can handle audio directly, so spoken conversations feel quick and natural rather than robotic. That makes voice a realistic way to use AI in the car, on the go and in customer service. The same technology powers AI commentary and translation, and also voice-clone fraud.",
+    "related": [
+      "multimodal",
+      "ai-commentary",
+      "deepfake",
+      "latency"
+    ]
+  },
+  {
+    "id": "wrapper",
+    "term": "Wrapper",
+    "aka": [
+      "wrappers",
+      "gpt wrapper",
+      "thin wrapper",
+      "ai wrapper"
+    ],
+    "category": "Business & strategy",
+    "short": "A product that is mostly a user interface on top of someone else's AI model, with little proprietary technology of its own.",
+    "explain": "Wrappers can be built fast, but they're vulnerable: the model provider can add the same feature, or a rival can copy it in weeks. Some so-called wrappers become strong businesses through distribution, deep workflow integration or proprietary data. In due diligence, ask what's unique besides the model.",
+    "related": [
+      "moat",
+      "orchestration",
+      "ai-washing",
+      "build-vs-buy",
+      "gross-margin"
+    ]
+  },
+  {
+    "id": "zero-data-retention",
+    "term": "Zero data retention",
+    "aka": [
+      "zdr",
+      "no data retention"
+    ],
+    "category": "Business & strategy",
+    "short": "A contract term where an AI vendor agrees not to store your prompts and outputs after returning a response.",
+    "explain": "Enterprise AI deals often negotiate how long, if at all, the vendor keeps your data and whether it can be used for training. Zero data retention is the strictest version. It’s a key question for anything touching confidential, customer or regulated data.",
+    "related": [
+      "data-privacy",
+      "api",
+      "vendor-lock-in"
+    ]
+  }
+]
