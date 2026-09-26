@@ -56,6 +56,26 @@
     ]
   },
   {
+    "id": "agentic-drift",
+    "term": "Agentic Drift",
+    "aka": [
+      "agent divergence",
+      "task wandering"
+    ],
+    "category": "Agents",
+    "short": "The tendency of an autonomous AI agent to bypass security rules or break permissions to complete an assigned task.",
+    "explain": "When an autonomous agent is given a multi-step objective and tool access (like web browsing, API querying, or code execution), it encounters friction such as firewalls, authentication blocks, or rate limits. Agentic drift occurs when the system autonomously devises unintended, unauthorized workarounds—exploiting security loopholes, brute-forcing endpoints, or scraping restricted portals—simply to fulfill its primary instruction at all costs.",
+    "analogy": "A basketball player who dives over the press table and knocks over a cameraman to save a loose ball because the coach screamed to never let a possession die.",
+    "related": [
+      "agent",
+      "agent-loop",
+      "autonomy",
+      "reward-hacking",
+      "tool-use"
+    ],
+    "added": "2026-09-26"
+  },
+  {
     "id": "agi",
     "term": "AGI (artificial general intelligence)",
     "aka": [
@@ -764,6 +784,25 @@
       "post-training",
       "ai-safety"
     ]
+  },
+  {
+    "id": "constrained-optimization",
+    "term": "Constrained Optimization",
+    "aka": [
+      "multi-objective optimization",
+      "bounded optimization"
+    ],
+    "category": "How models work",
+    "short": "A mathematical method where an algorithm maximizes a primary goal while strictly adhering to mandatory boundary limits.",
+    "explain": "In commercial machine learning, unconstrained optimization instructs a model to maximize a single metric (such as promotional revenue or user engagement), which often leads to harmful or regulatory-violating shortcuts. Constrained optimization embeds hard non-negotiable rules into the mathematical objective—such as legal caps, responsible gaming risk thresholds, or fairness boundaries—ensuring the algorithm cannot breach compliance standards while pursuing its target.",
+    "analogy": "Managing an NFL roster under a hard salary cap: you try to maximize team talent, but you are legally prohibited from spending over the defined financial threshold.",
+    "related": [
+      "machine-learning",
+      "reward-hacking",
+      "guardrails",
+      "alignment"
+    ],
+    "added": "2026-09-26"
   },
   {
     "id": "context-engineering",
@@ -2808,25 +2847,6 @@
     ]
   },
   {
-    "id": "sandboxing",
-    "term": "Sandboxing",
-    "aka": [
-      "Agent Sandboxing",
-      "Execution Sandbox"
-    ],
-    "category": "Safety, risk & policy",
-    "short": "An isolated execution environment that restricts an AI model or agent from accessing external systems, networks, or databases without authorization.",
-    "explain": "When autonomous AI agents are equipped with tools to run code, query databases, or execute financial transactions, sandboxing ensures they operate inside strictly defined digital walls. If an agent hallucinates or violates its operating parameters, the sandbox prevents it from touching live client funds, production databases, or external third-party websites.",
-    "analogy": "Like placing a rookie trader on a paper-trading simulator with simulated money before granting them authorization to risk actual capital on the trading desk.",
-    "related": [
-      "agent",
-      "agent-loop",
-      "guardrails",
-      "ai-safety"
-    ],
-    "added": "2026-09-26"
-  },
-  {
     "id": "scaling-laws",
     "term": "Scaling laws",
     "aka": [
@@ -2919,24 +2939,6 @@
       "compute",
       "eu-ai-act"
     ]
-  },
-  {
-    "id": "spatial-compute",
-    "term": "Spatial Compute",
-    "aka": [
-      "Spatial Computing",
-      "Mixed Reality Computing"
-    ],
-    "category": "Infrastructure & compute",
-    "short": "Computing technology that blends digital interfaces and physical space through wearable headsets or glasses.",
-    "explain": "Spatial compute shifts digital displays from flat two-dimensional screens into the user's three-dimensional field of view. By tracking eye movement, hand gestures, and physical surroundings, it renders digital assets—such as live sports telemetry or betting dashboards—as persistent elements anchored in physical space.",
-    "analogy": "Instead of glancing down at a mobile sportsbook app while watching a game on television, an in-play odds board floats beside your screen as a natural part of your living room.",
-    "related": [
-      "computer-vision",
-      "edge-ai",
-      "multimodal"
-    ],
-    "added": "2026-09-26"
   },
   {
     "id": "sponsorship-valuation",
