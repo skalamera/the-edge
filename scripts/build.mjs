@@ -129,7 +129,8 @@ md.use({
       start: (src) => src.indexOf('[['),
       tokenizer(src) {
         const m = /^\[\[([^\]|]+)(?:\|([^\]]+))?\]\]/.exec(src);
-        if (m) return { type: 'term', raw: m[0], ref: m[1].trim(), label: (m[2] || m[1]).trim() };
+        // Without an explicit label, show the id as words ("machine-learning" -> "machine learning").
+        if (m) return { type: 'term', raw: m[0], ref: m[1].trim(), label: (m[2] || m[1].replace(/-/g, ' ')).trim() };
       },
       renderer(tok) {
         const g = resolveTerm(tok.ref);
