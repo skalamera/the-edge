@@ -2808,6 +2808,25 @@
     ]
   },
   {
+    "id": "sandboxing",
+    "term": "Sandboxing",
+    "aka": [
+      "Agent Sandboxing",
+      "Execution Sandbox"
+    ],
+    "category": "Safety, risk & policy",
+    "short": "An isolated execution environment that restricts an AI model or agent from accessing external systems, networks, or databases without authorization.",
+    "explain": "When autonomous AI agents are equipped with tools to run code, query databases, or execute financial transactions, sandboxing ensures they operate inside strictly defined digital walls. If an agent hallucinates or violates its operating parameters, the sandbox prevents it from touching live client funds, production databases, or external third-party websites.",
+    "analogy": "Like placing a rookie trader on a paper-trading simulator with simulated money before granting them authorization to risk actual capital on the trading desk.",
+    "related": [
+      "agent",
+      "agent-loop",
+      "guardrails",
+      "ai-safety"
+    ],
+    "added": "2026-09-26"
+  },
+  {
     "id": "scaling-laws",
     "term": "Scaling laws",
     "aka": [
@@ -2900,6 +2919,24 @@
       "compute",
       "eu-ai-act"
     ]
+  },
+  {
+    "id": "spatial-compute",
+    "term": "Spatial Compute",
+    "aka": [
+      "Spatial Computing",
+      "Mixed Reality Computing"
+    ],
+    "category": "Infrastructure & compute",
+    "short": "Computing technology that blends digital interfaces and physical space through wearable headsets or glasses.",
+    "explain": "Spatial compute shifts digital displays from flat two-dimensional screens into the user's three-dimensional field of view. By tracking eye movement, hand gestures, and physical surroundings, it renders digital assets—such as live sports telemetry or betting dashboards—as persistent elements anchored in physical space.",
+    "analogy": "Instead of glancing down at a mobile sportsbook app while watching a game on television, an in-play odds board floats beside your screen as a natural part of your living room.",
+    "related": [
+      "computer-vision",
+      "edge-ai",
+      "multimodal"
+    ],
+    "added": "2026-09-26"
   },
   {
     "id": "sponsorship-valuation",
