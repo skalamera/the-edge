@@ -1,17 +1,20 @@
-// Weekly update agent for The Edge.
+// Weekly update agent for The Edge (Gemini).
 //
-// 1. Research: Claude searches the web for the week's most important AI developments,
-//    general and sports/betting/media specific, and writes a sourced research brief.
-// 2. Write: Claude turns the brief into a structured update in the book's voice
-//    (JSON, validated against a schema).
+// 1. Research: Gemini searches the web (Google Search grounding + URL context) for the
+//    week's most important AI developments, general and sports/betting/media specific,
+//    and writes a research brief. Every source it actually used becomes a numbered,
+//    verified source; claims in the brief are tagged [n] from Google's grounding data.
+// 2. Write: Gemini turns the brief into a structured update in the book's voice
+//    (JSON, validated against a schema). It cites sources by number only, so it can't
+//    invent a URL.
 // 3. Save: writes content/updates/YYYY-MM-DD.json and merges new glossary terms.
 //
-// Usage: ANTHROPIC_API_KEY=... node scripts/weekly-update.mjs [--dry-run]
+// Usage: GEMINI_API_KEY=... node scripts/weekly-update.mjs [--dry-run]
 
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import Anthropic from '@anthropic-ai/sdk';
+import { GoogleGenAI, ThinkingLevel } from '@google/genai';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const CONTENT = path.join(ROOT, 'content');
@@ -19,12 +22,12 @@ const UPDATES = path.join(CONTENT, 'updates');
 const GLOSSARY = path.join(CONTENT, 'glossary.json');
 const DRY_RUN = process.argv.includes('--dry-run');
 
-const MODEL = process.env.EDGE_MODEL || 'claude-opus-5';
-// Server-side fallback: if the model declines a request, the API re-runs it on a
-// recommended fallback model instead of failing the weekly run.
-const BETAS = ['server-side-fallback-2026-07-01'];
-
-const client = new Anthropic();
+const MODEL = process.env.EDGE_MODEL || 'gemini-3.8-flash';
+if (!process.env.GEMINI_API_KEY) {
+  console.error('GEMINI_API_KEY is not set.');
+  process.exit(1);
+}
+const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
 
 const today = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/New_York' }).format(new Date());
 const glossary = JSON.parse(fs.readFileSync(GLOSSARY, 'utf8'));
@@ -41,7 +44,7 @@ const chapters = fs
   .readdirSync(path.join(CONTENT, 'chapters'))
   .filter((f) => f.endsWith('.md'))
   .sort()
-  .map((f) => /^title:\s*(.+)$/m.exec(fs.readFileSync(path.join(CONTENT, 'chapters', f), 'utf8'))?.[1] ?? f);
+  .map((f) => /^title:\s*(.+)$/m.exec(fs.readFileSync(path.join(CONTENT, 'chapters', f), 'utf8'))?.[1]?.replace(/^"|"$/g, '') ?? f);
 const styleGuide = fs.readFileSync(path.join(ROOT, 'docs', 'STYLE_GUIDE.md'), 'utf8');
 
 const READER = `The reader is a senior executive in sports betting and sports data: VP of Betting & Gaming for the Americas at Genius Sports (official sports data, betting technology, sports media and advertising). His background is partnerships and sponsorship sales in pro sports, and he teaches sports industry management at Georgetown. He is commercially sharp but not an engineer. He is studying AI so he can lead conversations about it at work, teach it, and stay ahead of what's coming.`;
@@ -57,6 +60,35 @@ const TERM_CATEGORIES = [
   'Sports, betting & media',
 ];
 
+const usage = { input: 0, output: 0, searches: 0 };
+function logUsage(step, res) {
+  const u = res.usageMetadata || {};
+  usage.input += u.promptTokenCount || 0;
+  usage.output += (u.candidatesTokenCount || 0) + (u.thoughtsTokenCount || 0);
+  const queries = res.candidates?.[0]?.groundingMetadata?.webSearchQueries?.length || 0;
+  usage.searches += queries;
+  console.log(`  ${step}: finish=${res.candidates?.[0]?.finishReason} in=${u.promptTokenCount} out=${u.candidatesTokenCount} thinking=${u.thoughtsTokenCount ?? 0} searches=${queries}`);
+}
+
+async function generate(step, request, attempts = 3) {
+  for (let i = 1; ; i++) {
+    try {
+      const res = await ai.models.generateContent(request);
+      logUsage(step, res);
+      const finish = res.candidates?.[0]?.finishReason;
+      if (!res.text) throw new Error(`${step}: empty response (finish reason ${finish}, block ${res.promptFeedback?.blockReason ?? 'none'})`);
+      if (finish === 'MAX_TOKENS') throw new Error(`${step}: hit the output token limit`);
+      return res;
+    } catch (err) {
+      const status = err?.status ?? err?.code;
+      const retryable = !status || status === 429 || status >= 500;
+      if (i >= attempts || !retryable) throw err;
+      console.warn(`  ${step}: attempt ${i} failed (${err.message}); retrying`);
+      await new Promise((r) => setTimeout(r, 15000 * i));
+    }
+  }
+}
+
 // ---------- step 1: research ----------
 
 async function research() {
@@ -66,94 +98,108 @@ async function research() {
     .flatMap((u) => (u.items || []).map((i) => `- (${u.date}) ${i.headline}`))
     .join('\n');
 
-  const system = `You are the research desk for "The Edge", a weekly AI briefing that extends a study guide for one reader.
+  const prompt = `You are the research desk for "The Edge", a weekly AI briefing that extends a study guide for one reader.
 
 ${READER}
 
-Today is ${today}. Your job is to find the most important developments in AI ${window}, and write a research brief with sources.
+Today is ${today}. Find the most important developments in AI ${window} and write a research brief.
 
 What to look for, in priority order:
 1. Developments that change how a business person should think about AI: major model releases and capability jumps, agentic AI milestones, big deals, partnerships, funding and acquisitions that shift the landscape, pricing changes, notable enterprise adoption stories.
-2. AI in sports, betting and sports media: sportsbooks, leagues, sports data companies (Genius Sports, Sportradar, Stats Perform and others), broadcasters, integrity and responsible-gaming uses, prediction markets where AI is involved, regulators' statements on AI in gambling. Always search for this category specifically, even in quiet weeks.
+2. AI in sports, betting and sports media: sportsbooks, leagues, sports data companies (Genius Sports, Sportradar, Stats Perform and others), broadcasters, integrity and responsible-gaming uses, prediction markets where AI is involved, regulators' statements on AI in gambling. Always search this category specifically, even in quiet weeks.
 3. Policy, regulation, safety and chips/infrastructure news that a well-informed executive would be expected to know.
 
 Rules:
-- Only include items you verified from sources dated within the window. Prefer primary sources (company announcements, filings, regulators) and top-tier reporting.
+- Search thoroughly: run many searches across the categories above before writing.
+- Only include items you verified in sources dated within the window. Prefer primary sources (company announcements, filings, regulators) and top-tier reporting.
 - Skip hype, rumor, minor product tweaks and funding rounds that don't change the picture.
-- Aim for 5 to 7 items total, including at least one sports/betting/media item if anything real happened. If nothing meaningful happened in sports, say so rather than stretching.
-- For each item record: what happened (facts, dates, numbers exactly as reported), why it matters, any sports/betting angle, and the source URLs you actually read.
-- Also note one fundamental concept from the week's news that would be worth teaching (e.g., "why inference costs are falling"), and 2 to 4 things to watch next week.
+- Aim for 5 to 7 items, including at least one sports/betting/media item if anything real happened. If nothing meaningful happened in sports, say so rather than stretching.
+- For each item: what happened (facts, dates, numbers exactly as reported), why it matters, and any sports/betting angle.
+- Then note one fundamental concept from the week's news worth teaching (for example, why inference costs are falling), and 2 to 4 things to watch next week.
 
 Already covered in recent weeks (don't repeat unless there is a genuinely new development):
 ${recent || '- (nothing yet, this is the first update)'}
 
-Finish with the complete brief between <brief> and </brief> tags.`;
+Write the brief as plain text with a short heading per item.`;
 
-  const messages = [{ role: 'user', content: `Research the AI news ${window} and write the brief.` }];
-  const urls = new Set();
-  let text = '';
+  const res = await generate('research', {
+    model: MODEL,
+    contents: prompt,
+    config: {
+      tools: [{ googleSearch: {} }, { urlContext: {} }],
+      thinkingConfig: { thinkingLevel: ThinkingLevel.HIGH },
+      maxOutputTokens: 32768,
+    },
+  });
 
-  for (let turn = 0; turn < 8; turn++) {
-    const stream = client.beta.messages.stream({
-      model: MODEL,
-      max_tokens: 64000,
-      betas: BETAS,
-      fallbacks: 'default',
-      thinking: { type: 'adaptive' },
-      output_config: { effort: 'high' },
-      system,
-      tools: [
-        { type: 'web_search_20260209', name: 'web_search', max_uses: 25 },
-        { type: 'web_fetch_20260209', name: 'web_fetch', max_uses: 15 },
-      ],
-      messages,
-    });
-    const msg = await stream.finalMessage();
-    logUsage('research', msg);
-    collectUrls(msg.content, urls);
-    text += msg.content
-      .filter((b) => b.type === 'text')
-      .map((b) => b.text)
-      .join('');
+  const candidate = res.candidates[0];
+  const meta = candidate.groundingMetadata || {};
+  const chunks = meta.groundingChunks || [];
 
-    if (msg.stop_reason === 'refusal') throw new Error(`Research step was declined: ${JSON.stringify(msg.stop_details)}`);
-    if (msg.stop_reason === 'pause_turn') {
-      messages.push({ role: 'assistant', content: msg.content });
-      continue;
+  // Resolve Google's grounding redirect links to the real article URLs.
+  const sources = [];
+  const chunkToSource = new Map();
+  const resolved = await Promise.all(chunks.map((c) => (c.web?.uri ? resolveUrl(c.web.uri) : null)));
+  chunks.forEach((c, i) => {
+    const url = resolved[i];
+    if (!url) return;
+    let n = sources.findIndex((s) => s.url === url);
+    if (n === -1) n = sources.push({ id: sources.length + 1, title: c.web.title || hostname(url), url }) - 1;
+    chunkToSource.set(i, sources[n].id);
+  });
+  for (const m of candidate.urlContextMetadata?.urlMetadata || []) {
+    if (m.urlRetrievalStatus === 'URL_RETRIEVAL_STATUS_SUCCESS' && m.retrievedUrl && !sources.some((s) => s.url === m.retrievedUrl)) {
+      sources.push({ id: sources.length + 1, title: hostname(m.retrievedUrl), url: m.retrievedUrl });
     }
-    break;
   }
 
-  const brief = /<brief>([\s\S]*?)<\/brief>/.exec(text)?.[1]?.trim();
-  if (!brief) throw new Error('Research step finished without a <brief> block.');
-  // Only URLs that came back from real search/fetch results count as verified sources.
-  return { brief, urls };
+  const brief = addCitations(res.text, meta.groundingSupports || [], chunkToSource);
+  return { brief, sources };
 }
 
-function collectUrls(content, urls) {
-  for (const block of content) {
-    if (block.type === 'web_search_tool_result' && Array.isArray(block.content)) {
-      for (const r of block.content) if (r.url) urls.add(normUrl(r.url));
-    }
-    if (block.type === 'web_fetch_tool_result' && block.content?.url) urls.add(normUrl(block.content.url));
-    if (block.type === 'text') for (const c of block.citations || []) if (c.url) urls.add(normUrl(c.url));
+async function resolveUrl(uri) {
+  if (!/grounding-api-redirect/.test(uri)) return uri;
+  try {
+    const res = await fetch(uri, { redirect: 'manual', signal: AbortSignal.timeout(10000) });
+    const loc = res.headers.get('location');
+    if (loc && /^https?:\/\//.test(loc)) return loc;
+    const followed = await fetch(uri, { redirect: 'follow', signal: AbortSignal.timeout(15000) });
+    return followed.url && !/grounding-api-redirect/.test(followed.url) ? followed.url : null;
+  } catch {
+    return null;
   }
 }
-const normUrl = (u) =>
-  u
-    .trim()
-    .replace(/[?#].*$/, '')
-    .replace(/[.,;]+$/, '')
-    .replace(/\/$/, '')
-    .replace(/^https?:\/\/(www\.)?/i, '')
-    .toLowerCase();
+
+const hostname = (u) => {
+  try {
+    return new URL(u).hostname.replace(/^www\./, '');
+  } catch {
+    return u;
+  }
+};
+
+// Insert [n] markers after each grounded segment. Grounding indices are UTF-8 byte offsets.
+function addCitations(text, supports, chunkToSource) {
+  const inserts = [];
+  for (const s of supports) {
+    const end = s.segment?.endIndex;
+    const ids = [...new Set((s.groundingChunkIndices || []).map((i) => chunkToSource.get(i)).filter(Boolean))];
+    if (end != null && ids.length) inserts.push({ end, tag: ` [${ids.join('][')}]` });
+  }
+  inserts.sort((a, b) => b.end - a.end);
+  let out = Buffer.from(text, 'utf8');
+  for (const { end, tag } of inserts) {
+    if (end > out.length) continue;
+    out = Buffer.concat([out.subarray(0, end), Buffer.from(tag, 'utf8'), out.subarray(end)]);
+  }
+  return out.toString('utf8');
+}
 
 // ---------- step 2: write ----------
 
 const str = { type: 'string' };
 const UPDATE_SCHEMA = {
   type: 'object',
-  additionalProperties: false,
   required: ['title', 'summary', 'items', 'concept', 'new_terms', 'watch'],
   properties: {
     title: { type: 'string', description: 'Headline for the week, 4 to 10 words, no clickbait.' },
@@ -162,8 +208,7 @@ const UPDATE_SCHEMA = {
       type: 'array',
       items: {
         type: 'object',
-        additionalProperties: false,
-        required: ['headline', 'category', 'what', 'why', 'sports_angle', 'say', 'sources'],
+        required: ['headline', 'category', 'what', 'why', 'sports_angle', 'say', 'source_ids'],
         properties: {
           headline: str,
           category: { type: 'string', enum: CATEGORIES },
@@ -171,16 +216,12 @@ const UPDATE_SCHEMA = {
           why: { type: 'string', description: 'Why it matters to him, 2 to 4 sentences.' },
           sports_angle: { type: 'string', description: 'The sports, betting or media angle in 1 to 3 sentences, or an empty string if there genuinely is none.' },
           say: { type: 'string', description: 'One natural sentence he could say in a meeting.' },
-          sources: {
-            type: 'array',
-            items: { type: 'object', additionalProperties: false, required: ['title', 'url'], properties: { title: str, url: str } },
-          },
+          source_ids: { type: 'array', items: { type: 'integer' }, description: 'Numbers of the sources (from the numbered source list) that support this item.' },
         },
       },
     },
     concept: {
       type: 'object',
-      additionalProperties: false,
       required: ['title', 'body'],
       properties: {
         title: str,
@@ -192,7 +233,6 @@ const UPDATE_SCHEMA = {
       description: 'Zero to four genuinely new glossary terms that appeared in this week’s news and are not already in the glossary.',
       items: {
         type: 'object',
-        additionalProperties: false,
         required: ['id', 'term', 'aka', 'category', 'short', 'explain', 'analogy', 'related'],
         properties: {
           id: { type: 'string', description: 'lowercase, hyphens instead of spaces' },
@@ -210,8 +250,8 @@ const UPDATE_SCHEMA = {
   },
 };
 
-async function write(brief) {
-  const system = `You write the weekly "This Week" update for "The Edge", a living AI study guide.
+async function write(brief, sources) {
+  const systemInstruction = `You write the weekly "This Week" update for "The Edge", a living AI study guide.
 
 ${READER}
 
@@ -223,50 +263,47 @@ ${styleGuide}
 
 The book's chapters, for context (the concept of the week can reinforce one): ${chapters.join(' | ')}
 
-Existing glossary ids (link to these; don't propose them as new terms): ${glossary.map((g) => g.id).join(', ')}
+Existing glossary ids (link to these with [[id]]; don't propose them as new terms): ${glossary.map((g) => g.id).join(', ')}
 
 Rules:
-- Use only facts from the research brief. Never add facts, numbers or sources that aren't in it.
-- Every item must cite at least one source URL copied exactly from the brief.
+- Use only facts from the research brief. Never add facts or numbers that aren't in it.
+- Cite sources only by their numbers from the numbered source list. Every item needs at least one source that actually supports it (the [n] markers in the brief show which sources support which claims).
 - Order items by importance to this reader. Keep 4 to 7 items.
 - Write so he can understand each item even if he skipped last week.`;
 
-  const stream = client.beta.messages.stream({
+  const sourceList = sources.map((s) => `[${s.id}] ${s.title} — ${s.url}`).join('\n');
+  const res = await generate('write', {
     model: MODEL,
-    max_tokens: 32000,
-    betas: BETAS,
-    fallbacks: 'default',
-    thinking: { type: 'adaptive' },
-    output_config: { effort: 'high', format: { type: 'json_schema', schema: UPDATE_SCHEMA } },
-    system,
-    messages: [{ role: 'user', content: `Today is ${today}. Here is this week's research brief:\n\n<brief>\n${brief}\n</brief>\n\nWrite the update.` }],
+    contents: `Today is ${today}. Here is this week's research brief:\n\n<brief>\n${brief}\n</brief>\n\nNumbered sources:\n${sourceList}\n\nWrite the update.`,
+    config: {
+      systemInstruction,
+      responseMimeType: 'application/json',
+      responseJsonSchema: UPDATE_SCHEMA,
+      thinkingConfig: { thinkingLevel: ThinkingLevel.HIGH },
+      maxOutputTokens: 32768,
+    },
   });
-  const msg = await stream.finalMessage();
-  logUsage('write', msg);
-  if (msg.stop_reason === 'refusal') throw new Error(`Write step was declined: ${JSON.stringify(msg.stop_details)}`);
-  if (msg.stop_reason === 'max_tokens') throw new Error('Write step hit max_tokens.');
-  const text = msg.content.filter((b) => b.type === 'text').map((b) => b.text).join('');
-  return JSON.parse(text);
+  return JSON.parse(res.text);
 }
 
 // ---------- step 3: validate & save ----------
 
-function validate(update, urls) {
+function validate(update, sources) {
+  const byId = new Map(sources.map((s) => [s.id, s]));
   const items = [];
   for (const it of update.items || []) {
-    const sources = (it.sources || []).filter((s) => {
-      try {
-        new URL(s.url);
-      } catch {
-        return false;
-      }
-      return urls.has(normUrl(s.url));
-    });
-    if (!sources.length) {
+    const cited = [...new Set(it.source_ids || [])].map((n) => byId.get(n)).filter(Boolean);
+    if (!cited.length) {
       console.warn(`  - dropped item without a verified source: ${it.headline}`);
       continue;
     }
-    items.push({ ...it, sources, sports_angle: it.sports_angle?.trim() || undefined });
+    const { source_ids, ...rest } = it;
+    items.push({
+      ...rest,
+      category: CATEGORIES.includes(it.category) ? it.category : 'Business & deals',
+      sports_angle: it.sports_angle?.trim() || undefined,
+      sources: cited.map(({ title, url }) => ({ title, url })),
+    });
   }
   if (!items.length) throw new Error('No items survived source verification.');
 
@@ -274,11 +311,17 @@ function validate(update, urls) {
   for (const g of glossary) for (const k of [g.id, g.term, ...(g.aka || [])]) taken.add(normKey(k));
   const newTerms = [];
   for (const t of update.new_terms || []) {
+    if (!t.id || !t.term || !t.short) continue;
     const id = t.id.toLowerCase().trim().replace(/[\s_]+/g, '-');
     const keys = [id, t.term, ...(t.aka || [])].map(normKey);
     if (keys.some((k) => taken.has(k))) continue;
     keys.forEach((k) => taken.add(k));
-    newTerms.push({ ...t, id, analogy: t.analogy?.trim() || undefined });
+    newTerms.push({
+      ...t,
+      id,
+      category: TERM_CATEGORIES.includes(t.category) ? t.category : 'Foundations',
+      analogy: t.analogy?.trim() || undefined,
+    });
   }
   const ids = new Set([...glossary.map((g) => g.id), ...newTerms.map((t) => t.id)]);
   for (const t of newTerms) t.related = (t.related || []).filter((r) => ids.has(r) && r !== t.id);
@@ -287,27 +330,19 @@ function validate(update, urls) {
 }
 const normKey = (s) => String(s).toLowerCase().trim().replace(/[\s_-]+/g, ' ');
 
-const usage = { input: 0, output: 0, searches: 0 };
-function logUsage(step, msg) {
-  const u = msg.usage || {};
-  usage.input += (u.input_tokens || 0) + (u.cache_read_input_tokens || 0) + (u.cache_creation_input_tokens || 0);
-  usage.output += u.output_tokens || 0;
-  usage.searches += u.server_tool_use?.web_search_requests || 0;
-  console.log(`  ${step}: stop=${msg.stop_reason} in=${u.input_tokens} out=${u.output_tokens} model=${msg.model}`);
-}
-
 // ---------- main ----------
 
 console.log(`The Edge weekly update for ${today} (model ${MODEL})`);
 console.log('Researching…');
-const { brief, urls } = await research();
-console.log(`  brief: ${brief.length} chars, ${urls.size} source URLs seen`);
+const { brief, sources } = await research();
+console.log(`  brief: ${brief.length} chars, ${sources.length} verified sources`);
+if (!sources.length) throw new Error('Research returned no verifiable sources.');
 console.log('Writing…');
-const draft = await write(brief);
-const update = validate(draft, urls);
+const draft = await write(brief, sources);
+const update = validate(draft, sources);
 
 console.log(`Update: "${update.title}" · ${update.items.length} items · ${update.new_terms.length} new terms`);
-console.log(`Usage: ${usage.input} input tokens, ${usage.output} output tokens, ${usage.searches} web searches`);
+console.log(`Usage: ${usage.input} input tokens, ${usage.output} output tokens, ${usage.searches} search queries`);
 
 if (DRY_RUN) {
   console.log(JSON.stringify(update, null, 2));
@@ -315,7 +350,9 @@ if (DRY_RUN) {
   fs.mkdirSync(UPDATES, { recursive: true });
   fs.writeFileSync(path.join(UPDATES, `${today}.json`), `${JSON.stringify(update, null, 2)}\n`);
   if (update.new_terms.length) {
-    const merged = [...glossary, ...update.new_terms.map((t) => ({ ...t, added: today }))];
+    const merged = [...glossary, ...update.new_terms.map((t) => ({ ...t, added: today }))].sort((a, b) =>
+      a.term.localeCompare(b.term, 'en', { sensitivity: 'base' }),
+    );
     fs.writeFileSync(GLOSSARY, `${JSON.stringify(merged, null, 2)}\n`);
   }
   console.log(`Saved content/updates/${today}.json`);

@@ -22,7 +22,7 @@ jobs:
       - name: Research and write this week's update
         run: npm run update
         env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
       - name: Make sure the site still builds
         run: npm run build
       - name: Commit the new update
