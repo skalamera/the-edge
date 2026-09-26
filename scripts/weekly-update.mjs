@@ -30,7 +30,8 @@ if (!process.env.GEMINI_API_KEY) {
 const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
 
 const today = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/New_York' }).format(new Date());
-const glossary = JSON.parse(fs.readFileSync(GLOSSARY, 'utf8'));
+// A re-run on the same day replaces that day's additions rather than treating them as existing terms.
+const glossary = JSON.parse(fs.readFileSync(GLOSSARY, 'utf8')).filter((g) => g.added !== today);
 const pastUpdates = fs.existsSync(UPDATES)
   ? fs
       .readdirSync(UPDATES)
@@ -111,7 +112,7 @@ What to look for, in priority order:
 
 Rules:
 - Search thoroughly: run many searches across the categories above before writing.
-- Only include items you verified in sources dated within the window. Prefer primary sources (company announcements, filings, regulators) and top-tier reporting.
+- Only include items you verified in sources dated within the window. Prefer primary sources (company announcements, filings, court documents, regulators) and established news outlets and trade press. Never rely on social media posts, forums or video pages.
 - Skip hype, rumor, minor product tweaks and funding rounds that don't change the picture.
 - Aim for 5 to 7 items, including at least one sports/betting/media item if anything real happened. If nothing meaningful happened in sports, say so rather than stretching.
 - For each item: what happened (facts, dates, numbers exactly as reported), why it matters, and any sports/betting angle.
@@ -142,13 +143,18 @@ Write the brief as plain text with a short heading per item.`;
   const resolved = await Promise.all(chunks.map((c) => (c.web?.uri ? resolveUrl(c.web.uri) : null)));
   chunks.forEach((c, i) => {
     const url = resolved[i];
-    if (!url) return;
+    if (!url || BLOCKED_HOSTS.test(hostname(url))) return;
     let n = sources.findIndex((s) => s.url === url);
     if (n === -1) n = sources.push({ id: sources.length + 1, title: c.web.title || hostname(url), url }) - 1;
     chunkToSource.set(i, sources[n].id);
   });
   for (const m of candidate.urlContextMetadata?.urlMetadata || []) {
-    if (m.urlRetrievalStatus === 'URL_RETRIEVAL_STATUS_SUCCESS' && m.retrievedUrl && !sources.some((s) => s.url === m.retrievedUrl)) {
+    if (
+      m.urlRetrievalStatus === 'URL_RETRIEVAL_STATUS_SUCCESS' &&
+      m.retrievedUrl &&
+      !BLOCKED_HOSTS.test(hostname(m.retrievedUrl)) &&
+      !sources.some((s) => s.url === m.retrievedUrl)
+    ) {
       sources.push({ id: sources.length + 1, title: hostname(m.retrievedUrl), url: m.retrievedUrl });
     }
   }
@@ -169,6 +175,10 @@ async function resolveUrl(uri) {
     return null;
   }
 }
+
+// Social and user-generated pages aren't acceptable sources for a briefing.
+const BLOCKED_HOSTS = /(^|\.)(facebook|fb|instagram|x|twitter|threads|tiktok|reddit|youtube|youtu|linkedin|pinterest|quora)\.(com|net|be)$/i;
+const MAX_SOURCES_PER_ITEM = 3;
 
 const hostname = (u) => {
   try {
@@ -214,9 +224,9 @@ const UPDATE_SCHEMA = {
           category: { type: 'string', enum: CATEGORIES },
           what: { type: 'string', description: 'What happened, 2 to 4 plain-English sentences. Markdown allowed; link glossary terms as [[id]].' },
           why: { type: 'string', description: 'Why it matters to him, 2 to 4 sentences.' },
-          sports_angle: { type: 'string', description: 'The sports, betting or media angle in 1 to 3 sentences, or an empty string if there genuinely is none.' },
+          sports_angle: { type: 'string', description: 'The concrete sports, betting or media angle in 1 to 3 sentences, or an empty string. Leave it empty unless the connection is direct and factual.' },
           say: { type: 'string', description: 'One natural sentence he could say in a meeting.' },
-          source_ids: { type: 'array', items: { type: 'integer' }, description: 'Numbers of the sources (from the numbered source list) that support this item.' },
+          source_ids: { type: 'array', items: { type: 'integer' }, description: 'The 1 to 3 best sources (by number) that directly report this item, strongest first.' },
         },
       },
     },
@@ -267,7 +277,9 @@ Existing glossary ids (link to these with [[id]]; don't propose them as new term
 
 Rules:
 - Use only facts from the research brief. Never add facts or numbers that aren't in it.
-- Cite sources only by their numbers from the numbered source list. Every item needs at least one source that actually supports it (the [n] markers in the brief show which sources support which claims).
+- Cite sources only by their numbers from the numbered source list: the 1 to 3 that directly report the item, strongest (primary or most authoritative) first. Never attach a source that is only loosely related (the [n] markers in the brief show which sources support which claims).
+- Sports angle: only when the connection is direct and factual (the news is about sports, betting or media, or clearly changes something those businesses do). Never speculate about how sports companies use a technology, and never invent technical claims. An empty sports angle is better than a stretched one; most general AI items should have none.
+- Prefer items that matter to a sports-betting executive or that any informed executive must know. Skip consumer gadget news unless it's a major platform shift.
 - Order items by importance to this reader. Keep 4 to 7 items.
 - Write so he can understand each item even if he skipped last week.`;
 
@@ -292,7 +304,10 @@ function validate(update, sources) {
   const byId = new Map(sources.map((s) => [s.id, s]));
   const items = [];
   for (const it of update.items || []) {
-    const cited = [...new Set(it.source_ids || [])].map((n) => byId.get(n)).filter(Boolean);
+    const cited = [...new Set(it.source_ids || [])]
+      .map((n) => byId.get(n))
+      .filter(Boolean)
+      .slice(0, MAX_SOURCES_PER_ITEM);
     if (!cited.length) {
       console.warn(`  - dropped item without a verified source: ${it.headline}`);
       continue;
@@ -349,11 +364,9 @@ if (DRY_RUN) {
 } else {
   fs.mkdirSync(UPDATES, { recursive: true });
   fs.writeFileSync(path.join(UPDATES, `${today}.json`), `${JSON.stringify(update, null, 2)}\n`);
-  if (update.new_terms.length) {
-    const merged = [...glossary, ...update.new_terms.map((t) => ({ ...t, added: today }))].sort((a, b) =>
-      a.term.localeCompare(b.term, 'en', { sensitivity: 'base' }),
-    );
-    fs.writeFileSync(GLOSSARY, `${JSON.stringify(merged, null, 2)}\n`);
-  }
+  const merged = [...glossary, ...update.new_terms.map((t) => ({ ...t, added: today }))].sort((a, b) =>
+    a.term.localeCompare(b.term, 'en', { sensitivity: 'base' }),
+  );
+  fs.writeFileSync(GLOSSARY, `${JSON.stringify(merged, null, 2)}\n`);
   console.log(`Saved content/updates/${today}.json`);
 }
