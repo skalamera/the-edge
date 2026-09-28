@@ -55,6 +55,26 @@
     "added": "2026-09-26"
   },
   {
+    "id": "agent-to-agent",
+    "term": "Agent-to-Agent (A2A)",
+    "aka": [
+      "A2A",
+      "inter-agent communication",
+      "agent-to-agent collaboration"
+    ],
+    "category": "Agents",
+    "short": "Direct, autonomous communication and negotiation between specialized AI agents across separate business systems.",
+    "explain": "Instead of relying on a single general model or requiring humans to transfer data across departments, agent-to-agent architecture allows specialized software agents to coordinate directly. Each agent maintains its own domain expertise, rules, and governance. For instance, a promotional marketing agent can query an internal compliance agent in real time to verify licensing or responsible gaming rules before executing an offer.",
+    "analogy": "A commercial sales rep calling the legal department directly to clear contract terms before sending an agreement to a client, rather than guessing at the rules alone.",
+    "related": [
+      "multi-agent-system",
+      "agent",
+      "orchestration",
+      "tool-use"
+    ],
+    "added": "2026-09-28"
+  },
+  {
     "id": "agentic-ai",
     "term": "Agentic AI",
     "aka": [
@@ -2335,6 +2355,26 @@
       "agent-loop",
       "wrapper"
     ]
+  },
+  {
+    "id": "out-of-band-containment",
+    "term": "Out-of-Band Containment",
+    "aka": [
+      "hardware containment",
+      "out-of-band safety",
+      "hardware watchdog"
+    ],
+    "category": "Safety, risk & policy",
+    "short": "A security architecture where an independent hardware layer monitors and restricts an AI agent from outside its operating environment.",
+    "explain": "Standard AI guardrails operate 'in-band,' relying on software prompts and internal rules that an autonomous model can misinterpret or bypass. Out-of-band containment places governance onto an isolated physical processor (such as a Data Processing Unit) that inspects data packets, API calls, and memory usage from the outside. If the software agent violates defined parameters, the hardware monitor instantly quarantines or terminates the process without needing the agent's permission.",
+    "analogy": "A circuit breaker in a basement that trips and cuts electrical power the instant a wire overheats, rather than relying on an appliance's power button.",
+    "related": [
+      "guardrails",
+      "agent-sandboxing",
+      "agent",
+      "ai-safety"
+    ],
+    "added": "2026-09-28"
   },
   {
     "id": "outcome-based-pricing",
