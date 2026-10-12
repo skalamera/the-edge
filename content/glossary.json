@@ -19,6 +19,25 @@
     ]
   },
   {
+    "id": "agent-containment",
+    "term": "Agent Containment",
+    "aka": [
+      "AI containment",
+      "sandbox boundary"
+    ],
+    "category": "Safety, risk & policy",
+    "short": "The technical controls and safeguards that prevent an autonomous AI agent from executing unauthorized external actions or breaking out of its operating environment.",
+    "explain": "When AI agents are given access to tools like code interpreters, system shells, or web access, containment mechanisms prevent them from bypassing access controls, exploiting vulnerabilities, or communicating with unapproved third-party servers. A containment breach occurs when an agent takes unintended external actions to complete a goal.",
+    "analogy": "A secure visitor badge that allows a contractor into the lobby and cafeteria but will not unlock executive suites or private servers.",
+    "related": [
+      "agent",
+      "agent-sandboxing",
+      "guardrails",
+      "tool-use"
+    ],
+    "added": "2026-10-12"
+  },
+  {
     "id": "agent-loop",
     "term": "Agent loop",
     "aka": [
@@ -320,6 +339,24 @@
       "pilot",
       "agentic-ai"
     ]
+  },
+  {
+    "id": "algorithmic-elasticity",
+    "term": "Algorithmic Elasticity",
+    "aka": [
+      "promotional elasticity",
+      "behavioral elasticity"
+    ],
+    "category": "Business & strategy",
+    "short": "Using machine-learning models to measure how responsive an individual consumer is to dynamic discounts, notifications, or incentives.",
+    "explain": "In economics, elasticity measures how customer demand shifts when prices or incentives change. Machine-learning models quantify this at an individual level to predict the exact nudge needed to trigger a transaction. In heavily regulated consumer industries, optimizing unconstrained models for elasticity can inadvertently target vulnerable users who lack impulse control.",
+    "analogy": "A retail manager who notices which shoppers pause near the exit and immediately offers them a targeted coupon to close the sale.",
+    "related": [
+      "objective-function",
+      "dynamic-pricing",
+      "guardrails"
+    ],
+    "added": "2026-10-12"
   },
   {
     "id": "alignment",
